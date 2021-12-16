@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7C2DEB276B361600F7DD28 /* AppIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C2DEA276B361600F7DD28 /* AppIntroViewController.swift */; };
+		3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DEC276B362400F7DD28 /* AppIntroViewController.storyboard */; };
+		3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF0276B37C200F7DD28 /* LogInViewController.swift */; };
+		3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */; };
+		3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */; };
+		3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */; };
 		3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6C2763767B009A287C /* AppDelegate.swift */; };
 		3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6E2763767B009A287C /* SceneDelegate.swift */; };
-		3BF99F712763767B009A287C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F702763767B009A287C /* ViewController.swift */; };
-		3BF99F742763767B009A287C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF99F722763767B009A287C /* Main.storyboard */; };
 		3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F752763767B009A287C /* Cryptal_Bank.xcdatamodeld */; };
 		3BF99F792763767D009A287C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF99F782763767D009A287C /* Assets.xcassets */; };
 		3BF99F7C2763767D009A287C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF99F7A2763767D009A287C /* LaunchScreen.storyboard */; };
@@ -64,11 +68,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B7C2DEA276B361600F7DD28 /* AppIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroViewController.swift; sourceTree = "<group>"; };
+		3B7C2DEC276B362400F7DD28 /* AppIntroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppIntroViewController.storyboard; sourceTree = "<group>"; };
+		3B7C2DF0276B37C200F7DD28 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
+		3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
 		3BF99F692763767B009A287C /* Cryptal-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF99F6C2763767B009A287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF99F6E2763767B009A287C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BF99F702763767B009A287C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BF99F732763767B009A287C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF99F762763767B009A287C /* Cryptal_Bank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cryptal_Bank.xcdatamodel; sourceTree = "<group>"; };
 		3BF99F782763767D009A287C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF99F7B2763767D009A287C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -218,8 +226,9 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				3BF99F702763767B009A287C /* ViewController.swift */,
-				3BF99F722763767B009A287C /* Main.storyboard */,
+				3B7C2DEF276B37A600F7DD28 /* Create Account Scene */,
+				3B7C2DEE276B379900F7DD28 /* Log in Scene */,
+				3B7C2DE9276B35DA00F7DD28 /* Intro scene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -230,6 +239,33 @@
 				3BF99F752763767B009A287C /* Cryptal_Bank.xcdatamodeld */,
 			);
 			path = "Local Database";
+			sourceTree = "<group>";
+		};
+		3B7C2DE9276B35DA00F7DD28 /* Intro scene */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C2DEA276B361600F7DD28 /* AppIntroViewController.swift */,
+				3B7C2DEC276B362400F7DD28 /* AppIntroViewController.storyboard */,
+			);
+			path = "Intro scene";
+			sourceTree = "<group>";
+		};
+		3B7C2DEE276B379900F7DD28 /* Log in Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C2DF0276B37C200F7DD28 /* LogInViewController.swift */,
+				3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */,
+			);
+			path = "Log in Scene";
+			sourceTree = "<group>";
+		};
+		3B7C2DEF276B37A600F7DD28 /* Create Account Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */,
+				3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */,
+			);
+			path = "Create Account Scene";
 			sourceTree = "<group>";
 		};
 		3BF99F602763767B009A287C = {
@@ -419,7 +455,9 @@
 				3BF99F7C2763767D009A287C /* LaunchScreen.storyboard in Resources */,
 				3BF99FA027637B20009A287C /* GoogleService-Info.plist in Resources */,
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
-				3BF99F742763767B009A287C /* Main.storyboard in Resources */,
+				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
+				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
+				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,9 +482,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF99F712763767B009A287C /* ViewController.swift in Sources */,
+				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
+				3B7C2DEB276B361600F7DD28 /* AppIntroViewController.swift in Sources */,
 				3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */,
+				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
 				3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,14 +524,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3BF99F722763767B009A287C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BF99F732763767B009A287C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BF99F7A2763767D009A287C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -630,7 +662,6 @@
 				INFOPLIST_FILE = "Cryptal-Bank/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,7 +688,6 @@
 				INFOPLIST_FILE = "Cryptal-Bank/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
