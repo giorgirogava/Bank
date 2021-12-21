@@ -48,6 +48,9 @@
 		3BF99FD127637C21009A287C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD027637C21009A287C /* FirebaseStorage */; };
 		3BF99FD327637C21009A287C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */; };
 		3BF99FD527637C21009A287C /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */; };
+		8877099B27721F0400D8C965 /* NationalCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */; };
+		8877099D27721F5B00D8C965 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099C27721F5B00D8C965 /* ExchangeRates.swift */; };
+		8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */; };
 		88800CAD276BA0100032C290 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAC276BA0100032C290 /* APICaller.swift */; };
 		88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAE276BA8350032C290 /* CryptoViewController.swift */; };
 		88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */; };
@@ -92,6 +95,9 @@
 		3BF99F902763767D009A287C /* Cryptal_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITests.swift; sourceTree = "<group>"; };
 		3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BF99F9F27637B20009A287C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCurrencyViewController.swift; sourceTree = "<group>"; };
+		8877099C27721F5B00D8C965 /* ExchangeRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NationalCurrencyViewController.storyboard; sourceTree = "<group>"; };
 		88800CAC276BA0100032C290 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		88800CAE276BA8350032C290 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
@@ -236,6 +242,7 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8877099927721E3C00D8C965 /* National Currency Converter Scene */,
 				88800CB0276BA83E0032C290 /* Crypto Scene */,
 				3B7C2DEF276B37A600F7DD28 /* Create Account Scene */,
 				3B7C2DEE276B379900F7DD28 /* Log in Scene */,
@@ -327,6 +334,16 @@
 				3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */,
 			);
 			path = "Cryptal-BankUITests";
+			sourceTree = "<group>";
+		};
+		8877099927721E3C00D8C965 /* National Currency Converter Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8877099C27721F5B00D8C965 /* ExchangeRates.swift */,
+				8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */,
+				8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */,
+			);
+			path = "National Currency Converter Scene";
 			sourceTree = "<group>";
 		};
 		88800CAB276B9FCB0032C290 /* API */ = {
@@ -494,6 +511,7 @@
 				3BF99F7C2763767D009A287C /* LaunchScreen.storyboard in Resources */,
 				3BF99FA027637B20009A287C /* GoogleService-Info.plist in Resources */,
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
+				8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */,
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
 				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
 				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
@@ -526,11 +544,13 @@
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
 				3B7C2DEB276B361600F7DD28 /* AppIntroViewController.swift in Sources */,
 				88800CAD276BA0100032C290 /* APICaller.swift in Sources */,
+				8877099D27721F5B00D8C965 /* ExchangeRates.swift in Sources */,
 				3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */,
 				88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */,
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
 				3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */,
 				88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */,
+				8877099B27721F0400D8C965 /* NationalCurrencyViewController.swift in Sources */,
 				88800CB7276BAE530032C290 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
