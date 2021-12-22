@@ -30,6 +30,7 @@
 		3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */; };
 		3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */; };
 		3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */; };
+		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
 		3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6C2763767B009A287C /* AppDelegate.swift */; };
 		3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6E2763767B009A287C /* SceneDelegate.swift */; };
 		3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F752763767B009A287C /* Cryptal_Bank.xcdatamodeld */; };
@@ -65,11 +66,9 @@
 		3BF99FD127637C21009A287C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD027637C21009A287C /* FirebaseStorage */; };
 		3BF99FD327637C21009A287C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */; };
 		3BF99FD527637C21009A287C /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */; };
-		88800CAD276BA0100032C290 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAC276BA0100032C290 /* APICaller.swift */; };
 		88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAE276BA8350032C290 /* CryptoViewController.swift */; };
 		88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */; };
 		88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */; };
-		88800CB7276BAE530032C290 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CB6276BAE530032C290 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +112,7 @@
 		3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
+		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		3BF99F692763767B009A287C /* Cryptal-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF99F6C2763767B009A287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF99F6E2763767B009A287C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,11 +126,9 @@
 		3BF99F902763767D009A287C /* Cryptal_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITests.swift; sourceTree = "<group>"; };
 		3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BF99F9F27637B20009A287C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		88800CAC276BA0100032C290 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		88800CAE276BA8350032C290 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
 		88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
-		88800CB6276BAE530032C290 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +204,7 @@
 		3B6C479D277101D5008AD740 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3BE39A422773B18200A230B2 /* CryptoModel.swift */,
 				3B6C479E277101E5008AD740 /* AppIntroPageModel.swift */,
 				3B6C47B02772A783008AD740 /* User.swift */,
 			);
@@ -393,7 +392,6 @@
 		3BF99F6B2763767B009A287C /* Cryptal-Bank */ = {
 			isa = PBXGroup;
 			children = (
-				88800CAB276B9FCB0032C290 /* API */,
 				3B7C2DE1276B323C00F7DD28 /* App */,
 				3B7C2DE0276B322500F7DD28 /* Infrastructure */,
 				3B7C2DDF276B321A00F7DD28 /* Presentation */,
@@ -420,15 +418,6 @@
 			path = "Cryptal-BankUITests";
 			sourceTree = "<group>";
 		};
-		88800CAB276B9FCB0032C290 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				88800CB5276BAE380032C290 /* Model */,
-				88800CAC276BA0100032C290 /* APICaller.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		88800CB0276BA83E0032C290 /* Crypto Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,14 +426,6 @@
 				88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */,
 			);
 			path = "Crypto Scene";
-			sourceTree = "<group>";
-		};
-		88800CB5276BAE380032C290 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				88800CB6276BAE530032C290 /* Models.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -617,6 +598,7 @@
 				3B6C47B12772A783008AD740 /* User.swift in Sources */,
 				3B6C47942770EF76008AD740 /* Validator+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
+				3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */,
 				3B6C47962770EFD2008AD740 /* UITableView+Extension.swift in Sources */,
 				3B6C47A627729D8B008AD740 /* NetworkManager.swift in Sources */,
 				3B6C47AB27729EC8008AD740 /* ExchangeRatesConstants.swift in Sources */,
@@ -626,7 +608,6 @@
 				3B6C479C2770F14A008AD740 /* AppIntroViewModel.swift in Sources */,
 				3B6C478E2770EEDB008AD740 /* CustomPageControl.swift in Sources */,
 				3B7C2DEB276B361600F7DD28 /* AppIntroViewController.swift in Sources */,
-				88800CAD276BA0100032C290 /* APICaller.swift in Sources */,
 				3B6C47AD2772A203008AD740 /* ExchangeDataManager.swift in Sources */,
 				3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */,
 				3B6C47A2277104C5008AD740 /* AppIntroPageCell.swift in Sources */,
@@ -639,7 +620,6 @@
 				3B6C47A827729DCC008AD740 /* URLExtensions.swift in Sources */,
 				88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */,
 				3B6C47AF2772A761008AD740 /* UDManager.swift in Sources */,
-				88800CB7276BAE530032C290 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
