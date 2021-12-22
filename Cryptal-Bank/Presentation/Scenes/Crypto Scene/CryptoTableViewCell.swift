@@ -17,7 +17,6 @@ struct CryptoTableViewCellViewModel{
 
 class CryptoTableViewCell: UITableViewCell {
     
-    static let identifier = "CryptoTableViewCell"
     
     //
     

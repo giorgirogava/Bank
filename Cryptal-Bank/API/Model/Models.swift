@@ -5,17 +5,42 @@
 //  Created by IMAC on 16.12.21.
 //
 
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let crypto = try? newJSONDecoder().decode(Crypto.self, from: jsonData)
+
 import Foundation
 
-struct Crypto: Codable {
-    
-    let asset_id: String
-    let name: String?
-    let price_usd: Float?
-    let id_icon: String?
-    
+// MARK: - CryptoElement
+struct CryptoElement: Codable {
+    let assetID, name: String?
+    let typeIsCrypto: Int?
+    let dataQuoteStart, dataQuoteEnd, dataTradeStart, dataTradeEnd: String?
+    let dataSymbolsCount: Int?
+    let volume1HrsUsd, volume1DayUsd, volume1MthUsd: Double?
+    let dataStart, dataEnd: String?
+    let priceUsd: Double?
+
+    enum CodingKeys: String, CodingKey {
+        case assetID = "asset_id"
+        case name
+        case typeIsCrypto = "type_is_crypto"
+        case dataQuoteStart = "data_quote_start"
+        case dataQuoteEnd = "data_quote_end"
+        case dataTradeStart = "data_trade_start"
+        case dataTradeEnd = "data_trade_end"
+        case dataSymbolsCount = "data_symbols_count"
+        case volume1HrsUsd = "volume_1hrs_usd"
+        case volume1DayUsd = "volume_1day_usd"
+        case volume1MthUsd = "volume_1mth_usd"
+        case dataStart = "data_start"
+        case dataEnd = "data_end"
+        case priceUsd = "price_usd"
+    }
 }
 
+typealias Crypto = [CryptoElement]
 
 //    "asset_id": "USD",
 //    "name": "USD",
