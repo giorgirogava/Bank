@@ -26,18 +26,40 @@
                                     <segue destination="aoI-te-RRB" kind="show" id="5ZR-ah-tse"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkg-fW-Pnd">
+                                <rect key="frame" x="140" y="675" width="134" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="converter">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="paE-Iv-IbY" kind="show" id="uRJ-fw-m86"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6lf-n7-XiA" firstAttribute="top" secondItem="qkg-fW-Pnd" secondAttribute="bottom" constant="20.5" id="DMK-Kc-3QO"/>
                             <constraint firstItem="6lf-n7-XiA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Y5Y-5t-pi8"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6lf-n7-XiA" secondAttribute="bottom" constant="73" id="erb-mv-dkS"/>
+                            <constraint firstItem="qkg-fW-Pnd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gSs-Ea-e7S"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="79"/>
+        </scene>
+        <!--NationalCurrencyViewController-->
+        <scene sceneID="pZ8-fh-dAF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NationalCurrencyViewController" referencedIdentifier="NationalCurrencyViewController" id="paE-Iv-IbY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bH6-4F-8pd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luc-0i-x5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="-3"/>
         </scene>
         <!--CryptoViewController-->
         <scene sceneID="Kl7-D8-1jo">
@@ -47,7 +69,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNw-y8-oD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="78"/>
+            <point key="canvasLocation" x="718" y="137"/>
         </scene>
     </scenes>
     <resources>
