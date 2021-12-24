@@ -68,6 +68,9 @@
 		3BF99FD127637C21009A287C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD027637C21009A287C /* FirebaseStorage */; };
 		3BF99FD327637C21009A287C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */; };
 		3BF99FD527637C21009A287C /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */; };
+		885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 885EE78B27762EEB0045C510 /* FSCalendar */; };
+		885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885EE78E27762FAF0045C510 /* CalendarViewController.swift */; };
+		885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885EE79027762FE90045C510 /* CalendarViewController.storyboard */; };
 		887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887546E62774EA12002ACC8F /* LocationViewController.swift */; };
 		887546E92774EA37002ACC8F /* LocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887546E82774EA37002ACC8F /* LocationViewController.storyboard */; };
 		8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */; };
@@ -131,6 +134,8 @@
 		3BF99F902763767D009A287C /* Cryptal_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITests.swift; sourceTree = "<group>"; };
 		3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BF99F9F27637B20009A287C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		885EE78E27762FAF0045C510 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		885EE79027762FE90045C510 /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		887546E82774EA37002ACC8F /* LocationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationViewController.storyboard; sourceTree = "<group>"; };
 		8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCurrencyViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +164,7 @@
 				3BF99FC927637C21009A287C /* FirebaseMLModelDownloader in Frameworks */,
 				3BF99FB927637C21009A287C /* FirebaseFirestore in Frameworks */,
 				3BF99FCB27637C21009A287C /* FirebaseMessaging in Frameworks */,
+				885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */,
 				3BF99FC727637C21009A287C /* FirebaseInstallations in Frameworks */,
 				3BF99FC127637C21009A287C /* FirebaseFunctionsCombine-Community in Frameworks */,
 				3BF99FAB27637C21009A287C /* FirebaseAppDistribution-Beta in Frameworks */,
@@ -336,6 +342,7 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				885EE78D27762F490045C510 /* User Calendar */,
 				887546E52774E9CC002ACC8F /* User Location */,
 				8877099927721E3C00D8C965 /* National Currency Converter Scene */,
 				88800CB0276BA83E0032C290 /* Crypto Scene */,
@@ -430,6 +437,15 @@
 			path = "Cryptal-BankUITests";
 			sourceTree = "<group>";
 		};
+		885EE78D27762F490045C510 /* User Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				885EE78E27762FAF0045C510 /* CalendarViewController.swift */,
+				885EE79027762FE90045C510 /* CalendarViewController.storyboard */,
+			);
+			path = "User Calendar";
+			sourceTree = "<group>";
+		};
 		887546E52774E9CC002ACC8F /* User Location */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +518,7 @@
 				3BF99FD027637C21009A287C /* FirebaseStorage */,
 				3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */,
 				3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */,
+				885EE78B27762EEB0045C510 /* FSCalendar */,
 			);
 			productName = "Cryptal-Bank";
 			productReference = 3BF99F692763767B009A287C /* Cryptal-Bank.app */;
@@ -577,6 +594,7 @@
 			mainGroup = 3BF99F602763767B009A287C;
 			packageReferences = (
 				3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				885EE78A27762EEB0045C510 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = 3BF99F6A2763767B009A287C /* Products */;
 			projectDirPath = "";
@@ -602,6 +620,7 @@
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
 				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
 				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
+				885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */,
 				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
 				3B6C47A3277104C5008AD740 /* AppIntroPageCell.xib in Resources */,
 			);
@@ -651,6 +670,7 @@
 				3B6C479F277101E5008AD740 /* AppIntroPageModel.swift in Sources */,
 				3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */,
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
+				885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */,
 				3B6C47902770EF19008AD740 /* UICollectionViewCell+Extension.swift in Sources */,
 				3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */,
 				3B6C47A827729DCC008AD740 /* URLExtensions.swift in Sources */,
@@ -1014,6 +1034,15 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		885EE78A27762EEB0045C510 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 3.0.0;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1146,6 +1175,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageSwift-Beta";
+		};
+		885EE78B27762EEB0045C510 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 885EE78A27762EEB0045C510 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 
