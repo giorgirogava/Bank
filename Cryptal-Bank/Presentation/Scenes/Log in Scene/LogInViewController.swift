@@ -6,24 +6,27 @@
 //
 
 import UIKit
+import SpriteKit
 
 class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onLoginButtonClick(_ sender: Any) {
+        
+        navigationController?.popToRootViewController( animated: false )
+        let sb = UIStoryboard(name: "MainDashboardTabBarController", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "MainDashboardTabBarController")
+        
+        navigationController?.viewControllers.removeAll()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
-    */
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
 }
