@@ -56,16 +56,29 @@
                                     <segue destination="VCu-7G-HN4" kind="show" id="dWw-qj-ZTo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-pD-pgB">
+                                <rect key="frame" x="20" y="534" width="374" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Transaction Notification">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Rtc-1a-mDZ" kind="show" id="vz1-Zl-ATE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vZ3-pD-pgB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="1wu-Yk-w5b"/>
                             <constraint firstItem="qkg-fW-Pnd" firstAttribute="top" secondItem="olP-H6-C6G" secondAttribute="bottom" constant="10" id="9p9-Ga-VSn"/>
                             <constraint firstItem="olP-H6-C6G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="DGb-qB-MYE"/>
                             <constraint firstItem="6lf-n7-XiA" firstAttribute="top" secondItem="qkg-fW-Pnd" secondAttribute="bottom" constant="20.5" id="DMK-Kc-3QO"/>
                             <constraint firstItem="olP-H6-C6G" firstAttribute="top" secondItem="YAE-9y-npB" secondAttribute="bottom" constant="10" id="DR2-nb-G7Y"/>
                             <constraint firstItem="YAE-9y-npB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MUC-A3-tZC"/>
+                            <constraint firstItem="YAE-9y-npB" firstAttribute="top" secondItem="vZ3-pD-pgB" secondAttribute="bottom" constant="10" id="O3T-ts-rfJ"/>
                             <constraint firstItem="6lf-n7-XiA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Y5Y-5t-pi8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vZ3-pD-pgB" secondAttribute="trailing" constant="20" id="dRS-bG-Yqh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6lf-n7-XiA" secondAttribute="bottom" constant="73" id="erb-mv-dkS"/>
                             <constraint firstItem="qkg-fW-Pnd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gSs-Ea-e7S"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="olP-H6-C6G" secondAttribute="trailing" constant="20" id="rdL-PZ-F2X"/>
@@ -76,6 +89,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="79"/>
+        </scene>
+        <!--NotificationController-->
+        <scene sceneID="1oW-Wu-z6U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NotificationController" referencedIdentifier="NotificationController" id="Rtc-1a-mDZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DUG-0h-sdY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5d-85-IM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="-74"/>
         </scene>
         <!--CalendarViewController-->
         <scene sceneID="KMw-7F-TcY">

@@ -68,6 +68,8 @@
 		3BF99FD127637C21009A287C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD027637C21009A287C /* FirebaseStorage */; };
 		3BF99FD327637C21009A287C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */; };
 		3BF99FD527637C21009A287C /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */; };
+		8851FA66277775FD00D64604 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851FA65277775FD00D64604 /* NotificationController.swift */; };
+		8851FA682777761800D64604 /* NotificationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8851FA672777761800D64604 /* NotificationController.storyboard */; };
 		885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 885EE78B27762EEB0045C510 /* FSCalendar */; };
 		885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885EE78E27762FAF0045C510 /* CalendarViewController.swift */; };
 		885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885EE79027762FE90045C510 /* CalendarViewController.storyboard */; };
@@ -134,6 +136,8 @@
 		3BF99F902763767D009A287C /* Cryptal_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITests.swift; sourceTree = "<group>"; };
 		3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BF99F9F27637B20009A287C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8851FA65277775FD00D64604 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8851FA672777761800D64604 /* NotificationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationController.storyboard; sourceTree = "<group>"; };
 		885EE78E27762FAF0045C510 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		885EE79027762FE90045C510 /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8851FA642777755400D64604 /* Transaction Notification */,
 				885EE78D27762F490045C510 /* User Calendar */,
 				887546E52774E9CC002ACC8F /* User Location */,
 				8877099927721E3C00D8C965 /* National Currency Converter Scene */,
@@ -435,6 +440,15 @@
 				3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */,
 			);
 			path = "Cryptal-BankUITests";
+			sourceTree = "<group>";
+		};
+		8851FA642777755400D64604 /* Transaction Notification */ = {
+			isa = PBXGroup;
+			children = (
+				8851FA65277775FD00D64604 /* NotificationController.swift */,
+				8851FA672777761800D64604 /* NotificationController.storyboard */,
+			);
+			path = "Transaction Notification";
 			sourceTree = "<group>";
 		};
 		885EE78D27762F490045C510 /* User Calendar */ = {
@@ -617,6 +631,7 @@
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
 				8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */,
 				887546E92774EA37002ACC8F /* LocationViewController.storyboard in Resources */,
+				8851FA682777761800D64604 /* NotificationController.storyboard in Resources */,
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
 				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
 				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
@@ -647,6 +662,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8851FA66277775FD00D64604 /* NotificationController.swift in Sources */,
 				3B6C47B12772A783008AD740 /* User.swift in Sources */,
 				3B6C47942770EF76008AD740 /* Validator+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
