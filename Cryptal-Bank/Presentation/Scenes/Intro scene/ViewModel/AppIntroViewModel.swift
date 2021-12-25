@@ -14,7 +14,9 @@ protocol AppIntroViewModelProtocol:AnyObject{
 final class AppIntroViewModel: AppIntroViewModelProtocol {
     func getPages() -> [AppIntroPageModel] {
         return [
-            AppIntroPageModel(title: "Discounted Secondhand Books", imageName: "img_welcome_page_asset_1")
+            AppIntroPageModel(title: "Property Diversity", imageName: "p_chart"),
+            AppIntroPageModel(title: "Safe Security", imageName: "p_safe"),
+            AppIntroPageModel(title: "Convenient Transaction", imageName: "p_rocet")
         ]
     }
 }

@@ -14,7 +14,7 @@ class CustomPageControl: UIView {
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.distribution = .fillEqually
         sv.alignment = .center
-        sv.spacing = 14
+        sv.spacing = 12
         sv.axis = .horizontal
         return sv
     }()

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,23 +17,79 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-Os-9CR">
-                                <rect key="frame" x="147" y="769" width="120" height="43"/>
+                                <rect key="frame" x="20" y="767" width="374" height="45"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zcZ-Js-d8o"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get Start">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="24"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Pbi-li-tov" kind="show" id="wvo-vf-coE"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vh9-Jl-Zg9" customClass="CustomPageControl" customModule="Cryptal_Bank" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="736" width="414" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="YgC-Pg-pC1"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ofz-bw-9vr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="689"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M2S-Lx-4wJ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ofz-bw-9vr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0Qf-kc-MtJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fdy-Os-9CR" secondAttribute="trailing" constant="20" id="0uR-QN-cpd"/>
                             <constraint firstItem="fdy-Os-9CR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NZs-Fa-eBV"/>
+                            <constraint firstItem="ofz-bw-9vr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="PLK-lY-9jD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vh9-Jl-Zg9" secondAttribute="trailing" id="UfM-Mg-dqK"/>
+                            <constraint firstItem="fdy-Os-9CR" firstAttribute="top" secondItem="vh9-Jl-Zg9" secondAttribute="bottom" constant="16" id="Zal-eg-W8s"/>
+                            <constraint firstItem="vh9-Jl-Zg9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fR8-d5-DV6"/>
+                            <constraint firstItem="vh9-Jl-Zg9" firstAttribute="top" secondItem="ofz-bw-9vr" secondAttribute="bottom" constant="3" id="fWh-Qz-jwy"/>
+                            <constraint firstItem="fdy-Os-9CR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ioC-E5-gHX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fdy-Os-9CR" secondAttribute="bottom" constant="50" id="ix8-eh-B87"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ofz-bw-9vr" secondAttribute="trailing" id="jC6-lP-wKu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ofz-bw-9vr" id="Fi6-Yj-awV"/>
+                        <outlet property="customPageControl" destination="vh9-Jl-Zg9" id="Kfp-Y8-PuP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,8 +107,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

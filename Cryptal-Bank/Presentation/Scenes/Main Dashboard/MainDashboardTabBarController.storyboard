@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EB7-Ge-ORb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Dashboard Tab Bar Controller-->
+        <scene sceneID="eqN-Xw-zvM">
+            <objects>
+                <tabBarController storyboardIdentifier="MainDashboardTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="EB7-Ge-ORb" customClass="MainDashboardTabBarController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dq4-gP-3KP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IJa-Wd-6ch" kind="relationship" relationship="viewControllers" id="nbc-eh-4ac"/>
+                        <segue destination="Xz8-LK-4LN" kind="relationship" relationship="viewControllers" id="XXV-FG-Rbu"/>
+                        <segue destination="YaN-s1-wEb" kind="relationship" relationship="viewControllers" id="Szq-Pd-zAW"/>
+                        <segue destination="uXl-GM-fda" kind="relationship" relationship="viewControllers" id="xpv-07-gGU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8M-OE-kaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="61.607142857142854"/>
+        </scene>
+        <!--NationalCurrencyViewController-->
+        <scene sceneID="6Bp-yT-VWv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NationalCurrencyViewController" referencedIdentifier="NationalCurrencyViewController" id="IJa-Wd-6ch" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wallet" image="ic_wallet" landscapeImage="ic_wallet" largeContentSizeImage="ic_wallet" id="nnx-gi-jQ3"/>
+                    <navigationItem key="navigationItem" id="ldJ-zF-WJ0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOu-Zu-OYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="208"/>
+        </scene>
+        <!--LocationViewController-->
+        <scene sceneID="37D-nV-Vb7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LocationViewController" referencedIdentifier="LocationViewController" id="Xz8-LK-4LN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="KHI-gL-rbq"/>
+                    <navigationItem key="navigationItem" id="etJ-qT-IuL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yc-UE-RBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="98"/>
+        </scene>
+        <!--CalendarViewController-->
+        <scene sceneID="Q49-1R-ozV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CalendarViewController" referencedIdentifier="CalendarViewController" id="YaN-s1-wEb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6mO-f2-Shq"/>
+                    <navigationItem key="navigationItem" id="UE3-L0-3Ox"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqI-wZ-Tn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-6"/>
+        </scene>
+        <!--CryptoViewController-->
+        <scene sceneID="hQv-fW-HRA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CryptoViewController" referencedIdentifier="CryptoViewController" id="uXl-GM-fda" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Investment" image="ic_investment" landscapeImage="ic_investment" largeContentSizeImage="ic_investment" id="Knw-kf-8K1"/>
+                    <navigationItem key="navigationItem" id="QqM-np-PNH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKT-z0-aSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_investment" width="48" height="48"/>
+        <image name="ic_wallet" width="48" height="48"/>
+    </resources>
+</document>

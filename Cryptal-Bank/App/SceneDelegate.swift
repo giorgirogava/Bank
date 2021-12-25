@@ -25,6 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let vc = sb.instantiateViewController(withIdentifier: "AppIntroViewController")
             
         window?.rootViewController = UINavigationController(rootViewController: vc)
+       // window?.rootViewController = vc
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
