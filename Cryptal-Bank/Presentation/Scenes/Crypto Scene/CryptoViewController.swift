@@ -9,6 +9,9 @@ import UIKit
 
 class CryptoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    private var networkManager: NetworkManagerProtocol!
+    private var exchangeManager: ExchangeDataManager!
+    
     private let tableView: UITableView = {
         
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -21,17 +24,6 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     private var viewModels = [CryptoTableViewCellViewModel]()
     
     
-    //    static let numberFormatter = {
-    //        let formatter = NumberFormatter()
-    //        formatter.locale = .current
-    //        formatter.allowsFloats = true
-    //        formatter.numberStyle = .currency
-    //        formatter.formatterBehavior = .default
-    //
-    //        return formatter
-    //
-    //    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Live cry­pto­currency prices"
@@ -39,40 +31,28 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.delegate = self
         
-        APICaller.shared.getAllCryptoData { [weak self] result in
+        networkManager = NetworkManager()
+        // DI - Dependenc injection
+        exchangeManager = ExchangeDataManager(networkManager: networkManager)
+        
+        exchangeManager.getExchanges(){ rates in
+            print(rates)
+            print("ikakooo")
             
-            switch result {
-                
-            case .success (let models):
-                
-                self?.viewModels = models.compactMap({
-                    
-                    //                    let price = $0.price_usd ?? 0
-                    
-                    // MARK: Bug
-                    
-                    //                    let formatter = ViewController.numberFormatter
-                    //                    let priceString = formatter.string(from: NSNumber(value: price))
+            DispatchQueue.main.async {
+                self.viewModels = rates.compactMap({
                     
                     CryptoTableViewCellViewModel(
                         name: $0.name ?? "N/A",
-                        symbol: $0.asset_id,
-                        //                                                 price: priceString ?? "N/A"
-                        price: "$1"
+                        symbol: $0.assetID ?? "",
+                        price: "\($0.priceUsd ?? 0.0)"
                     )
                 })
                 
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-                
-            case .failure(let error):
-                print("Error: \(error)")
-                
-                
+                self.tableView.reloadData()
             }
-            
         }
+
         
     }
     
@@ -93,7 +73,7 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CryptoTableViewCell.identifier, for: indexPath) as? CryptoTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoTableViewCell", for: indexPath) as? CryptoTableViewCell else {
             fatalError()
         }
         
