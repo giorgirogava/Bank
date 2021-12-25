@@ -32,6 +32,7 @@
 		3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */; };
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
+		3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */; };
 		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
 		3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */; };
 		3BE39A452773B95F00A230B2 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099C27721F5B00D8C965 /* ExchangeRates.swift */; };
@@ -124,6 +125,7 @@
 		3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
+		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		3BF99F692763767B009A287C /* Cryptal-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF99F6C2763767B009A287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				3B6C478D2770EEDB008AD740 /* CustomPageControl.swift */,
+				3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */,
 			);
 			path = "Custom UI Components";
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
 				885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */,
 				3B6C47902770EF19008AD740 /* UICollectionViewCell+Extension.swift in Sources */,
+				3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */,
 				3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */,
 				3B6C47A827729DCC008AD740 /* URLExtensions.swift in Sources */,
 				88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */,

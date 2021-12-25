@@ -6,13 +6,13 @@
 //
 
 import UIKit
+import SpriteKit
 
 class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     @IBAction func onLoginButtonClick(_ sender: Any) {
@@ -26,4 +26,7 @@ class LogInViewController: UIViewController {
         present(vc, animated: true)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
 }

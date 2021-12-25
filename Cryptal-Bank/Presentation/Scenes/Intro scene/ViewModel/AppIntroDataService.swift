@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppIntroViewDataService: NSObject, UICollectionViewDataSource {
+class AppIntroDataService: NSObject, UICollectionViewDataSource {
     
     private var collectionView: UICollectionView!
     private var viewModel: AppIntroViewModelProtocol!
@@ -32,6 +32,7 @@ class AppIntroViewDataService: NSObject, UICollectionViewDataSource {
     func refresh() {
         pages = viewModel.getPages()
         collectionView.reloadData()
+       // startTimer()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -40,17 +41,46 @@ class AppIntroViewDataService: NSObject, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.deque(class: AppIntroPageCell.self, for: indexPath)
-        //cell.configure(with: pages[indexPath.row])
+        cell.configure(with: pages[indexPath.row])
         return cell
     }
+    
+    
+    func startTimer() {
+
+        _ =  Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.scrollAutomatically), userInfo: nil, repeats: true)
+    }
+    
+    @objc func scrollAutomatically(_ timer1: Timer) {
+
+        if let coll  = collectionView {
+            for cell in coll.visibleCells {
+                let indexPath: IndexPath? = coll.indexPath(for: cell)
+                
+              //  if ((indexPath?.row)! < pages.count + 1){
+                    let indexPath1: IndexPath?
+                    indexPath1 = IndexPath.init(row:  2, section: (indexPath?.section)!)
+                   print("ikakoo")
+                coll.scrollToItem(at: indexPath1!, at: .left, animated: true)
+                    pageDidChanged?((indexPath?.row)!)
+               // }
+//                else{
+//                    let indexPath1: IndexPath?
+//                    indexPath1 = IndexPath.init(row: 0, section: (indexPath?.section)!)
+//                    coll.scrollToItem(at: indexPath1!, at: .right, animated: true)
+//                }
+
+            }
+        }}
+
 }
 
 
-extension AppIntroViewDataService: UICollectionViewDelegate {
+extension AppIntroDataService: UICollectionViewDelegate {
     
 }
 
-extension AppIntroViewDataService: UICollectionViewDelegateFlowLayout {
+extension AppIntroDataService: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return UIScreen.main.bounds.size
     }
