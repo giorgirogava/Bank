@@ -36,20 +36,66 @@
                                     <segue destination="paE-Iv-IbY" kind="show" id="uRJ-fw-m86"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olP-H6-C6G">
+                                <rect key="frame" x="20" y="628" width="374" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="User Location">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="IcG-KU-Unp" kind="show" id="JlM-hf-BSG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAE-9y-npB">
+                                <rect key="frame" x="20" y="581" width="374" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calendar">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="VCu-7G-HN4" kind="show" id="dWw-qj-ZTo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qkg-fW-Pnd" firstAttribute="top" secondItem="olP-H6-C6G" secondAttribute="bottom" constant="10" id="9p9-Ga-VSn"/>
+                            <constraint firstItem="olP-H6-C6G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="DGb-qB-MYE"/>
                             <constraint firstItem="6lf-n7-XiA" firstAttribute="top" secondItem="qkg-fW-Pnd" secondAttribute="bottom" constant="20.5" id="DMK-Kc-3QO"/>
+                            <constraint firstItem="olP-H6-C6G" firstAttribute="top" secondItem="YAE-9y-npB" secondAttribute="bottom" constant="10" id="DR2-nb-G7Y"/>
+                            <constraint firstItem="YAE-9y-npB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MUC-A3-tZC"/>
                             <constraint firstItem="6lf-n7-XiA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Y5Y-5t-pi8"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6lf-n7-XiA" secondAttribute="bottom" constant="73" id="erb-mv-dkS"/>
                             <constraint firstItem="qkg-fW-Pnd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gSs-Ea-e7S"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="olP-H6-C6G" secondAttribute="trailing" constant="20" id="rdL-PZ-F2X"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YAE-9y-npB" secondAttribute="trailing" constant="20" id="y7d-TR-A76"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="79"/>
+        </scene>
+        <!--CalendarViewController-->
+        <scene sceneID="KMw-7F-TcY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CalendarViewController" referencedIdentifier="CalendarViewController" id="VCu-7G-HN4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dzC-Yg-k93"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZr-aP-94O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="-20"/>
+        </scene>
+        <!--LocationViewController-->
+        <scene sceneID="HFJ-6x-Vf7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LocationViewController" referencedIdentifier="LocationViewController" id="IcG-KU-Unp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7F0-jN-gze"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elM-0f-V2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="32"/>
         </scene>
         <!--NationalCurrencyViewController-->
         <scene sceneID="pZ8-fh-dAF">
@@ -59,7 +105,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luc-0i-x5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="-3"/>
+            <point key="canvasLocation" x="776" y="78"/>
         </scene>
         <!--CryptoViewController-->
         <scene sceneID="Kl7-D8-1jo">
@@ -69,7 +115,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNw-y8-oD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="137"/>
+            <point key="canvasLocation" x="766" y="127"/>
         </scene>
     </scenes>
     <resources>
