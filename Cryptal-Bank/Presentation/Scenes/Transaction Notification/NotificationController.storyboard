@@ -21,6 +21,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Set Transaction reminder"/>
                                 <connections>
                                     <action selector="setReminder:" destination="5EZ-qb-Rvc" eventType="touchUpInside" id="IlM-Om-y4a"/>
+                                    <action selector="setReminder:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bb2-Fp-btp"/>
                                 </connections>
                             </button>
                         </subviews>
