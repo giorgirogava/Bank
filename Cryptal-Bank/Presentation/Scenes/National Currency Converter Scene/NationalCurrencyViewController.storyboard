@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--National Currency View Controller-->
+        <!--Currency-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="NationalCurrencyViewController" id="BYZ-38-t0r" customClass="NationalCurrencyViewController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,11 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRI-6m-Ru2">
-                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
-                            </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount (United States dollar [USD, US$])" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6HC-Ua-UuB">
-                                <rect key="frame" x="20" y="602" width="374" height="34"/>
+                                <rect key="frame" x="20" y="431" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -30,21 +27,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRI-6m-Ru2">
+                                <rect key="frame" x="0.0" y="537" width="414" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="dRI-6m-Ru2" firstAttribute="top" secondItem="6HC-Ua-UuB" secondAttribute="bottom" constant="10" id="5cR-hc-8nO"/>
+                            <constraint firstItem="dRI-6m-Ru2" firstAttribute="top" secondItem="6HC-Ua-UuB" secondAttribute="bottom" constant="72" id="5cR-hc-8nO"/>
                             <constraint firstItem="LxA-nw-sbm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Axn-jg-hD8"/>
                             <constraint firstItem="6HC-Ua-UuB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jzr-Ii-2Ab"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LxA-nw-sbm" secondAttribute="trailing" constant="20" id="Lrk-HM-Cv9"/>
                             <constraint firstItem="dRI-6m-Ru2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qup-MC-hcp"/>
                             <constraint firstItem="LxA-nw-sbm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Yky-tU-qHF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6HC-Ua-UuB" secondAttribute="trailing" constant="20" id="sNP-qi-TTF"/>
-                            <constraint firstItem="dRI-6m-Ru2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wmD-AA-ppr"/>
+                            <constraint firstItem="dRI-6m-Ru2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-60" id="wmD-AA-ppr"/>
                             <constraint firstItem="dRI-6m-Ru2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xEx-ze-58I"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Currency" image="coloncurrencysign.square.fill" catalog="system" id="7Xd-bZ-620"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pickerView" destination="dRI-6m-Ru2" id="Mdg-Dt-dcv"/>
                         <outlet property="priceLabel" destination="LxA-nw-sbm" id="PDD-KQ-66U"/>
@@ -53,10 +55,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-149" y="112"/>
         </scene>
     </scenes>
     <resources>
+        <image name="coloncurrencysign.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

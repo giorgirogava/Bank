@@ -71,6 +71,11 @@
 		3BF99FD127637C21009A287C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD027637C21009A287C /* FirebaseStorage */; };
 		3BF99FD327637C21009A287C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */; };
 		3BF99FD527637C21009A287C /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */; };
+		885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A21C32778B4CA00C7E5CA /* BarViewController.swift */; };
+		885A21C62778B50200C7E5CA /* GraphsAndChartsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885A21C52778B50200C7E5CA /* GraphsAndChartsViewController.storyboard */; };
+		885A21C82778B6D500C7E5CA /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A21C72778B6D500C7E5CA /* LineViewController.swift */; };
+		885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A21C92778B6EE00C7E5CA /* PieViewController.swift */; };
+		885A21D12778BB7F00C7E5CA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 885A21D02778BB7F00C7E5CA /* Charts */; };
 		885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 885EE78B27762EEB0045C510 /* FSCalendar */; };
 		885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885EE78E27762FAF0045C510 /* CalendarViewController.swift */; };
 		885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885EE79027762FE90045C510 /* CalendarViewController.storyboard */; };
@@ -140,6 +145,10 @@
 		3BF99F902763767D009A287C /* Cryptal_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITests.swift; sourceTree = "<group>"; };
 		3BF99F922763767D009A287C /* Cryptal_BankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_BankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BF99F9F27637B20009A287C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		885A21C32778B4CA00C7E5CA /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		885A21C52778B50200C7E5CA /* GraphsAndChartsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphsAndChartsViewController.storyboard; sourceTree = "<group>"; };
+		885A21C72778B6D500C7E5CA /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		885A21C92778B6EE00C7E5CA /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
 		885EE78E27762FAF0045C510 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		885EE79027762FE90045C510 /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +189,7 @@
 				3BF99FB327637C21009A287C /* FirebaseDatabase in Frameworks */,
 				3BF99FCF27637C21009A287C /* FirebaseRemoteConfig in Frameworks */,
 				3BF99FBF27637C21009A287C /* FirebaseFunctions in Frameworks */,
+				885A21D12778BB7F00C7E5CA /* Charts in Frameworks */,
 				3BF99FAF27637C21009A287C /* FirebaseAuthCombine-Community in Frameworks */,
 				3BF99FD327637C21009A287C /* FirebaseStorageCombine-Community in Frameworks */,
 				3BF99FC527637C21009A287C /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -349,6 +359,7 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				885A21BD2778B32800C7E5CA /* Financial Graphs And Charts */,
 				3BBAA6D027774E8A00C91DD0 /* Main Dashboard */,
 				885EE78D27762F490045C510 /* User Calendar */,
 				887546E52774E9CC002ACC8F /* User Location */,
@@ -454,6 +465,17 @@
 			path = "Cryptal-BankUITests";
 			sourceTree = "<group>";
 		};
+		885A21BD2778B32800C7E5CA /* Financial Graphs And Charts */ = {
+			isa = PBXGroup;
+			children = (
+				885A21C32778B4CA00C7E5CA /* BarViewController.swift */,
+				885A21C72778B6D500C7E5CA /* LineViewController.swift */,
+				885A21C92778B6EE00C7E5CA /* PieViewController.swift */,
+				885A21C52778B50200C7E5CA /* GraphsAndChartsViewController.storyboard */,
+			);
+			path = "Financial Graphs And Charts";
+			sourceTree = "<group>";
+		};
 		885EE78D27762F490045C510 /* User Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +558,7 @@
 				3BF99FD227637C21009A287C /* FirebaseStorageCombine-Community */,
 				3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */,
 				885EE78B27762EEB0045C510 /* FSCalendar */,
+				885A21D02778BB7F00C7E5CA /* Charts */,
 			);
 			productName = "Cryptal-Bank";
 			productReference = 3BF99F692763767B009A287C /* Cryptal-Bank.app */;
@@ -612,6 +635,7 @@
 			packageReferences = (
 				3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				885EE78A27762EEB0045C510 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				885A21CF2778BB7F00C7E5CA /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 3BF99F6A2763767B009A287C /* Products */;
 			projectDirPath = "";
@@ -632,6 +656,7 @@
 				3BF99F7C2763767D009A287C /* LaunchScreen.storyboard in Resources */,
 				3BF99FA027637B20009A287C /* GoogleService-Info.plist in Resources */,
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
+				885A21C62778B50200C7E5CA /* GraphsAndChartsViewController.storyboard in Resources */,
 				8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */,
 				887546E92774EA37002ACC8F /* LocationViewController.storyboard in Resources */,
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
@@ -668,6 +693,7 @@
 				3B6C47B12772A783008AD740 /* User.swift in Sources */,
 				3B6C47942770EF76008AD740 /* Validator+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
+				885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */,
 				3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */,
 				3B6C47962770EFD2008AD740 /* UITableView+Extension.swift in Sources */,
 				3B6C47A627729D8B008AD740 /* NetworkManager.swift in Sources */,
@@ -675,6 +701,7 @@
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
+				885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */,
 				3B6C479A2770F05C008AD740 /* AppIntroDataService.swift in Sources */,
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
 				3B6C479C2770F14A008AD740 /* AppIntroViewModel.swift in Sources */,
@@ -696,6 +723,7 @@
 				3B6C47A827729DCC008AD740 /* URLExtensions.swift in Sources */,
 				88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */,
 				3B6C47AF2772A761008AD740 /* UDManager.swift in Sources */,
+				885A21C82778B6D500C7E5CA /* LineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1082,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		885A21CF2778BB7F00C7E5CA /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		885EE78A27762EEB0045C510 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
@@ -1195,6 +1231,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageSwift-Beta";
+		};
+		885A21D02778BB7F00C7E5CA /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 885A21CF2778BB7F00C7E5CA /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 		885EE78B27762EEB0045C510 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
