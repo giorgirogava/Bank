@@ -18,6 +18,11 @@ struct UDManager {
     
     private static var ud = UserDefaults.standard
     
+    static func markUserAsLoggedIn() {
+        ud.set(false, forKey: KEY_IS_USER_LOGGED_IN)
+        ud.set("",forKey: KEY_USER_CREDENTIAL_USERNAME)
+        ud.set("",forKey: KEY_USER_CREDENTIAL_PASSWORD)
+    }
     
     static func markUserAsLoggedOut() {
         ud.set(false, forKey: KEY_IS_USER_LOGGED_IN)

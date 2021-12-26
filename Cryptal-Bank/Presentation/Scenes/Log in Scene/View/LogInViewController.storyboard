@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJe-z8-SNR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome!-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" id="Y6W-OH-hqX" customClass="LogInViewController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lf-n7-XiA">
+                                <rect key="frame" x="25" y="353" width="364" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UZz-Z1-tAU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log in">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onLoginButtonClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qY2-AE-SSR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zrX-x5-GnY" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
+                                <rect key="frame" x="25" y="168" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qA4-Qt-mer"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelBackground">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="  Email"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDY-5H-B17" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
+                                <rect key="frame" x="25" y="243" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bR2-Le-QoD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelBackground">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="  Password"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cF7-td-QTM" userLabel="Stack View register">
+                                <rect key="frame" x="72.5" y="418" width="269.5" height="35.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-PU-2f7">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="35.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-zY-wdJ">
+                                        <rect key="frame" x="179" y="0.0" width="90.5" height="35.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zrX-x5-GnY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="0Jx-jZ-FQF"/>
+                            <constraint firstItem="6lf-n7-XiA" firstAttribute="top" secondItem="VDY-5H-B17" secondAttribute="bottom" constant="60" id="EBh-vQ-ePA"/>
+                            <constraint firstItem="cF7-td-QTM" firstAttribute="centerX" secondItem="6lf-n7-XiA" secondAttribute="centerX" id="GHS-z0-DK0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VDY-5H-B17" secondAttribute="trailing" constant="25" id="RJ7-kW-AL2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zrX-x5-GnY" secondAttribute="trailing" constant="25" id="TmZ-Ng-g5j"/>
+                            <constraint firstItem="6lf-n7-XiA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Y5Y-5t-pi8"/>
+                            <constraint firstItem="zrX-x5-GnY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="hZx-y1-k4g"/>
+                            <constraint firstItem="6lf-n7-XiA" firstAttribute="trailing" secondItem="VDY-5H-B17" secondAttribute="trailing" id="haS-4d-HDt"/>
+                            <constraint firstItem="6lf-n7-XiA" firstAttribute="leading" secondItem="VDY-5H-B17" secondAttribute="leading" id="mdO-yg-9E4"/>
+                            <constraint firstItem="cF7-td-QTM" firstAttribute="top" secondItem="6lf-n7-XiA" secondAttribute="bottom" constant="15" id="sRV-va-f8b"/>
+                            <constraint firstItem="VDY-5H-B17" firstAttribute="top" secondItem="zrX-x5-GnY" secondAttribute="bottom" constant="25" id="yof-b4-hTv"/>
+                            <constraint firstItem="VDY-5H-B17" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="zbq-3r-o27"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome!" id="4Ij-Oz-bCo"/>
+                    <connections>
+                        <outlet property="bEmailFild" destination="zrX-x5-GnY" id="lZn-Qc-Qqa"/>
+                        <outlet property="bPasswordFild" destination="VDY-5H-B17" id="vOX-ke-j0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="78.348214285714278"/>
+        </scene>
+        <!--CalendarViewController-->
+        <scene sceneID="KMw-7F-TcY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CalendarViewController" referencedIdentifier="CalendarViewController" id="VCu-7G-HN4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dzC-Yg-k93"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZr-aP-94O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676.0869565217392" y="-20.089285714285712"/>
+        </scene>
+        <!--LocationViewController-->
+        <scene sceneID="HFJ-6x-Vf7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LocationViewController" referencedIdentifier="LocationViewController" id="IcG-KU-Unp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7F0-jN-gze"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elM-0f-V2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673.913043478261" y="31.473214285714285"/>
+        </scene>
+        <!--NationalCurrencyViewController-->
+        <scene sceneID="pZ8-fh-dAF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NationalCurrencyViewController" referencedIdentifier="NationalCurrencyViewController" id="paE-Iv-IbY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bH6-4F-8pd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luc-0i-x5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684.7826086956522" y="77.678571428571431"/>
+        </scene>
+        <!--CryptoViewController-->
+        <scene sceneID="Kl7-D8-1jo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CryptoViewController" referencedIdentifier="CryptoViewController" id="aoI-te-RRB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IJh-Tp-FQP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNw-y8-oD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676.0869565217392" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SFv-db-SdL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SJe-z8-SNR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8S5-Kl-Dhd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="E8p-P1-UaX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMV-Y1-PDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="VDY-5H-B17">
+            <size key="intrinsicContentSize" width="70" height="18.5"/>
+        </designable>
+        <designable name="zrX-x5-GnY">
+            <size key="intrinsicContentSize" width="42.5" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
