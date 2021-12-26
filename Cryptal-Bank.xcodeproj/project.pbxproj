@@ -76,6 +76,8 @@
 		885A21C82778B6D500C7E5CA /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A21C72778B6D500C7E5CA /* LineViewController.swift */; };
 		885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A21C92778B6EE00C7E5CA /* PieViewController.swift */; };
 		885A21D12778BB7F00C7E5CA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 885A21D02778BB7F00C7E5CA /* Charts */; };
+		885A22012778D8FF00C7E5CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A22002778D8FF00C7E5CA /* NotificationController.swift */; };
+		885A22032778D91800C7E5CA /* NotificationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885A22022778D91800C7E5CA /* NotificationController.storyboard */; };
 		885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 885EE78B27762EEB0045C510 /* FSCalendar */; };
 		885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885EE78E27762FAF0045C510 /* CalendarViewController.swift */; };
 		885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885EE79027762FE90045C510 /* CalendarViewController.storyboard */; };
@@ -149,6 +151,8 @@
 		885A21C52778B50200C7E5CA /* GraphsAndChartsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphsAndChartsViewController.storyboard; sourceTree = "<group>"; };
 		885A21C72778B6D500C7E5CA /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		885A21C92778B6EE00C7E5CA /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
+		885A22002778D8FF00C7E5CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		885A22022778D91800C7E5CA /* NotificationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationController.storyboard; sourceTree = "<group>"; };
 		885EE78E27762FAF0045C510 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		885EE79027762FE90045C510 /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -359,6 +363,7 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				885A21FF2778D8CC00C7E5CA /* Transaction Notification */,
 				885A21BD2778B32800C7E5CA /* Financial Graphs And Charts */,
 				3BBAA6D027774E8A00C91DD0 /* Main Dashboard */,
 				885EE78D27762F490045C510 /* User Calendar */,
@@ -474,6 +479,15 @@
 				885A21C52778B50200C7E5CA /* GraphsAndChartsViewController.storyboard */,
 			);
 			path = "Financial Graphs And Charts";
+			sourceTree = "<group>";
+		};
+		885A21FF2778D8CC00C7E5CA /* Transaction Notification */ = {
+			isa = PBXGroup;
+			children = (
+				885A22002778D8FF00C7E5CA /* NotificationController.swift */,
+				885A22022778D91800C7E5CA /* NotificationController.storyboard */,
+			);
+			path = "Transaction Notification";
 			sourceTree = "<group>";
 		};
 		885EE78D27762F490045C510 /* User Calendar */ = {
@@ -666,6 +680,7 @@
 				885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */,
 				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
 				3B6C47A3277104C5008AD740 /* AppIntroPageCell.xib in Resources */,
+				885A22032778D91800C7E5CA /* NotificationController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +715,7 @@
 				3B6C47AB27729EC8008AD740 /* ExchangeRatesConstants.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
+				885A22012778D8FF00C7E5CA /* NotificationController.swift in Sources */,
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
 				885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */,
 				3B6C479A2770F05C008AD740 /* AppIntroDataService.swift in Sources */,
