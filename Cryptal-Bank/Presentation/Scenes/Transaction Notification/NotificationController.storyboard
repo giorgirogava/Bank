@@ -7,31 +7,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Notification-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController restorationIdentifier="NotificationController" storyboardIdentifier="NotificationController" id="Y6W-OH-hqX" customClass="NotificationController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9H-zf-wuy">
-                                <rect key="frame" x="166" y="432.5" width="82" height="31"/>
+                                <rect key="frame" x="20" y="432.5" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="reminder"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set Transaction reminder"/>
+                                <connections>
+                                    <action selector="setReminder:" destination="5EZ-qb-Rvc" eventType="touchUpInside" id="IlM-Om-y4a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.90475480558443155" green="0.79641488646770986" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="z9H-zf-wuy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MVq-Nt-duB"/>
+                            <constraint firstItem="z9H-zf-wuy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="UiO-k6-yxE"/>
                             <constraint firstItem="z9H-zf-wuy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="enx-UK-xzZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z9H-zf-wuy" secondAttribute="trailing" constant="20" id="ntw-xR-sZc"/>
                             <constraint firstItem="z9H-zf-wuy" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="zk3-fk-2bs"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Notification" image="message.and.waveform.fill" catalog="system" id="G6J-Wy-27a"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="message.and.waveform.fill" catalog="system" width="128" height="111"/>
+    </resources>
 </document>
