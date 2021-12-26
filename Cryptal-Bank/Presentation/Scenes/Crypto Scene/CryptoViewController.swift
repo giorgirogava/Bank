@@ -26,7 +26,7 @@ class CryptoViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Live cry­pto­currency prices"
+      //  title = "Live cry­pto­currency prices"
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
