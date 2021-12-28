@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="IDCardViewController" id="Y6W-OH-hqX" customClass="IDCardViewController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-hm-tfX">
+                                <rect key="frame" x="20" y="782" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p7i-jc-pgX"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.99962788849999995" blue="0.84641586209999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Take Picture">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BHt-9a-VxY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Mf-vj-x3G">
+                                <rect key="frame" x="20" y="64" width="374" height="708"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="0.86847771105843186" blue="0.83150963395472643" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YyW-hm-tfX" secondAttribute="trailing" constant="20" id="LPA-vp-AH7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YyW-hm-tfX" secondAttribute="bottom" constant="30" id="NF6-BR-bfa"/>
+                            <constraint firstItem="YyW-hm-tfX" firstAttribute="top" secondItem="5Mf-vj-x3G" secondAttribute="bottom" constant="10" id="QK7-EZ-hez"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Mf-vj-x3G" secondAttribute="trailing" constant="20" id="WCz-7q-Hd8"/>
+                            <constraint firstItem="5Mf-vj-x3G" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="amp-Nd-YB2"/>
+                            <constraint firstItem="5Mf-vj-x3G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="blu-Lw-LfJ"/>
+                            <constraint firstItem="YyW-hm-tfX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rVO-tB-2Cz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="YyW-hm-tfX" id="cye-rV-0mK"/>
+                        <outlet property="imageView" destination="5Mf-vj-x3G" id="Vt8-og-zbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
