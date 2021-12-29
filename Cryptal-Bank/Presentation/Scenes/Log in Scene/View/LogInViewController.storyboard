@@ -64,7 +64,7 @@
                                     <constraint firstAttribute="height" constant="50" id="bR2-Le-QoD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
                                         <color key="value" systemColor="labelColor"/>

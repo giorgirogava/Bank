@@ -22,7 +22,7 @@ class IDCardViewController: UIViewController {
     @IBAction func didTapButton(){
         
         let picker = UIImagePickerController()
-        picker.sourceType = .camera
+        picker.sourceType = .photoLibrary
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true)
@@ -32,7 +32,7 @@ class IDCardViewController: UIViewController {
 }
 
 
-extension UIViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension IDCardViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -50,7 +50,7 @@ extension UIViewController:UIImagePickerControllerDelegate, UINavigationControll
         
         // MARK: Cannot find
         
-        // imageView.image = image
+         imageView.image = image
         
         
     }
