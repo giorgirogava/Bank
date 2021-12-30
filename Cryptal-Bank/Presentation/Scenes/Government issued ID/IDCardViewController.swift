@@ -47,9 +47,7 @@ extension IDCardViewController: UIImagePickerControllerDelegate, UINavigationCon
             
             return
         }
-        
-        // MARK: Cannot find
-        
+    
          imageView.image = image
         
         

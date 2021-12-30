@@ -84,6 +84,8 @@
 		885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 885EE78B27762EEB0045C510 /* FSCalendar */; };
 		885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885EE78E27762FAF0045C510 /* CalendarViewController.swift */; };
 		885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885EE79027762FE90045C510 /* CalendarViewController.storyboard */; };
+		8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8874F769277DE915006B6F23 /* BiometricsViewController.swift */; };
+		8874F76C277DE934006B6F23 /* BiometricsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */; };
 		887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887546E62774EA12002ACC8F /* LocationViewController.swift */; };
 		887546E92774EA37002ACC8F /* LocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887546E82774EA37002ACC8F /* LocationViewController.storyboard */; };
 		8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */; };
@@ -161,6 +163,8 @@
 		885A22022778D91800C7E5CA /* NotificationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationController.storyboard; sourceTree = "<group>"; };
 		885EE78E27762FAF0045C510 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		885EE79027762FE90045C510 /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
+		8874F769277DE915006B6F23 /* BiometricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsViewController.swift; sourceTree = "<group>"; };
+		8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiometricsViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		887546E82774EA37002ACC8F /* LocationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationViewController.storyboard; sourceTree = "<group>"; };
 		8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCurrencyViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +374,7 @@
 		3B7C2DE7276B32AD00F7DD28 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8874F768277DE88B006B6F23 /* Face And Touch ID */,
 				885498DF277B44EC003EFED0 /* Government issued ID */,
 				885A21FF2778D8CC00C7E5CA /* Transaction Notification */,
 				885A21BD2778B32800C7E5CA /* Financial Graphs And Charts */,
@@ -530,6 +535,15 @@
 				885EE79027762FE90045C510 /* CalendarViewController.storyboard */,
 			);
 			path = "User Calendar";
+			sourceTree = "<group>";
+		};
+		8874F768277DE88B006B6F23 /* Face And Touch ID */ = {
+			isa = PBXGroup;
+			children = (
+				8874F769277DE915006B6F23 /* BiometricsViewController.swift */,
+				8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */,
+			);
+			path = "Face And Touch ID";
 			sourceTree = "<group>";
 		};
 		887546E52774E9CC002ACC8F /* User Location */ = {
@@ -710,6 +724,7 @@
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
 				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
 				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
+				8874F76C277DE934006B6F23 /* BiometricsViewController.storyboard in Resources */,
 				3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */,
 				885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */,
 				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
@@ -748,6 +763,7 @@
 				3B6C47962770EFD2008AD740 /* UITableView+Extension.swift in Sources */,
 				3B6C47A627729D8B008AD740 /* NetworkManager.swift in Sources */,
 				3B6C47AB27729EC8008AD740 /* ExchangeRatesConstants.swift in Sources */,
+				8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
 				885A22012778D8FF00C7E5CA /* NotificationController.swift in Sources */,

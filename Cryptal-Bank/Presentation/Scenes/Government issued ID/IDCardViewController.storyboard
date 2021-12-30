@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card View Controller-->
+        <!--photo-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="IDCardViewController" id="Y6W-OH-hqX" customClass="IDCardViewController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-hm-tfX">
-                                <rect key="frame" x="20" y="782" width="374" height="50"/>
+                                <rect key="frame" x="20" y="733" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="p7i-jc-pgX"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Mf-vj-x3G">
-                                <rect key="frame" x="20" y="64" width="374" height="708"/>
+                                <rect key="frame" x="20" y="64" width="374" height="659"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -47,6 +47,8 @@
                             <constraint firstItem="YyW-hm-tfX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rVO-tB-2Cz"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="photo" image="photo" catalog="system" id="6HE-LG-zTp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="button" destination="YyW-hm-tfX" id="cye-rV-0mK"/>
                         <outlet property="imageView" destination="5Mf-vj-x3G" id="Vt8-og-zbH"/>
@@ -58,6 +60,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
