@@ -11,7 +11,7 @@ import Foundation
 struct UDManager {
     
     // MARK: - Keys
-    
+    private static let FIRSTLY_USER_OPEN_APP = "FIRSTLY_USER_OPEN_APP"
     private static let KEY_IS_USER_LOGGED_IN = "KEY_IS_USER_LOGGED_IN"
     private static let KEY_USER_CREDENTIAL_USERNAME = "KEY_USER_CREDENTIAL_USERNAME"
     private static let KEY_USER_CREDENTIAL_PASSWORD = "KEY_USER_CREDENTIAL_PASSWORD"
@@ -22,6 +22,17 @@ struct UDManager {
         ud.set(false, forKey: KEY_IS_USER_LOGGED_IN)
         ud.set("",forKey: KEY_USER_CREDENTIAL_USERNAME)
         ud.set("",forKey: KEY_USER_CREDENTIAL_PASSWORD)
+    }
+    
+    static func isNotFirstInstall()-> Bool {
+        
+        if  !ud.bool(forKey: FIRSTLY_USER_OPEN_APP){
+            print(!ud.bool(forKey: FIRSTLY_USER_OPEN_APP))
+            ud.set(true, forKey: FIRSTLY_USER_OPEN_APP)
+            return true
+        } else {
+            return false
+        }
     }
     
     static func markUserAsLoggedOut() {
