@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable extension UIView {
+@IBDesignable class UIViewAdditionalFeatures: UIView {
     @IBInspectable var borderColor:UIColor? {
         set {
             layer.borderColor = newValue!.cgColor

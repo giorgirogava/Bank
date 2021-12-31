@@ -48,7 +48,7 @@ class AppIntroDataService: NSObject, UICollectionViewDataSource {
     
     func startTimer() {
 
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.scrollAutomatically), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(self.scrollAutomatically), userInfo: nil, repeats: true)
     }
     
     @objc func scrollAutomatically(_ timer1: Timer) {
@@ -61,11 +61,13 @@ class AppIntroDataService: NSObject, UICollectionViewDataSource {
                         indexPath1 = IndexPath.init(row: (indexPath?.row)! + 1, section: (indexPath?.section)!)
                         
                         coll.scrollToItem(at: indexPath1!, at: .centeredHorizontally, animated: true)
+                        pageDidChanged?(indexPath1!.row)
                     }
                     else{
                         let indexPath1: IndexPath?
                         indexPath1 = IndexPath.init(row: 0, section: (indexPath?.section)!)
                         coll.scrollToItem(at: indexPath1!, at: .right, animated: true)
+                        pageDidChanged?(indexPath1!.row)
                     }
                     
                 }
@@ -82,7 +84,7 @@ extension AppIntroDataService: UICollectionViewDelegate {
 
 extension AppIntroDataService: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return UIScreen.main.bounds.size
+        return  CGSize(width: collectionView.bounds.size.width , height: collectionView.bounds.size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
