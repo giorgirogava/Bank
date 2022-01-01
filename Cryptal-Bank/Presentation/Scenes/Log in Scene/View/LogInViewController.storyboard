@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJe-z8-SNR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJe-z8-SNR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,6 +96,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Register">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="0em-FD-ves" kind="show" id="29N-GA-cWw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -127,45 +130,15 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="78.348214285714278"/>
         </scene>
-        <!--CalendarViewController-->
-        <scene sceneID="KMw-7F-TcY">
+        <!--CreateAccountViewController-->
+        <scene sceneID="k08-gg-7V1">
             <objects>
-                <viewControllerPlaceholder storyboardName="CalendarViewController" referencedIdentifier="CalendarViewController" id="VCu-7G-HN4" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="dzC-Yg-k93"/>
+                <viewControllerPlaceholder storyboardName="CreateAccountViewController" referencedIdentifier="CreateAccountViewController" id="0em-FD-ves" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KHT-II-cQR"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iZr-aP-94O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOO-gn-wb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676.0869565217392" y="-20.089285714285712"/>
-        </scene>
-        <!--LocationViewController-->
-        <scene sceneID="HFJ-6x-Vf7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="LocationViewController" referencedIdentifier="LocationViewController" id="IcG-KU-Unp" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7F0-jN-gze"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="elM-0f-V2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="31.473214285714285"/>
-        </scene>
-        <!--NationalCurrencyViewController-->
-        <scene sceneID="pZ8-fh-dAF">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NationalCurrencyViewController" referencedIdentifier="NationalCurrencyViewController" id="paE-Iv-IbY" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bH6-4F-8pd"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="luc-0i-x5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1684.7826086956522" y="77.678571428571431"/>
-        </scene>
-        <!--CryptoViewController-->
-        <scene sceneID="Kl7-D8-1jo">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CryptoViewController" referencedIdentifier="CryptoViewController" id="aoI-te-RRB" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="IJh-Tp-FQP"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DNw-y8-oD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1676.0869565217392" y="126.5625"/>
+            <point key="canvasLocation" x="1778" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SFv-db-SdL">
@@ -186,14 +159,6 @@
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="VDY-5H-B17">
-            <size key="intrinsicContentSize" width="70" height="18.5"/>
-        </designable>
-        <designable name="zrX-x5-GnY">
-            <size key="intrinsicContentSize" width="42.5" height="18.5"/>
-        </designable>
-    </designables>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
