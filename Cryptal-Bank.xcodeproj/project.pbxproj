@@ -140,7 +140,7 @@
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
-		3BF99F692763767B009A287C /* Cryptal-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF99F692763767B009A287C /* Cryptal Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF99F6C2763767B009A287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF99F6E2763767B009A287C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BF99F762763767B009A287C /* Cryptal_Bank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cryptal_Bank.xcdatamodel; sourceTree = "<group>"; };
@@ -463,7 +463,7 @@
 		3BF99F6A2763767B009A287C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BF99F692763767B009A287C /* Cryptal-Bank.app */,
+				3BF99F692763767B009A287C /* Cryptal Bank.app */,
 				3BF99F822763767D009A287C /* Cryptal-BankTests.xctest */,
 				3BF99F8C2763767D009A287C /* Cryptal-BankUITests.xctest */,
 			);
@@ -622,7 +622,7 @@
 				885A21D02778BB7F00C7E5CA /* Charts */,
 			);
 			productName = "Cryptal-Bank";
-			productReference = 3BF99F692763767B009A287C /* Cryptal-Bank.app */;
+			productReference = 3BF99F692763767B009A287C /* Cryptal Bank.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3BF99F812763767D009A287C /* Cryptal-BankTests */ = {
@@ -974,7 +974,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cryptal Bank";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1000,7 +1000,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cryptal Bank";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
