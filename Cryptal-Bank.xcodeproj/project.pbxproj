@@ -89,6 +89,11 @@
 		885EE78C27762EEB0045C510 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 885EE78B27762EEB0045C510 /* FSCalendar */; };
 		885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885EE78E27762FAF0045C510 /* CalendarViewController.swift */; };
 		885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885EE79027762FE90045C510 /* CalendarViewController.storyboard */; };
+		886E1FA22781E6A80075B5D1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886E1FA12781E6A80075B5D1 /* WidgetKit.framework */; };
+		886E1FA42781E6A80075B5D1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886E1FA32781E6A80075B5D1 /* SwiftUI.framework */; };
+		886E1FA72781E6A80075B5D1 /* Cryptal_Bank_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E1FA62781E6A80075B5D1 /* Cryptal_Bank_Widget.swift */; };
+		886E1FA92781E6AA0075B5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886E1FA82781E6AA0075B5D1 /* Assets.xcassets */; };
+		886E1FAD2781E6AA0075B5D1 /* Cryptal-Bank-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8874F769277DE915006B6F23 /* BiometricsViewController.swift */; };
 		8874F76C277DE934006B6F23 /* BiometricsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */; };
 		887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887546E62774EA12002ACC8F /* LocationViewController.swift */; };
@@ -114,7 +119,28 @@
 			remoteGlobalIDString = 3BF99F682763767B009A287C;
 			remoteInfo = "Cryptal-Bank";
 		};
+		886E1FAB2781E6AA0075B5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF99F612763767B009A287C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 886E1F9E2781E6A80075B5D1;
+			remoteInfo = "Cryptal-Bank-WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		886E1FAE2781E6AA0075B5D1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				886E1FAD2781E6AA0075B5D1 /* Cryptal-Bank-WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3B6C478D2770EEDB008AD740 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
@@ -173,6 +199,12 @@
 		885A22022778D91800C7E5CA /* NotificationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationController.storyboard; sourceTree = "<group>"; };
 		885EE78E27762FAF0045C510 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		885EE79027762FE90045C510 /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
+		886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cryptal-Bank-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		886E1FA12781E6A80075B5D1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		886E1FA32781E6A80075B5D1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		886E1FA62781E6A80075B5D1 /* Cryptal_Bank_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_Bank_Widget.swift; sourceTree = "<group>"; };
+		886E1FA82781E6AA0075B5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		886E1FAA2781E6AA0075B5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8874F769277DE915006B6F23 /* BiometricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsViewController.swift; sourceTree = "<group>"; };
 		8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiometricsViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +264,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		886E1F9C2781E6A80075B5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886E1FA42781E6A80075B5D1 /* SwiftUI.framework in Frameworks */,
+				886E1FA22781E6A80075B5D1 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +509,8 @@
 				3BF99F6B2763767B009A287C /* Cryptal-Bank */,
 				3BF99F852763767D009A287C /* Cryptal-BankTests */,
 				3BF99F8F2763767D009A287C /* Cryptal-BankUITests */,
+				886E1FA52781E6A80075B5D1 /* Cryptal-Bank-Widget */,
+				886E1FA02781E6A80075B5D1 /* Frameworks */,
 				3BF99F6A2763767B009A287C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -478,6 +521,7 @@
 				3BF99F692763767B009A287C /* Cryptal Bank.app */,
 				3BF99F822763767D009A287C /* Cryptal-BankTests.xctest */,
 				3BF99F8C2763767D009A287C /* Cryptal-BankUITests.xctest */,
+				886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -584,6 +628,25 @@
 			path = "User Calendar";
 			sourceTree = "<group>";
 		};
+		886E1FA02781E6A80075B5D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886E1FA12781E6A80075B5D1 /* WidgetKit.framework */,
+				886E1FA32781E6A80075B5D1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		886E1FA52781E6A80075B5D1 /* Cryptal-Bank-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				886E1FA62781E6A80075B5D1 /* Cryptal_Bank_Widget.swift */,
+				886E1FA82781E6AA0075B5D1 /* Assets.xcassets */,
+				886E1FAA2781E6AA0075B5D1 /* Info.plist */,
+			);
+			path = "Cryptal-Bank-Widget";
+			sourceTree = "<group>";
+		};
 		8874F768277DE88B006B6F23 /* Face And Touch ID */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,10 +695,12 @@
 				3BF99F652763767B009A287C /* Sources */,
 				3BF99F662763767B009A287C /* Frameworks */,
 				3BF99F672763767B009A287C /* Resources */,
+				886E1FAE2781E6AA0075B5D1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				886E1FAC2781E6AA0075B5D1 /* PBXTargetDependency */,
 			);
 			name = "Cryptal-Bank";
 			packageProductDependencies = (
@@ -708,6 +773,23 @@
 			productReference = 3BF99F8C2763767D009A287C /* Cryptal-BankUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		886E1F9E2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 886E1FB12781E6AA0075B5D1 /* Build configuration list for PBXNativeTarget "Cryptal-Bank-WidgetExtension" */;
+			buildPhases = (
+				886E1F9B2781E6A80075B5D1 /* Sources */,
+				886E1F9C2781E6A80075B5D1 /* Frameworks */,
+				886E1F9D2781E6A80075B5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cryptal-Bank-WidgetExtension";
+			productName = "Cryptal-Bank-WidgetExtension";
+			productReference = 886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -715,7 +797,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					3BF99F682763767B009A287C = {
@@ -728,6 +810,9 @@
 					3BF99F8B2763767D009A287C = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 3BF99F682763767B009A287C;
+					};
+					886E1F9E2781E6A80075B5D1 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -752,6 +837,7 @@
 				3BF99F682763767B009A287C /* Cryptal-Bank */,
 				3BF99F812763767D009A287C /* Cryptal-BankTests */,
 				3BF99F8B2763767D009A287C /* Cryptal-BankUITests */,
+				886E1F9E2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -791,6 +877,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		886E1F9D2781E6A80075B5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886E1FA92781E6AA0075B5D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +958,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		886E1F9B2781E6A80075B5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886E1FA72781E6A80075B5D1 /* Cryptal_Bank_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -876,6 +978,11 @@
 			isa = PBXTargetDependency;
 			target = 3BF99F682763767B009A287C /* Cryptal-Bank */;
 			targetProxy = 3BF99F8D2763767D009A287C /* PBXContainerItemProxy */;
+		};
+		886E1FAC2781E6AA0075B5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 886E1F9E2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension */;
+			targetProxy = 886E1FAB2781E6AA0075B5D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1010,6 +1117,7 @@
 		3BF99F972763767D009A287C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1036,6 +1144,7 @@
 		3BF99F982763767D009A287C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1151,6 +1260,58 @@
 			};
 			name = Release;
 		};
+		886E1FAF2781E6AA0075B5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cryptal-Bank-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal-Bank-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank.Cryptal-Bank-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		886E1FB02781E6AA0075B5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cryptal-Bank-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal-Bank-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank.Cryptal-Bank-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1186,6 +1347,15 @@
 			buildConfigurations = (
 				3BF99F9D2763767D009A287C /* Debug */,
 				3BF99F9E2763767D009A287C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		886E1FB12781E6AA0075B5D1 /* Build configuration list for PBXNativeTarget "Cryptal-Bank-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				886E1FAF2781E6AA0075B5D1 /* Debug */,
+				886E1FB02781E6AA0075B5D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
