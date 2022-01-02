@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class LogInViewController: UIViewController {
   
@@ -19,6 +20,14 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationController?.isNavigationBarHidden = false
+       
+    }
+    
+    
+    func playerActiveStatus(isActive: Bool) {
+        let appUserUid = Auth.auth().currentUser?.uid
+        let myNewRef = Database.database(url: Servers.Firebase_Base_URL ).reference(withPath:"Players/\(appUserUid ?? "error")/activeStatus")
+        myNewRef.setValue(isActive)
     }
     
     @IBAction func onLoginButtonClick(_ sender: Any) {
@@ -44,6 +53,7 @@ class LogInViewController: UIViewController {
                 self?.present(alert, animated: true, completion: nil)
             }else {
                 UDManager.markUserAsLoggedIn()
+                self?.playerActiveStatus(isActive: true)
                 
                 self?.navigationController?.popToRootViewController( animated: false )
                 let sb = UIStoryboard(name: "MainDashboardTabBarController", bundle: nil)

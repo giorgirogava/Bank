@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q0S-Cj-ypA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-6T-NMW" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
-                                <rect key="frame" x="25" y="188" width="364" height="50"/>
+                                <rect key="frame" x="25" y="168" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8Fa-6h-SKp"/>
                                 </constraints>
@@ -38,9 +38,12 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="  Username"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onUsernameTextChange:" destination="Y6W-OH-hqX" eventType="editingChanged" id="O4V-f9-fEc"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7Z-nJ-5Vs" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
-                                <rect key="frame" x="25" y="268" width="364" height="50"/>
+                                <rect key="frame" x="25" y="248" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Q1V-hq-lGl"/>
                                 </constraints>
@@ -61,14 +64,17 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="  Email"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onEmailTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="I9i-Dj-2EF"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veW-Yi-KEy" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
-                                <rect key="frame" x="25" y="348" width="364" height="50"/>
+                                <rect key="frame" x="25" y="328" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QPy-qt-u64"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
                                         <color key="value" systemColor="labelColor"/>
@@ -84,14 +90,17 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="  Password"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPasswordTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="dAd-yT-rMC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TmE-SP-JEe" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
-                                <rect key="frame" x="25" y="428" width="364" height="50"/>
+                                <rect key="frame" x="25" y="408" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0g1-i4-YxG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
                                         <color key="value" systemColor="labelColor"/>
@@ -107,9 +116,12 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="  Confirm Password"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onConfirmPasswordTextChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="aWr-pP-h7v"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duo-lQ-MuC">
-                                <rect key="frame" x="25" y="513" width="364" height="50"/>
+                                <rect key="frame" x="25" y="493" width="364" height="50"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Bna-Ca-kho"/>
@@ -123,9 +135,12 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRegisterClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vN6-J9-ECG"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YVK-Op-jwj">
-                                <rect key="frame" x="81" y="573" width="252" height="35.5"/>
+                                <rect key="frame" x="81" y="553" width="252" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxd-O3-cDO">
                                         <rect key="frame" x="0.0" y="7" width="182" height="21.5"/>
@@ -159,7 +174,7 @@
                             <constraint firstItem="YVK-Op-jwj" firstAttribute="centerX" secondItem="Duo-lQ-MuC" secondAttribute="centerX" id="LVp-8G-RhX"/>
                             <constraint firstItem="TmE-SP-JEe" firstAttribute="leading" secondItem="veW-Yi-KEy" secondAttribute="leading" id="Nji-CU-xr3"/>
                             <constraint firstItem="YVK-Op-jwj" firstAttribute="top" secondItem="Duo-lQ-MuC" secondAttribute="bottom" constant="10" id="WaL-gT-usC"/>
-                            <constraint firstItem="Z82-6T-NMW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="YD4-Ez-B16"/>
+                            <constraint firstItem="Z82-6T-NMW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="YD4-Ez-B16"/>
                             <constraint firstItem="veW-Yi-KEy" firstAttribute="leading" secondItem="W7Z-nJ-5Vs" secondAttribute="leading" id="bwa-ZE-hkk"/>
                             <constraint firstItem="TmE-SP-JEe" firstAttribute="trailing" secondItem="veW-Yi-KEy" secondAttribute="trailing" id="ga2-sz-N2Q"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Z82-6T-NMW" secondAttribute="trailing" constant="25" id="hx5-dd-B2O"/>
@@ -168,6 +183,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account" id="tPr-ux-NyS"/>
+                    <connections>
+                        <outlet property="confirmPasswordLabel" destination="TmE-SP-JEe" id="xg3-eI-bhZ"/>
+                        <outlet property="emailLabel" destination="W7Z-nJ-5Vs" id="LOk-iM-xS7"/>
+                        <outlet property="passwordLabel" destination="veW-Yi-KEy" id="JT5-gp-50F"/>
+                        <outlet property="usernameLabel" destination="Z82-6T-NMW" id="jAq-TZ-zDZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
