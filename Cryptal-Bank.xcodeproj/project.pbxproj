@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B63F5662783BBC5006D5670 /* StringsFormater+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63F5652783BBC5006D5670 /* StringsFormater+Extensions.swift */; };
 		3B6C478E2770EEDB008AD740 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C478D2770EEDB008AD740 /* CustomPageControl.swift */; };
 		3B6C47902770EF19008AD740 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C478F2770EF19008AD740 /* UICollectionViewCell+Extension.swift */; };
 		3B6C47922770EF51008AD740 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C47912770EF51008AD740 /* UICollectionView+Extension.swift */; };
@@ -150,6 +151,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B63F5652783BBC5006D5670 /* StringsFormater+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringsFormater+Extensions.swift"; sourceTree = "<group>"; };
 		3B6C478D2770EEDB008AD740 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		3B6C478F2770EF19008AD740 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		3B6C47912770EF51008AD740 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				3B6C47912770EF51008AD740 /* UICollectionView+Extension.swift */,
 				3B6C47972770EFEC008AD740 /* UITableViewCell+Extension.swift */,
 				3B6C47952770EFD2008AD740 /* UITableView+Extension.swift */,
+				3B63F5652783BBC5006D5670 /* StringsFormater+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -952,6 +955,7 @@
 			files = (
 				3B6C47B12772A783008AD740 /* User.swift in Sources */,
 				3B6C47942770EF76008AD740 /* Validator+Extensions.swift in Sources */,
+				3B63F5662783BBC5006D5670 /* StringsFormater+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
 				885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */,
 				3B824B2327825865008E26FF /* HomeDashboardViewController.swift in Sources */,

@@ -39,7 +39,7 @@ class HomeDashboardViewController: UIViewController {
         
         totalBalanceLive(){[unowned self] balance in
             
-            ballanceLabel.text = balance
+            ballanceLabel.text = balance.moneyFormat()
         }
         
         configureDataSource()
@@ -71,7 +71,7 @@ class HomeDashboardViewController: UIViewController {
             if snapshot.exists() {
                 let value =   snapshot.value as? String ?? "0"
                 
-                return balance(value)
+                balance(value)
             }else {
                 balance("0")
             }
@@ -84,13 +84,13 @@ class HomeDashboardViewController: UIViewController {
         
         let myNewRef = Database.database(url: Servers.Firebase_Base_URL).reference(withPath:"UsersPrivateData/\(appUserUid)/totalBalance")
         
-        // myNewRef.setValue("1387213838.234")
+         myNewRef.setValue("5.234")
         
         myNewRef.observe(.value) { snapshot in
             if snapshot.exists() {
                 let value =   snapshot.value as? String ?? "0"
                 
-                return balance(value)
+                balance(value)
             }else {
                 balance("0")
             }
@@ -119,7 +119,7 @@ class HomeDashboardViewController: UIViewController {
             if snapshot.exists() {
                 let value =   snapshot.value as? Bool ?? false
                 
-                return hiden(value)
+                hiden(value)
             }else {
                 hiden(false)
             }
@@ -134,7 +134,7 @@ class HomeDashboardViewController: UIViewController {
             if snapshot.exists() {
                 let value =   snapshot.value as? Bool ?? false
                 
-                return hiden(value)
+                hiden(value)
             }else {
                 hiden(false)
             }
@@ -143,17 +143,3 @@ class HomeDashboardViewController: UIViewController {
     
 }
 
-
-extension String {
-    func moneyFormat() -> String{
-        var newString = ""
-         Array(self).enumerated().forEach{ index, char  in
-            
-            if (index + 1) % 3 == 0 {
-                newString += " "
-            }
-             newString += "\(char)"
-        }
-        return newString
-    }
-}

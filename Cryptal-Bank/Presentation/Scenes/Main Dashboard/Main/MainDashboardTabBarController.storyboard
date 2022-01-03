@@ -17,14 +17,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="IJa-Wd-6ch" kind="relationship" relationship="viewControllers" id="nbc-eh-4ac"/>
-                        <segue destination="Xz8-LK-4LN" kind="relationship" relationship="viewControllers" id="XXV-FG-Rbu"/>
-                        <segue destination="YaN-s1-wEb" kind="relationship" relationship="viewControllers" id="Szq-Pd-zAW"/>
-                        <segue destination="uXl-GM-fda" kind="relationship" relationship="viewControllers" id="xpv-07-gGU"/>
-                        <segue destination="42G-nz-ZaS" kind="relationship" relationship="viewControllers" id="h6H-u0-UhF"/>
-                        <segue destination="mIm-Oe-6sM" kind="relationship" relationship="viewControllers" id="0YB-RV-ZVf"/>
-                        <segue destination="DA0-vZ-sko" kind="relationship" relationship="viewControllers" id="xXi-WS-o7O"/>
-                        <segue destination="Rla-vh-8M8" kind="relationship" relationship="viewControllers" id="zzj-DS-gUp"/>
+                        <segue destination="TVs-MK-e53" kind="relationship" relationship="viewControllers" id="lmB-14-Eei"/>
+                        <segue destination="42G-nz-ZaS" kind="relationship" relationship="viewControllers" id="Yxz-4Z-mCN"/>
+                        <segue destination="uXl-GM-fda" kind="relationship" relationship="viewControllers" id="Iph-VV-gAe"/>
+                        <segue destination="YaN-s1-wEb" kind="relationship" relationship="viewControllers" id="GST-9d-1t2"/>
+                        <segue destination="Xz8-LK-4LN" kind="relationship" relationship="viewControllers" id="lRn-qv-G4D"/>
+                        <segue destination="IJa-Wd-6ch" kind="relationship" relationship="viewControllers" id="wIl-77-JGi"/>
+                        <segue destination="mIm-Oe-6sM" kind="relationship" relationship="viewControllers" id="fKc-Rw-rJ4"/>
+                        <segue destination="DA0-vZ-sko" kind="relationship" relationship="viewControllers" id="ajo-ec-fo4"/>
+                        <segue destination="Rla-vh-8M8" kind="relationship" relationship="viewControllers" id="pKo-Il-zRM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8M-OE-kaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -71,6 +72,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2D-Xo-Bwn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="775" y="185"/>
+        </scene>
+        <!--HomeDashboardViewController-->
+        <scene sceneID="dIk-hl-A5S">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeDashboardViewController" referencedIdentifier="HomeDashboardViewController" id="TVs-MK-e53" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VGL-S5-MET"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVH-i6-fb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-312"/>
         </scene>
         <!--LocationViewController-->
         <scene sceneID="37D-nV-Vb7">
