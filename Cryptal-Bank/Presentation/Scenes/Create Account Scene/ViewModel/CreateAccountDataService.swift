@@ -174,7 +174,7 @@ extension String {
         guard let appUserUid = Auth.auth().currentUser?.uid else { return }
         guard let appUserEmail = Auth.auth().currentUser?.email else { return }
         
-        let myNewRef = Database.database(url: Servers.Firebase_Base_URL).reference(withPath:"Users/")
+        let myNewRef = Database.database(url: Servers.Firebase_Base_URL).reference(withPath:"Users/\(appUserUid)")
         myNewRef.setValue(["uid": appUserUid ,
                            "Email": appUserEmail ,
                            "name": self,

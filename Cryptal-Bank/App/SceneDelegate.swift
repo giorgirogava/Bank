@@ -21,6 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
         
+//        // for fast development  HomeDashboardViewController
+//        let sb = UIStoryboard(name: "HomeDashboardViewController", bundle: nil)
+//        vc = sb.instantiateViewController(withIdentifier: "HomeDashboardViewController")
+//        ////////////////// open View Controller first for fast development
+        
         if UDManager.isNotFirstInstall(){
             let sb = UIStoryboard(name: "AppIntroViewController", bundle: nil)
             vc = sb.instantiateViewController(withIdentifier: "AppIntroViewController")

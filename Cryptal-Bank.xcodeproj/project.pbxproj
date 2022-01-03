@@ -33,6 +33,10 @@
 		3B824B1C27824F57008E26FF /* ProfileTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B824B1B27824F57008E26FF /* ProfileTabViewController.storyboard */; };
 		3B824B1E27824F65008E26FF /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B1D27824F65008E26FF /* ProfileTabViewController.swift */; };
 		3B824B20278253E8008E26FF /* ImgViewsCustomisations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B1F278253E8008E26FF /* ImgViewsCustomisations.swift */; };
+		3B824B2327825865008E26FF /* HomeDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B2227825865008E26FF /* HomeDashboardViewController.swift */; };
+		3B824B2527825879008E26FF /* HomeDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B824B2427825879008E26FF /* HomeDashboardViewController.storyboard */; };
+		3B824B29278267A5008E26FF /* HomeDashboardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B28278267A5008E26FF /* HomeDashboardDataService.swift */; };
+		3B824B2B278267E6008E26FF /* HomeDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B2A278267E6008E26FF /* HomeDashboardViewModel.swift */; };
 		3B9D00DA2778F12700874FB0 /* FloatingLabelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */; };
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
@@ -172,6 +176,10 @@
 		3B824B1B27824F57008E26FF /* ProfileTabViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileTabViewController.storyboard; sourceTree = "<group>"; };
 		3B824B1D27824F65008E26FF /* ProfileTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
 		3B824B1F278253E8008E26FF /* ImgViewsCustomisations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewsCustomisations.swift; sourceTree = "<group>"; };
+		3B824B2227825865008E26FF /* HomeDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardViewController.swift; sourceTree = "<group>"; };
+		3B824B2427825879008E26FF /* HomeDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDashboardViewController.storyboard; sourceTree = "<group>"; };
+		3B824B28278267A5008E26FF /* HomeDashboardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardDataService.swift; sourceTree = "<group>"; };
+		3B824B2A278267E6008E26FF /* HomeDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardViewModel.swift; sourceTree = "<group>"; };
 		3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelInput.swift; sourceTree = "<group>"; };
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
@@ -486,6 +494,33 @@
 			path = "Profile bar";
 			sourceTree = "<group>";
 		};
+		3B824B212782583D008E26FF /* Home Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B824B262782672E008E26FF /* View */,
+				3B824B2727826739008E26FF /* ViewModel */,
+			);
+			path = "Home Dashboard";
+			sourceTree = "<group>";
+		};
+		3B824B262782672E008E26FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B824B2227825865008E26FF /* HomeDashboardViewController.swift */,
+				3B824B2427825879008E26FF /* HomeDashboardViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B824B2727826739008E26FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B824B28278267A5008E26FF /* HomeDashboardDataService.swift */,
+				3B824B2A278267E6008E26FF /* HomeDashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3B9D00DB27791FC600874FB0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +541,7 @@
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				3B824B212782583D008E26FF /* Home Dashboard */,
 				3BFED46C2780D834007109AF /* Main */,
 				8874F768277DE88B006B6F23 /* Face And Touch ID */,
 				885498DF277B44EC003EFED0 /* Government issued ID */,
@@ -867,6 +903,7 @@
 				3BF99F7C2763767D009A287C /* LaunchScreen.storyboard in Resources */,
 				3BF99FA027637B20009A287C /* GoogleService-Info.plist in Resources */,
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
+				3B824B2527825879008E26FF /* HomeDashboardViewController.storyboard in Resources */,
 				885498E3277B45E7003EFED0 /* IDCardViewController.storyboard in Resources */,
 				885A21C62778B50200C7E5CA /* GraphsAndChartsViewController.storyboard in Resources */,
 				8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */,
@@ -917,8 +954,10 @@
 				3B6C47942770EF76008AD740 /* Validator+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
 				885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */,
+				3B824B2327825865008E26FF /* HomeDashboardViewController.swift in Sources */,
 				3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */,
 				885498E1277B45C5003EFED0 /* IDCardViewController.swift in Sources */,
+				3B824B29278267A5008E26FF /* HomeDashboardDataService.swift in Sources */,
 				3B6C47962770EFD2008AD740 /* UITableView+Extension.swift in Sources */,
 				3BFED47027811163007109AF /* CreateAccountDataService.swift in Sources */,
 				3B6C47A627729D8B008AD740 /* NetworkManager.swift in Sources */,
@@ -931,6 +970,7 @@
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
 				885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */,
 				3BF594EF27814680004D1988 /* Servers.swift in Sources */,
+				3B824B2B278267E6008E26FF /* HomeDashboardViewModel.swift in Sources */,
 				3B6C479A2770F05C008AD740 /* AppIntroDataService.swift in Sources */,
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
 				3B6C479C2770F14A008AD740 /* AppIntroViewModel.swift in Sources */,
