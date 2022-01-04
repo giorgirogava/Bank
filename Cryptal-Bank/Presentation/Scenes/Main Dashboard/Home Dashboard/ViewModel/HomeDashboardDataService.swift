@@ -45,10 +45,10 @@ class HomeDashboardDataService:NSObject {
             }
         }
         
-        viewModel.totalBalanceLive(){[unowned self] balance in
-            
-            ballanceLabel.text = balance.moneyFormat()
-        }
+//        viewModel.totalBalanceLive(){[unowned self] balance in
+//            
+//            ballanceLabel.text = balance.moneyFormat()
+//        }
     }
     
     
