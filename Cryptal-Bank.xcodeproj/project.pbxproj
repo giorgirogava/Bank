@@ -102,6 +102,16 @@
 		886E1FA72781E6A80075B5D1 /* Cryptal_Bank_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E1FA62781E6A80075B5D1 /* Cryptal_Bank_Widget.swift */; };
 		886E1FA92781E6AA0075B5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886E1FA82781E6AA0075B5D1 /* Assets.xcassets */; };
 		886E1FAD2781E6AA0075B5D1 /* Cryptal-Bank-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		88733759278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 88733758278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8873375F278740EC00F1EF6E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8873375D278740EC00F1EF6E /* Interface.storyboard */; };
+		88733761278740EE00F1EF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88733760278740EE00F1EF6E /* Assets.xcassets */; };
+		88733767278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 88733766278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8873376C278740EE00F1EF6E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873376B278740EE00F1EF6E /* InterfaceController.swift */; };
+		8873376E278740EE00F1EF6E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873376D278740EE00F1EF6E /* ExtensionDelegate.swift */; };
+		88733770278740EE00F1EF6E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873376F278740EE00F1EF6E /* NotificationController.swift */; };
+		88733772278740EE00F1EF6E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88733771278740EE00F1EF6E /* ComplicationController.swift */; };
+		88733774278740EE00F1EF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88733773278740EE00F1EF6E /* Assets.xcassets */; };
+		88733783278744EA00F1EF6E /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88733782278744EA00F1EF6E /* RowController.swift */; };
 		8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8874F769277DE915006B6F23 /* BiometricsViewController.swift */; };
 		8874F76C277DE934006B6F23 /* BiometricsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */; };
 		887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887546E62774EA12002ACC8F /* LocationViewController.swift */; };
@@ -110,8 +120,6 @@
 		88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAE276BA8350032C290 /* CryptoViewController.swift */; };
 		88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */; };
 		88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */; };
-		888415542784980D00AAB548 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888415532784980D00AAB548 /* GoogleMapsViewController.swift */; };
-		888415562784982C00AAB548 /* GoogleMapsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888415552784982C00AAB548 /* GoogleMapsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +144,20 @@
 			remoteGlobalIDString = 886E1F9E2781E6A80075B5D1;
 			remoteInfo = "Cryptal-Bank-WidgetExtension";
 		};
+		8873375A278740EC00F1EF6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF99F612763767B009A287C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88733757278740EC00F1EF6E;
+			remoteInfo = "Cryptal Bank Watch WatchKit App";
+		};
+		88733768278740EE00F1EF6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF99F612763767B009A287C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88733765278740EE00F1EF6E;
+			remoteInfo = "Cryptal Bank Watch WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -148,6 +170,28 @@
 				886E1FAD2781E6AA0075B5D1 /* Cryptal-Bank-WidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8873377A278740EE00F1EF6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				88733767278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8873377E278740EE00F1EF6E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				88733759278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -223,6 +267,19 @@
 		886E1FA62781E6A80075B5D1 /* Cryptal_Bank_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptal_Bank_Widget.swift; sourceTree = "<group>"; };
 		886E1FA82781E6AA0075B5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886E1FAA2781E6AA0075B5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88733755278740EC00F1EF6E /* Cryptal Bank Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal Bank Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88733758278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal Bank Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8873375E278740EC00F1EF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		88733760278740EE00F1EF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88733766278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cryptal Bank Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8873376B278740EE00F1EF6E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8873376D278740EE00F1EF6E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8873376F278740EE00F1EF6E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		88733771278740EE00F1EF6E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		88733773278740EE00F1EF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88733775278740EE00F1EF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88733776278740EE00F1EF6E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		88733782278744EA00F1EF6E /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 		8874F769277DE915006B6F23 /* BiometricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsViewController.swift; sourceTree = "<group>"; };
 		8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiometricsViewController.storyboard; sourceTree = "<group>"; };
 		887546E62774EA12002ACC8F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -233,8 +290,6 @@
 		88800CAE276BA8350032C290 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
 		88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
-		888415532784980D00AAB548 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
-		888415552784982C00AAB548 /* GoogleMapsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleMapsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +348,13 @@
 			files = (
 				886E1FA42781E6A80075B5D1 /* SwiftUI.framework in Frameworks */,
 				886E1FA22781E6A80075B5D1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88733763278740EE00F1EF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +610,6 @@
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				8884154E2784959000AAB548 /* Search Locations */,
 				3B824B212782583D008E26FF /* Home Dashboard */,
 				3BFED46C2780D834007109AF /* Main */,
 				8874F768277DE88B006B6F23 /* Face And Touch ID */,
@@ -571,6 +632,8 @@
 				3BF99F852763767D009A287C /* Cryptal-BankTests */,
 				3BF99F8F2763767D009A287C /* Cryptal-BankUITests */,
 				886E1FA52781E6A80075B5D1 /* Cryptal-Bank-Widget */,
+				8873375C278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App */,
+				8873376A278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension */,
 				886E1FA02781E6A80075B5D1 /* Frameworks */,
 				3BF99F6A2763767B009A287C /* Products */,
 			);
@@ -583,6 +646,9 @@
 				3BF99F822763767D009A287C /* Cryptal-BankTests.xctest */,
 				3BF99F8C2763767D009A287C /* Cryptal-BankUITests.xctest */,
 				886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */,
+				88733755278740EC00F1EF6E /* Cryptal Bank Watch.app */,
+				88733758278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App.app */,
+				88733766278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -708,6 +774,30 @@
 			path = "Cryptal-Bank-Widget";
 			sourceTree = "<group>";
 		};
+		8873375C278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8873375D278740EC00F1EF6E /* Interface.storyboard */,
+				88733760278740EE00F1EF6E /* Assets.xcassets */,
+			);
+			path = "Cryptal Bank Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		8873376A278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8873376B278740EE00F1EF6E /* InterfaceController.swift */,
+				8873376D278740EE00F1EF6E /* ExtensionDelegate.swift */,
+				8873376F278740EE00F1EF6E /* NotificationController.swift */,
+				88733771278740EE00F1EF6E /* ComplicationController.swift */,
+				88733773278740EE00F1EF6E /* Assets.xcassets */,
+				88733775278740EE00F1EF6E /* Info.plist */,
+				88733776278740EE00F1EF6E /* PushNotificationPayload.apns */,
+				88733782278744EA00F1EF6E /* RowController.swift */,
+			);
+			path = "Cryptal Bank Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
 		8874F768277DE88B006B6F23 /* Face And Touch ID */ = {
 			isa = PBXGroup;
 			children = (
@@ -744,15 +834,6 @@
 				88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */,
 			);
 			path = "Crypto Scene";
-			sourceTree = "<group>";
-		};
-		8884154E2784959000AAB548 /* Search Locations */ = {
-			isa = PBXGroup;
-			children = (
-				888415532784980D00AAB548 /* GoogleMapsViewController.swift */,
-				888415552784982C00AAB548 /* GoogleMapsViewController.storyboard */,
-			);
-			path = "Search Locations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -860,6 +941,57 @@
 			productReference = 886E1F9F2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		88733754278740EC00F1EF6E /* Cryptal Bank Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8873377F278740EE00F1EF6E /* Build configuration list for PBXNativeTarget "Cryptal Bank Watch" */;
+			buildPhases = (
+				88733753278740EC00F1EF6E /* Resources */,
+				8873377E278740EE00F1EF6E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8873375B278740EC00F1EF6E /* PBXTargetDependency */,
+			);
+			name = "Cryptal Bank Watch";
+			productName = "Cryptal Bank Watch";
+			productReference = 88733755278740EC00F1EF6E /* Cryptal Bank Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		88733757278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8873377B278740EE00F1EF6E /* Build configuration list for PBXNativeTarget "Cryptal Bank Watch WatchKit App" */;
+			buildPhases = (
+				88733756278740EC00F1EF6E /* Resources */,
+				8873377A278740EE00F1EF6E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88733769278740EE00F1EF6E /* PBXTargetDependency */,
+			);
+			name = "Cryptal Bank Watch WatchKit App";
+			productName = "Cryptal Bank Watch WatchKit App";
+			productReference = 88733758278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		88733765278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88733777278740EE00F1EF6E /* Build configuration list for PBXNativeTarget "Cryptal Bank Watch WatchKit Extension" */;
+			buildPhases = (
+				88733762278740EE00F1EF6E /* Sources */,
+				88733763278740EE00F1EF6E /* Frameworks */,
+				88733764278740EE00F1EF6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cryptal Bank Watch WatchKit Extension";
+			productName = "Cryptal Bank Watch WatchKit Extension";
+			productReference = 88733766278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -882,6 +1014,15 @@
 						TestTargetID = 3BF99F682763767B009A287C;
 					};
 					886E1F9E2781E6A80075B5D1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					88733754278740EC00F1EF6E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					88733757278740EC00F1EF6E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					88733765278740EE00F1EF6E = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -908,6 +1049,9 @@
 				3BF99F812763767D009A287C /* Cryptal-BankTests */,
 				3BF99F8B2763767D009A287C /* Cryptal-BankUITests */,
 				886E1F9E2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension */,
+				88733754278740EC00F1EF6E /* Cryptal Bank Watch */,
+				88733757278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App */,
+				88733765278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -934,7 +1078,6 @@
 				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
 				3B6C47A3277104C5008AD740 /* AppIntroPageCell.xib in Resources */,
 				885A22032778D91800C7E5CA /* NotificationController.storyboard in Resources */,
-				888415562784982C00AAB548 /* GoogleMapsViewController.storyboard in Resources */,
 				3B824B1C27824F57008E26FF /* ProfileTabViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -961,6 +1104,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88733753278740EC00F1EF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88733756278740EC00F1EF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88733761278740EE00F1EF6E /* Assets.xcassets in Resources */,
+				8873375F278740EC00F1EF6E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88733764278740EE00F1EF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88733774278740EE00F1EF6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -984,7 +1151,6 @@
 				8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
-				888415542784980D00AAB548 /* GoogleMapsViewController.swift in Sources */,
 				885A22012778D8FF00C7E5CA /* NotificationController.swift in Sources */,
 				3B9D00DA2778F12700874FB0 /* FloatingLabelInput.swift in Sources */,
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
@@ -1046,6 +1212,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88733762278740EE00F1EF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88733783278744EA00F1EF6E /* RowController.swift in Sources */,
+				88733770278740EE00F1EF6E /* NotificationController.swift in Sources */,
+				88733772278740EE00F1EF6E /* ComplicationController.swift in Sources */,
+				8873376E278740EE00F1EF6E /* ExtensionDelegate.swift in Sources */,
+				8873376C278740EE00F1EF6E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1064,6 +1242,16 @@
 			target = 886E1F9E2781E6A80075B5D1 /* Cryptal-Bank-WidgetExtension */;
 			targetProxy = 886E1FAB2781E6AA0075B5D1 /* PBXContainerItemProxy */;
 		};
+		8873375B278740EC00F1EF6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88733757278740EC00F1EF6E /* Cryptal Bank Watch WatchKit App */;
+			targetProxy = 8873375A278740EC00F1EF6E /* PBXContainerItemProxy */;
+		};
+		88733769278740EE00F1EF6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88733765278740EE00F1EF6E /* Cryptal Bank Watch WatchKit Extension */;
+			targetProxy = 88733768278740EE00F1EF6E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1073,6 +1261,14 @@
 				3BF99F7B2763767D009A287C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8873375D278740EC00F1EF6E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8873375E278740EC00F1EF6E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1392,6 +1588,138 @@
 			};
 			name = Release;
 		};
+		88733778278740EE00F1EF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cryptal Bank Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		88733779278740EE00F1EF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cryptal Bank Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		8873377C278740EE00F1EF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Cryptal_Bank_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		8873377D278740EE00F1EF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Cryptal_Bank_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		88733780278740EE00F1EF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88733781278740EE00F1EF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1436,6 +1764,33 @@
 			buildConfigurations = (
 				886E1FAF2781E6AA0075B5D1 /* Debug */,
 				886E1FB02781E6AA0075B5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88733777278740EE00F1EF6E /* Build configuration list for PBXNativeTarget "Cryptal Bank Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88733778278740EE00F1EF6E /* Debug */,
+				88733779278740EE00F1EF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8873377B278740EE00F1EF6E /* Build configuration list for PBXNativeTarget "Cryptal Bank Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8873377C278740EE00F1EF6E /* Debug */,
+				8873377D278740EE00F1EF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8873377F278740EE00F1EF6E /* Build configuration list for PBXNativeTarget "Cryptal Bank Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88733780278740EE00F1EF6E /* Debug */,
+				88733781278740EE00F1EF6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
