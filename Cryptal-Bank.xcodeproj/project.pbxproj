@@ -110,6 +110,8 @@
 		88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAE276BA8350032C290 /* CryptoViewController.swift */; };
 		88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */; };
 		88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */; };
+		888415542784980D00AAB548 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888415532784980D00AAB548 /* GoogleMapsViewController.swift */; };
+		888415562784982C00AAB548 /* GoogleMapsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888415552784982C00AAB548 /* GoogleMapsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +233,8 @@
 		88800CAE276BA8350032C290 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
 		88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		888415532784980D00AAB548 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		888415552784982C00AAB548 /* GoogleMapsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleMapsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -544,6 +548,7 @@
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				8884154E2784959000AAB548 /* Search Locations */,
 				3B824B212782583D008E26FF /* Home Dashboard */,
 				3BFED46C2780D834007109AF /* Main */,
 				8874F768277DE88B006B6F23 /* Face And Touch ID */,
@@ -741,6 +746,15 @@
 			path = "Crypto Scene";
 			sourceTree = "<group>";
 		};
+		8884154E2784959000AAB548 /* Search Locations */ = {
+			isa = PBXGroup;
+			children = (
+				888415532784980D00AAB548 /* GoogleMapsViewController.swift */,
+				888415552784982C00AAB548 /* GoogleMapsViewController.storyboard */,
+			);
+			path = "Search Locations";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -920,6 +934,7 @@
 				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
 				3B6C47A3277104C5008AD740 /* AppIntroPageCell.xib in Resources */,
 				885A22032778D91800C7E5CA /* NotificationController.storyboard in Resources */,
+				888415562784982C00AAB548 /* GoogleMapsViewController.storyboard in Resources */,
 				3B824B1C27824F57008E26FF /* ProfileTabViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -969,6 +984,7 @@
 				8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
+				888415542784980D00AAB548 /* GoogleMapsViewController.swift in Sources */,
 				885A22012778D8FF00C7E5CA /* NotificationController.swift in Sources */,
 				3B9D00DA2778F12700874FB0 /* FloatingLabelInput.swift in Sources */,
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
