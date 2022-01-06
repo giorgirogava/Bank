@@ -40,8 +40,8 @@ class HomeDashboardDataService:NSObject {
                 
                 viewModel.totalBalanceSingle(){[unowned self] balance in
                     ballanceLabel.text = balance.moneyFormat()
+                    currencyLabel.isHidden = false
                 }
-                currencyLabel.isHidden = false
             }
         }
         
