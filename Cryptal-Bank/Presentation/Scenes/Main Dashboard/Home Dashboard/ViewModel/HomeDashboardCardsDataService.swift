@@ -39,11 +39,12 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
         self.viewModel = viewModel
     }
     
-    func refresh() {
+    func refresh(end: @escaping () -> ()) {
          viewModel.getCards(){ [unowned self] all in
              cards = all
           }
         cardsCollectionView.reloadData()
+        end()
     }
     
     

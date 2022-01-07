@@ -29,7 +29,7 @@ class HomeDashboardTotalBallanceDataService:NSObject {
         self.viewModel = viewModel
     }
     
-    func loadDashboard(){
+    func loadDashboard(end: @escaping () -> ()){
         viewModel.isHidenLive(){ [unowned self] hiden in
             if hiden {
                 self.eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
@@ -43,12 +43,14 @@ class HomeDashboardTotalBallanceDataService:NSObject {
                     currencyLabel.isHidden = false
                 }
             }
+            end()
         }
         
 //        viewModel.totalBalanceLive(){[unowned self] balance in
 //            
 //            ballanceLabel.text = balance.moneyFormat()
 //        }
+        
     }
     
     

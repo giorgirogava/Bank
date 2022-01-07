@@ -31,18 +31,18 @@ class HomeDashboardViewController: UIViewController {
         unowned let vc = self
         viewModel = HomeDashboardViewModel()
         ballanceDataService = HomeDashboardTotalBallanceDataService(withController: vc,
-                                               ballanceLabel: ballanceLabel,
-                                               currencyLabel: currencyLabel,
-                                               eyeButton: eyeButton,
-                                               viewModel: viewModel)
+                                                                    ballanceLabel: ballanceLabel,
+                                                                    currencyLabel: currencyLabel,
+                                                                    eyeButton: eyeButton,
+                                                                    viewModel: viewModel)
         
         cardsDataService = HomeDashboardCardsDataService(withController: vc,
                                                          cardsCollectionView:cardsCollectionView,
                                                          viewModel: viewModel)
         
         
-        ballanceDataService.loadDashboard()
-        cardsDataService.refresh()
+        ballanceDataService.loadDashboard(){}
+        cardsDataService.refresh(){}
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
@@ -53,9 +53,28 @@ class HomeDashboardViewController: UIViewController {
     @IBAction func onEyeButtonClick(_ sender: UIButton) {
         ballanceDataService.changeBalanceHidenStatusTogle()
     }
-
+    
     @objc func refresh(_ sender: Any) {
         //  your code to reload tableView
+        var ballanceDataServiceLoadinEnd = false
+        var cardsDataServiceLoadinEnd = false
+        
+        ballanceDataService.loadDashboard(){ [unowned self] in
+            ballanceDataServiceLoadinEnd = true
+            
+            if ballanceDataServiceLoadinEnd && cardsDataServiceLoadinEnd {
+                refreshControl.endRefreshing()
+            }
+            
+        }
+        cardsDataService.refresh(){ [unowned self] in
+            cardsDataServiceLoadinEnd = true
+            
+            if ballanceDataServiceLoadinEnd && cardsDataServiceLoadinEnd {
+                refreshControl.endRefreshing()
+            }
+        }
+        
     }
 }
 
