@@ -13,7 +13,7 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
     
     weak private var cardsCollectionView: UICollectionView!
     
-    private var cards = [String](){
+    private var cards = [CardModel](){
         
         willSet {
            
@@ -40,18 +40,20 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
     }
     
     func refresh() {
-//        toes = viewModel.getToes()
-//        collectionView.reloadData()
+         viewModel.getCards(){ [unowned self] all in
+             cards = all
+          }
+        cardsCollectionView.reloadData()
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  5 //toes.count
+        return  cards.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.deque(class: CardsCollectionViewCell.self, for: indexPath)
-       // cell.configure(with: toes[indexPath.row])
+        cell.configure(with: cards[indexPath.row])
         return cell
     }
     

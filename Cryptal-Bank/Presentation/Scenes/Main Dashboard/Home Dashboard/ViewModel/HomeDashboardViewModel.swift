@@ -16,7 +16,7 @@ protocol  HomeDashboardViewModelProtocol: AnyObject {
     func balance(hide: Bool)
     func isHidenLive( hiden: @escaping (_ hiden: Bool) -> ())
     func isHidenSingle( hiden: @escaping (_ hiden: Bool) -> ())
-    
+    func getCards( card: @escaping (_ card: [CardModel]) -> ())
 }
 
 final class HomeDashboardViewModel: HomeDashboardViewModelProtocol {
@@ -102,6 +102,55 @@ final class HomeDashboardViewModel: HomeDashboardViewModelProtocol {
                 hiden(false)
             }
         })
+    }
+    
+    func getCards( card: @escaping (_ card: [CardModel]) -> ()){
+        
+        card([CardModel(name: "String?",
+                        owner: "String",
+                        colour: 0x0000ff,
+                        expireData: "09/26",
+                        cardnumber: "XXXXX XXXX XXXX 4262",
+                        AcountNumber: "XXXX XXXXX 3434",
+                        cardType: CardType.MASTER,
+                        money: [Money(balances: 121232.23, Currency: CurrencyType.GEL),
+                                Money(balances: 14352.23, Currency: CurrencyType.USD)]
+                       ),
+              CardModel(name: "String?",
+                        owner: "String",
+                        colour: 0x008000,
+                        expireData: "09/26",
+                        cardnumber: "XXXXX XXXX XXXX 6756",
+                        AcountNumber: "XXXX XXXXX 3434",
+                        cardType: CardType.MASTER,
+                        money: [Money(balances: 121232.23, Currency: CurrencyType.GEL),
+                                Money(balances: 14352.23, Currency: CurrencyType.USD)]
+                       ),
+              CardModel(name: "String?",
+                        owner: "String",
+                        colour: 0xff00ff,
+                        expireData: "09/26",
+                        cardnumber: "XXXXX XXXX XXXX XXXX",
+                        AcountNumber: "XXXX XXXXX 3434",
+                        cardType: CardType.VISA,
+                        money: [Money(balances: 121232.23, Currency: CurrencyType.GEL),
+                                Money(balances: 1432342352.23, Currency: CurrencyType.GBP),
+                                Money(balances: 152.23, Currency: CurrencyType.EUR),
+                                Money(balances: 14352.23, Currency: CurrencyType.USD)]
+                       ),
+              CardModel(name: "String?",
+                              owner: "String",
+                              colour: 0xff0000,
+                              expireData: "09/26",
+                              cardnumber: "XXXXX XXXX XXXX 2344",
+                              AcountNumber: "XXXX XXXXX 3434",
+                              cardType: CardType.VISA,
+                              money: [Money(balances: 121232.23, Currency: CurrencyType.GEL),
+                                      Money(balances: 45464566614352.23, Currency: CurrencyType.GBP),
+                                      Money(balances: 14352.23, Currency: CurrencyType.USD)]
+                             )
+             ]
+        )
     }
     
 }

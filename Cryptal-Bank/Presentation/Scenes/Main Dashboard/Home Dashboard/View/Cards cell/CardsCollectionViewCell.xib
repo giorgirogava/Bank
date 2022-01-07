@@ -94,6 +94,13 @@
                 <constraint firstItem="PON-r8-ZHA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="h8c-MQ-FgX"/>
             </constraints>
             <size key="customSize" width="250" height="150"/>
+            <connections>
+                <outlet property="balancesStack" destination="9fg-mD-6Vr" id="4Lo-Sf-C9y"/>
+                <outlet property="card" destination="PON-r8-ZHA" id="GT2-Iz-Q2Y"/>
+                <outlet property="cardExpireDate" destination="2Un-P5-ff0" id="oka-Ut-4yv"/>
+                <outlet property="cardNumber" destination="a3j-j6-qtd" id="UG3-6i-zac"/>
+                <outlet property="cardType" destination="jpH-XV-ah2" id="WBX-gA-8n4"/>
+            </connections>
             <point key="canvasLocation" x="282.60869565217394" y="155.35714285714286"/>
         </collectionViewCell>
     </objects>

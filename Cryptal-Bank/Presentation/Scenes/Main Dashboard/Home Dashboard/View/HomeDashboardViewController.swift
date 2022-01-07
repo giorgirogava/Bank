@@ -42,6 +42,7 @@ class HomeDashboardViewController: UIViewController {
         
         
         ballanceDataService.loadDashboard()
+        cardsDataService.refresh()
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
