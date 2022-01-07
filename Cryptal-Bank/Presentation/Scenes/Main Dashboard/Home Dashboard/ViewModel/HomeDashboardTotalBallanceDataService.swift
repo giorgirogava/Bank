@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeDashboardDataService:NSObject {
+class HomeDashboardTotalBallanceDataService:NSObject {
      weak private var controller: UIViewController!
      weak private var viewModel: HomeDashboardViewModelProtocol!
     

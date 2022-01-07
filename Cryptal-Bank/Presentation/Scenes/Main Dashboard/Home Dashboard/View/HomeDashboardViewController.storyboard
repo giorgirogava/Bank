@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EJ-k6-KXM">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="804"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="964.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kW-n4-DhE">
                                                 <rect key="frame" x="25.000000000000007" y="0.0" width="92.666666666666686" height="30"/>
@@ -56,10 +56,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GsI-o7-7iW" userLabel="Collection View Cards">
-                                                <rect key="frame" x="0.0" y="87.666666666666657" width="428" height="150"/>
+                                                <rect key="frame" x="0.0" y="87.666666666666657" width="428" height="199.99999999999997"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="X7e-mB-OGW"/>
+                                                    <constraint firstAttribute="height" constant="200" id="X7e-mB-OGW"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ty6-nI-Q5T">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -88,7 +88,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="4EJ-k6-KXM" firstAttribute="height" secondItem="Qwq-kT-Nu3" secondAttribute="height" priority="250" id="1Bs-v1-BHH"/>
+                                    <constraint firstItem="4EJ-k6-KXM" firstAttribute="height" secondItem="Qwq-kT-Nu3" secondAttribute="height" multiplier="1.2" priority="250" id="1Bs-v1-BHH"/>
                                     <constraint firstItem="4EJ-k6-KXM" firstAttribute="leading" secondItem="Qwq-kT-Nu3" secondAttribute="leading" id="Dyn-l0-JZT"/>
                                     <constraint firstAttribute="bottom" secondItem="4EJ-k6-KXM" secondAttribute="bottom" id="GKa-aD-MOG"/>
                                     <constraint firstItem="4EJ-k6-KXM" firstAttribute="top" secondItem="Qwq-kT-Nu3" secondAttribute="top" id="Hf2-aj-ve1"/>
@@ -109,8 +109,10 @@
                     <navigationItem key="navigationItem" title="Home Dashboard" id="2RJ-HJ-0eO"/>
                     <connections>
                         <outlet property="ballanceLabel" destination="Wht-Up-xxE" id="gf2-OP-EdK"/>
+                        <outlet property="cardsCollectionView" destination="GsI-o7-7iW" id="2BR-Or-PIV"/>
                         <outlet property="currencyLabel" destination="7Ae-kT-beo" id="36D-kd-Nao"/>
                         <outlet property="eyeButton" destination="5Sm-V9-EOt" id="th6-BX-oQU"/>
+                        <outlet property="scrollView" destination="Qwq-kT-Nu3" id="FPY-Y3-VLX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVx-xw-9PG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
