@@ -45,7 +45,7 @@ class CardsCollectionViewCell: UICollectionViewCell {
         with.money?.forEach{ money in
                 let label = UILabel()
             guard let balance = money.balances,
-                  let currency = money.Currency
+                  let currency = money.currency
             else { return }
             
                 label.text = "\(String(balance).moneyFormat()) \(currency)"

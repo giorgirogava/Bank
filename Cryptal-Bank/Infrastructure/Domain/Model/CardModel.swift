@@ -16,10 +16,26 @@ struct CardModel {
     var AcountNumber: String?
     var cardType: CardType?
     var money: [Money]?
+    
+    
+    func toNSDictionary()-> NSDictionary {
+        ["name": name ?? "",
+         "owner": owner ?? "",
+         "colour": colour ?? 0x008000,
+         "expireData": expireData ?? "",
+         "cardnumber": cardnumber ?? "",
+         "AcountNumber": AcountNumber ?? "",
+         "cardType": cardType?.rawValue ?? "",
+         "money": money?.compactMap{
+            ["balances": $0.balances ?? 0.0,
+             "currency": $0.currency?.rawValue ?? ""]
+           } ?? []
+        ]
+    }
 }
 struct Money {
     var balances: Double?
-    var Currency: CurrencyType?
+    var currency: CurrencyType?
 }
 
 

@@ -40,10 +40,31 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
     }
     
     func refresh(end: @escaping () -> ()) {
-         viewModel.getCards(){ [unowned self] all in
-             cards = all
-          }
+        viewModel.saveCard(card: CardModel(name: "String?",
+                                           owner: "String",
+                                           colour: 0x008000,
+                                           expireData: "09/26",
+                                           cardnumber: "XXXXX XXXX XXXX 6756",
+                                           AcountNumber: "XXXX XXXXX 3434",
+                                           cardType: CardType.VISA,
+                                           money: [Money(balances: 121232.23, currency: CurrencyType.GEL),
+                                                   Money(balances: 14352.23, currency: CurrencyType.USD)]
+                                          ))
+        
+//         viewModel.getCards(){ [unowned self] all in
+//             cards = all
+//          }
+        viewModel.getCardsSingle(){ [unowned self] all in
+            cards = all
+            
+        }
+        
+        
         cardsCollectionView.reloadData()
+        viewModel.getCardsSingle(){ it in
+            
+            
+        }
         end()
     }
     
