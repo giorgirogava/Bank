@@ -91,6 +91,10 @@
 		3BFED472278111C2007109AF /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFED471278111C2007109AF /* CreateAccountViewModel.swift */; };
 		3BFED475278112A7007109AF /* DialogAlertsForActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFED474278112A7007109AF /* DialogAlertsForActions.swift */; };
 		3BFED47727811475007109AF /* LogInViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFED47627811475007109AF /* LogInViewDataService.swift */; };
+		8852A11C2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8852A11B2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel */; };
+		8852A11E2789EFA800C516A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852A11D2789EFA800C516A0 /* Extensions.swift */; };
+		8852A1202789F0BE00C516A0 /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852A11F2789F0BE00C516A0 /* imageViewController.swift */; };
+		8852A1222789F0DE00C516A0 /* imageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8852A1212789F0DE00C516A0 /* imageViewController.storyboard */; };
 		885498E1277B45C5003EFED0 /* IDCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885498E0277B45C5003EFED0 /* IDCardViewController.swift */; };
 		885498E3277B45E7003EFED0 /* IDCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885498E2277B45E7003EFED0 /* IDCardViewController.storyboard */; };
 		885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A21C32778B4CA00C7E5CA /* BarViewController.swift */; };
@@ -263,6 +267,10 @@
 		3BFED471278111C2007109AF /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		3BFED474278112A7007109AF /* DialogAlertsForActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertsForActions.swift; sourceTree = "<group>"; };
 		3BFED47627811475007109AF /* LogInViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewDataService.swift; sourceTree = "<group>"; };
+		8852A11B2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		8852A11D2789EFA800C516A0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8852A11F2789F0BE00C516A0 /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
+		8852A1212789F0DE00C516A0 /* imageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = imageViewController.storyboard; sourceTree = "<group>"; };
 		885498E0277B45C5003EFED0 /* IDCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCardViewController.swift; sourceTree = "<group>"; };
 		885498E2277B45E7003EFED0 /* IDCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IDCardViewController.storyboard; sourceTree = "<group>"; };
 		885A21C32778B4CA00C7E5CA /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
@@ -636,6 +644,7 @@
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				8852A11A2789EF6300C516A0 /* CoreML */,
 				3B824B212782583D008E26FF /* Home Dashboard */,
 				3BFED46C2780D834007109AF /* Main */,
 				8874F768277DE88B006B6F23 /* Face And Touch ID */,
@@ -741,6 +750,17 @@
 				3BFED474278112A7007109AF /* DialogAlertsForActions.swift */,
 			);
 			path = "Dialog Alerts";
+			sourceTree = "<group>";
+		};
+		8852A11A2789EF6300C516A0 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				8852A11D2789EFA800C516A0 /* Extensions.swift */,
+				8852A11B2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel */,
+				8852A11F2789F0BE00C516A0 /* imageViewController.swift */,
+				8852A1212789F0DE00C516A0 /* imageViewController.storyboard */,
+			);
+			path = CoreML;
 			sourceTree = "<group>";
 		};
 		885498DF277B44EC003EFED0 /* Government issued ID */ = {
@@ -1106,6 +1126,7 @@
 				3B6C47A3277104C5008AD740 /* AppIntroPageCell.xib in Resources */,
 				885A22032778D91800C7E5CA /* NotificationController.storyboard in Resources */,
 				3B824B1C27824F57008E26FF /* ProfileTabViewController.storyboard in Resources */,
+				8852A1222789F0DE00C516A0 /* imageViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1168,6 +1189,7 @@
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
 				3BE6276F2787CC1900983F73 /* Colours+Extensions.swift in Sources */,
 				885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */,
+				8852A1202789F0BE00C516A0 /* imageViewController.swift in Sources */,
 				3B91B7702787B84F00921544 /* CardModel.swift in Sources */,
 				3BE627712787E11400983F73 /* StackView+Extensions.swift in Sources */,
 				3B824B2327825865008E26FF /* HomeDashboardViewController.swift in Sources */,
@@ -1178,6 +1200,7 @@
 				3BFED47027811163007109AF /* CreateAccountDataService.swift in Sources */,
 				3B6C47A627729D8B008AD740 /* NetworkManager.swift in Sources */,
 				3B6C47AB27729EC8008AD740 /* ExchangeRatesConstants.swift in Sources */,
+				8852A11C2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel in Sources */,
 				8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
@@ -1188,6 +1211,7 @@
 				3B91B76D2787B4E100921544 /* CardsCollectionViewCell.swift in Sources */,
 				3BF594EF27814680004D1988 /* Servers.swift in Sources */,
 				3B824B2B278267E6008E26FF /* HomeDashboardViewModel.swift in Sources */,
+				8852A11E2789EFA800C516A0 /* Extensions.swift in Sources */,
 				3B6C479A2770F05C008AD740 /* AppIntroDataService.swift in Sources */,
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
 				3B6C479C2770F14A008AD740 /* AppIntroViewModel.swift in Sources */,
