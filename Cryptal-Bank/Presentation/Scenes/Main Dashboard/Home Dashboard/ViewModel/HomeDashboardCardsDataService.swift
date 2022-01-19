@@ -16,7 +16,7 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
     private var cards = [CardModel](){
         
         willSet {
-           
+            
         }
         didSet {
             cardsCollectionView.reloadData()
@@ -36,6 +36,7 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
         //self.cardsCollectionView.isPagingEnabled = true
         self.cardsCollectionView.showsHorizontalScrollIndicator = false
         self.cardsCollectionView.registerNib(class: CardsCollectionViewCell.self)
+        self.cardsCollectionView.registerNib(class: PlusCollectionViewCell.self)
         self.viewModel = viewModel
     }
     
@@ -51,9 +52,9 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
                                                    Money(balances: 14352.23, currency: CurrencyType.USD)]
                                           ))
         
-//         viewModel.getCards(){ [unowned self] all in
-//             cards = all
-//          }
+        //         viewModel.getCards(){ [unowned self] all in
+        //             cards = all
+        //          }
         viewModel.getCardsSingle(){ [unowned self] all in
             cards = all
             
@@ -68,17 +69,42 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
         end()
     }
     
+    func sumOfCards(money: @escaping (String) -> ()){
+        viewModel.getCardsSingle(){ all in
+            
+            let total = all.map{ card -> Double in
+                
+                var cardMoney = 0.0
+                
+                card.money?.forEach{ money in
+                    guard let balance = money.balances
+                            //let currency = money.currency
+                    else { return }
+                    cardMoney += balance
+                }
+                
+                return cardMoney
+            }.reduce(.zero, +)
+            money("\(total)")
+        }
+    }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  cards.count
+        return  cards.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.deque(class: CardsCollectionViewCell.self, for: indexPath)
-        cell.configure(with: cards[indexPath.row])
-        return cell
+        
+        if indexPath.row < cards.count {
+            let  cell = collectionView.deque(class: CardsCollectionViewCell.self, for: indexPath)
+            cell.configure(with: cards[indexPath.row])
+            return cell
+        }else {
+            return collectionView.deque(class: PlusCollectionViewCell.self, for: indexPath)
+        }
     }
-    
     
 }
 
@@ -98,5 +124,5 @@ extension HomeDashboardCardsDataService: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
-
+    
 }

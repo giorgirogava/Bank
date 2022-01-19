@@ -46,6 +46,8 @@
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
 		3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */; };
+		3BD1FBE22798215200CAFAEE /* PlusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */; };
+		3BD1FBE32798215200CAFAEE /* PlusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */; };
 		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
 		3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */; };
 		3BE39A452773B95F00A230B2 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099C27721F5B00D8C965 /* ExchangeRates.swift */; };
@@ -246,6 +248,8 @@
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusCollectionViewCell.xib; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		3BE6276E2787CC1900983F73 /* Colours+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colours+Extensions.swift"; sourceTree = "<group>"; };
 		3BE627702787E11400983F73 /* StackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extensions.swift"; sourceTree = "<group>"; };
@@ -598,6 +602,7 @@
 		3B824B262782672E008E26FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3BD1FBDF2798212B00CAFAEE /* Plus cell */,
 				3B91B76A2787B4A400921544 /* Cards cell */,
 				3B824B2227825865008E26FF /* HomeDashboardViewController.swift */,
 				3B824B2427825879008E26FF /* HomeDashboardViewController.storyboard */,
@@ -658,6 +663,15 @@
 				3B824B1A27824EF7008E26FF /* Profile bar */,
 			);
 			path = "Main Dashboard";
+			sourceTree = "<group>";
+		};
+		3BD1FBDF2798212B00CAFAEE /* Plus cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */,
+				3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */,
+			);
+			path = "Plus cell";
 			sourceTree = "<group>";
 		};
 		3BF99F602763767B009A287C = {
@@ -1108,6 +1122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF99F7C2763767D009A287C /* LaunchScreen.storyboard in Resources */,
+				3BD1FBE32798215200CAFAEE /* PlusCollectionViewCell.xib in Resources */,
 				3BF99FA027637B20009A287C /* GoogleService-Info.plist in Resources */,
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
 				3B824B2527825879008E26FF /* HomeDashboardViewController.storyboard in Resources */,
@@ -1185,6 +1200,7 @@
 			files = (
 				3B6C47B12772A783008AD740 /* User.swift in Sources */,
 				3B6C47942770EF76008AD740 /* Validator+Extensions.swift in Sources */,
+				3BD1FBE22798215200CAFAEE /* PlusCollectionViewCell.swift in Sources */,
 				3B63F5662783BBC5006D5670 /* StringsFormater+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
 				3BE6276F2787CC1900983F73 /* Colours+Extensions.swift in Sources */,
@@ -1454,8 +1470,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cryptal-Bank/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a picture";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with face id";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to see current location ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1465,7 +1485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank";
+				PRODUCT_BUNDLE_IDENTIFIER = ika.ikakooo.pro.CryptalBank;
 				PRODUCT_NAME = "Cryptal Bank";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1481,8 +1501,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cryptal-Bank/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a picture";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with face id";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to see current location ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1492,7 +1516,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank";
+				PRODUCT_BUNDLE_IDENTIFIER = ika.ikakooo.pro.CryptalBank;
 				PRODUCT_NAME = "Cryptal Bank";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1555,6 +1579,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1577,6 +1611,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1599,6 +1643,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cryptal-Bank-Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal-Bank-Widget";
@@ -1609,7 +1654,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank.Cryptal-Bank-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.CryptalBank.Cryptal-Bank-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1625,6 +1670,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cryptal-Bank-Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal-Bank-Widget";
@@ -1635,7 +1681,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.Cryptal-Bank.Cryptal-Bank-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.CryptalBank.Cryptal-Bank-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

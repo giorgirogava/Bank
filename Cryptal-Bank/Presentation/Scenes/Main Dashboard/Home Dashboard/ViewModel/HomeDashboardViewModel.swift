@@ -186,7 +186,7 @@ final class HomeDashboardViewModel: HomeDashboardViewModelProtocol {
                         //print(m)
                         let mon = m as? NSDictionary
                         let balances = mon?["balances"] as? Double ?? 0.0
-                        let currency = mon?["currency"] as? CurrencyType ?? CurrencyType.GEL
+                        let currency = mon?["currency"] as? String ?? CurrencyType.GEL
                         
                         moneyes.append(Money(balances: balances, currency: currency))
                         

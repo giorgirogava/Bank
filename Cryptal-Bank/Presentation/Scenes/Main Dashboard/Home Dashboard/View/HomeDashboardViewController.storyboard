@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwq-kT-Nu3">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EJ-k6-KXM">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="964.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="906"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kW-n4-DhE">
                                                 <rect key="frame" x="25.000000000000007" y="0.0" width="92.666666666666686" height="30"/>
@@ -106,7 +106,11 @@
                             <constraint firstItem="Qwq-kT-Nu3" firstAttribute="trailing" secondItem="3Xw-GJ-cDt" secondAttribute="trailing" id="kcB-Kw-403"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" landscapeImage="homekit" largeContentSizeImage="homekit" id="YLx-e6-62Y">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Home Dashboard" id="2RJ-HJ-0eO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ballanceLabel" destination="Wht-Up-xxE" id="gf2-OP-EdK"/>
                         <outlet property="cardsCollectionView" destination="GsI-o7-7iW" id="2BR-Or-PIV"/>
@@ -140,6 +144,7 @@
     </scenes>
     <resources>
         <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

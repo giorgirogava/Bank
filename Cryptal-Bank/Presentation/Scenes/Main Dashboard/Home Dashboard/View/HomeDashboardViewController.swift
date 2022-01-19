@@ -41,8 +41,13 @@ class HomeDashboardViewController: UIViewController {
                                                          viewModel: viewModel)
         
         
-        ballanceDataService.loadDashboard(){}
+        //ballanceDataService.loadDashboard(){}
+        
         cardsDataService.refresh(){}
+        
+        cardsDataService.sumOfCards(){ [unowned self] totalMoney in
+            ballanceDataService.setSumOfCards(money: totalMoney)
+        }
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
@@ -56,13 +61,14 @@ class HomeDashboardViewController: UIViewController {
     
     @objc func refresh(_ sender: Any) {
         //  your code to reload tableView
-        var ballanceDataServiceLoadinEnd = false
+        var setSumOfCardsLoadinEnd = false
         var cardsDataServiceLoadinEnd = false
         
-        ballanceDataService.loadDashboard(){ [unowned self] in
-            ballanceDataServiceLoadinEnd = true
+        cardsDataService.sumOfCards(){ [unowned self] totalMoney in
+            setSumOfCardsLoadinEnd = true
             
-            if ballanceDataServiceLoadinEnd && cardsDataServiceLoadinEnd {
+            if setSumOfCardsLoadinEnd && cardsDataServiceLoadinEnd {
+                ballanceDataService.setSumOfCards(money: totalMoney)
                 refreshControl.endRefreshing()
             }
             
@@ -70,7 +76,7 @@ class HomeDashboardViewController: UIViewController {
         cardsDataService.refresh(){ [unowned self] in
             cardsDataServiceLoadinEnd = true
             
-            if ballanceDataServiceLoadinEnd && cardsDataServiceLoadinEnd {
+            if setSumOfCardsLoadinEnd && cardsDataServiceLoadinEnd {
                 refreshControl.endRefreshing()
             }
         }

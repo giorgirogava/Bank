@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Cryptal_Bank
+//@testable import Cryptal_Bank
 
 class Cryptal_BankTests: XCTestCase {
 

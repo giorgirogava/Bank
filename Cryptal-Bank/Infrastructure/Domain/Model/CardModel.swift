@@ -28,22 +28,22 @@ struct CardModel {
          "cardType": cardType?.rawValue ?? "",
          "money": money?.compactMap{
             ["balances": $0.balances ?? 0.0,
-             "currency": $0.currency?.rawValue ?? ""]
+             "currency": $0.currency ?? ""]
            } ?? []
         ]
     }
 }
 struct Money {
     var balances: Double?
-    var currency: CurrencyType?
+    var currency: String?
 }
 
 
-enum CurrencyType: String, CaseIterable {
-    case EUR = "EUR"
-    case GBP = "GBP"
-    case USD = "USD"
-    case GEL = "GEL"
+enum CurrencyType: CaseIterable {
+    static let EUR = "EUR"
+    static let GBP = "GBP"
+    static let USD = "USD"
+    static let GEL = "GEL"
 }
 
 enum CardType:String,CaseIterable {

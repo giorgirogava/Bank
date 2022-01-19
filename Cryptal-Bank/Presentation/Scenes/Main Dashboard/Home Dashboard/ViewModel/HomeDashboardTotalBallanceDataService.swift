@@ -53,6 +53,26 @@ class HomeDashboardTotalBallanceDataService:NSObject {
         
     }
     
+    func setSumOfCards(money:String?){
+        viewModel.isHidenLive(){ [unowned self] hiden in
+            if hiden {
+                self.eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+                ballanceLabel.text = "$ $ $ $"
+                currencyLabel.isHidden = true
+            }else {
+                self.eyeButton.setImage(UIImage(systemName: "eye"), for: .normal)
+                    ballanceLabel.text = money?.moneyFormat() ?? "0"
+                    currencyLabel.isHidden = false
+            }
+    }
+    
+    //        viewModel.totalBalanceLive(){[unowned self] balance in
+    //
+    //            ballanceLabel.text = balance.moneyFormat()
+    //        }
+    
+}
+    
     
     func changeBalanceHidenStatusTogle(){
         viewModel.isHidenSingle(){ [unowned self] isHiden in

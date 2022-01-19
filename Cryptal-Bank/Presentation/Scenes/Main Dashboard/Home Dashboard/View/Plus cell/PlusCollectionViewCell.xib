@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PlusCollectionViewCell" reuseIdentifier="PlusCollectionViewCell" id="gTV-IL-0wX" customClass="PlusCollectionViewCell" customModule="Cryptal_Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOo-le-j3P" customClass="UIViewAdditionalFeatures" customModule="Cryptal_Bank" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cLL-Le-K2c">
+                                <rect key="frame" x="75" y="46" width="100" height="58"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="251" constant="150" id="Psy-e6-L4H"/>
+                                    <constraint firstAttribute="width" priority="500" constant="100" id="z4h-BP-eCX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTs-f1-vfc">
+                                <rect key="frame" x="70" y="10" width="110" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cLL-Le-K2c" firstAttribute="top" secondItem="tTs-f1-vfc" secondAttribute="bottom" constant="15" id="5Mz-ra-ZpK"/>
+                            <constraint firstAttribute="bottom" secondItem="cLL-Le-K2c" secondAttribute="bottom" priority="251" constant="10" id="QFJ-Yd-mzU"/>
+                            <constraint firstItem="cLL-Le-K2c" firstAttribute="centerX" secondItem="WOo-le-j3P" secondAttribute="centerX" id="RE6-Bi-f2w"/>
+                            <constraint firstItem="tTs-f1-vfc" firstAttribute="top" secondItem="WOo-le-j3P" secondAttribute="top" constant="10" id="Rwg-85-SbJ"/>
+                            <constraint firstItem="tTs-f1-vfc" firstAttribute="centerX" secondItem="WOo-le-j3P" secondAttribute="centerX" id="k9F-nB-Q5y"/>
+                            <constraint firstItem="cLL-Le-K2c" firstAttribute="centerY" secondItem="WOo-le-j3P" secondAttribute="centerY" id="qFg-pU-ZiX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="labelColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="WOo-le-j3P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H84-3C-mtK"/>
+                <constraint firstAttribute="trailing" secondItem="WOo-le-j3P" secondAttribute="trailing" id="WDJ-ez-wiL"/>
+                <constraint firstAttribute="bottom" secondItem="WOo-le-j3P" secondAttribute="bottom" id="kxE-I5-0QO"/>
+                <constraint firstItem="WOo-le-j3P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="txF-xC-UgX"/>
+            </constraints>
+            <size key="customSize" width="250" height="150"/>
+            <point key="canvasLocation" x="282.60869565217394" y="159.375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
