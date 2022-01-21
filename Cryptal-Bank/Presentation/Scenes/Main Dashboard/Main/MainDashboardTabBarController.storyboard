@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="775" y="185"/>
         </scene>
-        <!--HomeDashboardViewController-->
+        <!--HomeDashboardNavigationController-->
         <scene sceneID="dIk-hl-A5S">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeDashboardViewController" referencedIdentifier="HomeDashboardViewController" id="TVs-MK-e53" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="HomeDashboardViewController" referencedIdentifier="HomeDashboardNavigationController" id="TVs-MK-e53" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VGL-S5-MET"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVH-i6-fb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

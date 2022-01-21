@@ -25,7 +25,7 @@ struct UDManager {
     }
     
     static func isNotFirstInstall()-> Bool {
-        
+        return true
         if  !ud.bool(forKey: FIRSTLY_USER_OPEN_APP){
             ud.set(true, forKey: FIRSTLY_USER_OPEN_APP)
             return true

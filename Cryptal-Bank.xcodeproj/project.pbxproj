@@ -31,6 +31,7 @@
 		3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */; };
 		3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */; };
 		3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */; };
+		3B7C769E279A0A8B00EEE5DA /* HomeDashboardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C769D279A0A8B00EEE5DA /* HomeDashboardNavigationController.swift */; };
 		3B824B1C27824F57008E26FF /* ProfileTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B824B1B27824F57008E26FF /* ProfileTabViewController.storyboard */; };
 		3B824B1E27824F65008E26FF /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B1D27824F65008E26FF /* ProfileTabViewController.swift */; };
 		3B824B20278253E8008E26FF /* ImgViewsCustomisations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B824B1F278253E8008E26FF /* ImgViewsCustomisations.swift */; };
@@ -46,6 +47,8 @@
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
 		3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */; };
+		3BC63AF62799EF33007EA638 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC63AF52799EF33007EA638 /* AddCardViewController.swift */; };
+		3BC63AF82799EF67007EA638 /* AddCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */; };
 		3BD1FBE22798215200CAFAEE /* PlusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */; };
 		3BD1FBE32798215200CAFAEE /* PlusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */; };
 		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
@@ -233,6 +236,7 @@
 		3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		3B7C2DF4276B37F200F7DD28 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		3B7C2DF6276B37FE00F7DD28 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
+		3B7C769D279A0A8B00EEE5DA /* HomeDashboardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardNavigationController.swift; sourceTree = "<group>"; };
 		3B824B1B27824F57008E26FF /* ProfileTabViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileTabViewController.storyboard; sourceTree = "<group>"; };
 		3B824B1D27824F65008E26FF /* ProfileTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
 		3B824B1F278253E8008E26FF /* ImgViewsCustomisations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewsCustomisations.swift; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		3BC63AF52799EF33007EA638 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCardViewController.storyboard; sourceTree = "<group>"; };
 		3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusCollectionViewCell.xib; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
@@ -593,6 +599,7 @@
 		3B824B212782583D008E26FF /* Home Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				3BC63AF42799EECC007EA638 /* Add Card scene */,
 				3B824B262782672E008E26FF /* View */,
 				3B824B2727826739008E26FF /* ViewModel */,
 			);
@@ -606,6 +613,7 @@
 				3B91B76A2787B4A400921544 /* Cards cell */,
 				3B824B2227825865008E26FF /* HomeDashboardViewController.swift */,
 				3B824B2427825879008E26FF /* HomeDashboardViewController.storyboard */,
+				3B7C769D279A0A8B00EEE5DA /* HomeDashboardNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -663,6 +671,15 @@
 				3B824B1A27824EF7008E26FF /* Profile bar */,
 			);
 			path = "Main Dashboard";
+			sourceTree = "<group>";
+		};
+		3BC63AF42799EECC007EA638 /* Add Card scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BC63AF52799EF33007EA638 /* AddCardViewController.swift */,
+				3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */,
+			);
+			path = "Add Card scene";
 			sourceTree = "<group>";
 		};
 		3BD1FBDF2798212B00CAFAEE /* Plus cell */ = {
@@ -1133,6 +1150,7 @@
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
 				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
 				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
+				3BC63AF82799EF67007EA638 /* AddCardViewController.storyboard in Resources */,
 				8874F76C277DE934006B6F23 /* BiometricsViewController.storyboard in Resources */,
 				3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */,
 				885EE79127762FEA0045C510 /* CalendarViewController.storyboard in Resources */,
@@ -1237,8 +1255,10 @@
 				3B6C47AD2772A203008AD740 /* ExchangeDataManager.swift in Sources */,
 				3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */,
 				3B6C47A2277104C5008AD740 /* AppIntroPageCell.swift in Sources */,
+				3B7C769E279A0A8B00EEE5DA /* HomeDashboardNavigationController.swift in Sources */,
 				3B6C47922770EF51008AD740 /* UICollectionView+Extension.swift in Sources */,
 				3B824B20278253E8008E26FF /* ImgViewsCustomisations.swift in Sources */,
+				3BC63AF62799EF33007EA638 /* AddCardViewController.swift in Sources */,
 				88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */,
 				3B6C479F277101E5008AD740 /* AppIntroPageModel.swift in Sources */,
 				3B91B7692787AC3E00921544 /* HomeDashboardCardsDataService.swift in Sources */,
@@ -1468,6 +1488,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J4383386FU;
@@ -1487,6 +1508,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ika.ikakooo.pro.CryptalBank;
 				PRODUCT_NAME = "Cryptal Bank";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1499,6 +1521,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J4383386FU;
@@ -1518,6 +1541,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ika.ikakooo.pro.CryptalBank;
 				PRODUCT_NAME = "Cryptal Bank";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1531,6 +1555,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1555,6 +1580,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1576,8 +1602,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					HEADER_SEARCH_PATHS,
@@ -1608,8 +1636,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					HEADER_SEARCH_PATHS,
@@ -1696,12 +1726,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cryptal Bank Watch WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Cryptal_Bank_Watch_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = Cryptal_Bank_Watch_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1709,7 +1740,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Criptal-Bank-Watch.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1726,12 +1757,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cryptal Bank Watch WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Cryptal_Bank_Watch_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = Cryptal_Bank_Watch_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1739,7 +1771,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Criptal-Bank-Watch.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1758,12 +1790,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Cryptal_Bank_Watch_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Criptal-Bank-Watch.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1782,12 +1815,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Cryptal_Bank_Watch_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Cryptal Bank Watch WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Criptal-Bank-Watch.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1803,8 +1837,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Criptal-Bank-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1815,8 +1850,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4383386FU;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Cryptal-Bank-Watch";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.George.Criptal-Bank-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

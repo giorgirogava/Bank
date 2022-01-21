@@ -41,16 +41,6 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
     }
     
     func refresh(end: @escaping () -> ()) {
-        viewModel.saveCard(card: CardModel(name: "String?",
-                                           owner: "String",
-                                           colour: 0x008000,
-                                           expireData: "09/26",
-                                           cardnumber: "XXXXX XXXX XXXX 6756",
-                                           AcountNumber: "XXXX XXXXX 3434",
-                                           cardType: CardType.VISA,
-                                           money: [Money(balances: 121232.23, currency: CurrencyType.GEL),
-                                                   Money(balances: 14352.23, currency: CurrencyType.USD)]
-                                          ))
         
         //         viewModel.getCards(){ [unowned self] all in
         //             cards = all
@@ -123,6 +113,11 @@ extension HomeDashboardCardsDataService: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if indexPath.row == cards.count {
+            let sb = UIStoryboard(name: "AddCardViewController", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "AddCardViewController")
+            controller.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }
