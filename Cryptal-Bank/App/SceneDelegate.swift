@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
 //        // for fast development  HomeDashboardViewController
-//        let sb = UIStoryboard(name: "HomeDashboardViewController", bundle: nil)
-//        vc = sb.instantiateViewController(withIdentifier: "HomeDashboardViewController")
+//        let sb = UIStoryboard(name: "CryptoViewController", bundle: nil)
+//        vc = sb.instantiateViewController(withIdentifier: "CryptoViewController")
 //        ////////////////// open View Controller first for fast development
         
         if UDManager.isNotFirstInstall(){

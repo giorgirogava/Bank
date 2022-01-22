@@ -17,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 50 Crypto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbg-xY-cVj">
-                                <rect key="frame" x="24" y="145" width="185" height="36"/>
+                                <rect key="frame" x="24" y="140" width="185" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bmH-5c-irg">
-                                <rect key="frame" x="0.0" y="181" width="414" height="632"/>
+                                <rect key="frame" x="5" y="176" width="409" height="637"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mbg-xY-cVj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="LcB-t4-bzd"/>
+                            <constraint firstItem="mbg-xY-cVj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="LcB-t4-bzd"/>
                             <constraint firstItem="mbg-xY-cVj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="R2C-QE-4ts"/>
-                            <constraint firstItem="bmH-5c-irg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="S8c-ST-9X5"/>
+                            <constraint firstItem="bmH-5c-irg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="S8c-ST-9X5"/>
                             <constraint firstItem="bmH-5c-irg" firstAttribute="top" secondItem="mbg-xY-cVj" secondAttribute="bottom" id="UdG-97-N55"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bmH-5c-irg" secondAttribute="trailing" id="W4O-Qs-5ay"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="bmH-5c-irg" secondAttribute="bottom" id="cVd-k7-RaV"/>

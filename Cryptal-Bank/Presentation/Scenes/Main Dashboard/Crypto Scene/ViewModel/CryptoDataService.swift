@@ -30,6 +30,7 @@ class CryptoDataService: NSObject, UITableViewDataSource {
        // self.tableView.isPagingEnabled = true
         self.tableView.showsHorizontalScrollIndicator = false
         self.tableView.registerNib(class: CryptoTableViewCell.self)
+       // self.tableView.contentInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
         
         self.viewModel = viewModel
     }
@@ -62,9 +63,9 @@ class CryptoDataService: NSObject, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 70
+//    }
 }
 
 extension  CryptoDataService: UITableViewDelegate {
