@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile Tab View Controller-->
+        <!--Profile-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="ProfileTabViewController" id="Y6W-OH-hqX" customClass="ProfileTabViewController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,6 +50,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="Ivp-lZ-SmC" kind="show" id="Hww-fz-TUj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4b-8A-5wW">
                                 <rect key="frame" x="119" y="406" width="92" height="34.666666666666686"/>
@@ -58,6 +61,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Account">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ivp-lZ-SmC" kind="show" id="lpP-tQ-z2G"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-FA-ZGF">
                                 <rect key="frame" x="31" y="448.33333333333331" width="344" height="1"/>
@@ -73,6 +79,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="cWJ-OG-GJe" kind="show" id="H8N-ec-vuW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-Ok-dYu">
                                 <rect key="frame" x="119" y="458.66666666666669" width="129" height="35"/>
@@ -81,6 +90,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Notifications">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="cWJ-OG-GJe" kind="show" id="YwK-09-aPd"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0au-lU-0Hy">
                                 <rect key="frame" x="31" y="501.33333333333331" width="344" height="1"/>
@@ -213,7 +225,7 @@
                             <constraint firstItem="TQP-cp-lxU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="87" id="ys5-sK-chN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" landscapeImage="person" largeContentSizeImage="person" id="agg-uk-Bik">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" landscapeImage="person" largeContentSizeImage="person" id="agg-uk-Bik">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -222,12 +234,38 @@
             </objects>
             <point key="canvasLocation" x="134.78260869565219" y="91.741071428571431"/>
         </scene>
+        <!--NotificationController-->
+        <scene sceneID="UXd-5s-5Rw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NotificationController" referencedIdentifier="NotificationController" id="cWJ-OG-GJe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zRp-Ud-OdQ"/>
+                    <navigationItem key="navigationItem" id="zSo-Lt-Ry7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiQ-WU-4fM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="185"/>
+        </scene>
+        <!--BiometricsViewController-->
+        <scene sceneID="vMx-WD-key">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BiometricsViewController" storyboardName="BiometricsViewController" referencedIdentifier="BiometricsViewController" id="Ivp-lZ-SmC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="1nI-dW-3mV"/>
+                    <navigationItem key="navigationItem" id="Xf8-IU-lpq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="545-Ik-Gtf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="-53"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="TQP-cp-lxU">
             <size key="intrinsicContentSize" width="402" height="531"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hww-fz-TUj"/>
+        <segue reference="YwK-09-aPd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_3X4" width="402" height="531"/>
         <image name="arrow.up.and.person.rectangle.portrait" catalog="system" width="128" height="100"/>
