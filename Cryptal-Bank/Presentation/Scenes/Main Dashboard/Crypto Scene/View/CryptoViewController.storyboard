@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVt-18-19C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVt-18-19C">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,12 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 50 Crypto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbg-xY-cVj">
+                                <rect key="frame" x="24" y="145" width="185" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bmH-5c-irg">
+                                <rect key="frame" x="0.0" y="181" width="414" height="632"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mbg-xY-cVj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="LcB-t4-bzd"/>
+                            <constraint firstItem="mbg-xY-cVj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="R2C-QE-4ts"/>
+                            <constraint firstItem="bmH-5c-irg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="S8c-ST-9X5"/>
+                            <constraint firstItem="bmH-5c-irg" firstAttribute="top" secondItem="mbg-xY-cVj" secondAttribute="bottom" id="UdG-97-N55"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bmH-5c-irg" secondAttribute="trailing" id="W4O-Qs-5ay"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="bmH-5c-irg" secondAttribute="bottom" id="cVd-k7-RaV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Investment" image="ic_investment" landscapeImage="ic_investment" largeContentSizeImage="ic_investment" id="sDm-tD-SYd"/>
                     <navigationItem key="navigationItem" id="kZu-NY-Ymc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cryptoTableView" destination="bmH-5c-irg" id="dKy-YB-C7P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -50,6 +50,13 @@
 		3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */; };
 		3BC63AF62799EF33007EA638 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC63AF52799EF33007EA638 /* AddCardViewController.swift */; };
 		3BC63AF82799EF67007EA638 /* AddCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */; };
+		3BCA277E279B10D400D496E3 /* CryptoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA277D279B10D400D496E3 /* CryptoDataService.swift */; };
+		3BCA2780279B111500D496E3 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA277F279B111500D496E3 /* CryptoViewModel.swift */; };
+		3BCA2783279B27C900D496E3 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA2781279B27C900D496E3 /* CryptoTableViewCell.swift */; };
+		3BCA2784279B27C900D496E3 /* CryptoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCA2782279B27C900D496E3 /* CryptoTableViewCell.xib */; };
+		3BCA2787279B419A00D496E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3BCA2786279B419A00D496E3 /* Kingfisher */; };
+		3BCA2789279B4E4100D496E3 /* CryptoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA2788279B4E4100D496E3 /* CryptoDataManager.swift */; };
+		3BCA278B279B4F2900D496E3 /* CryptoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA278A279B4F2900D496E3 /* CryptoConstants.swift */; };
 		3BD1FBE22798215200CAFAEE /* PlusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */; };
 		3BD1FBE32798215200CAFAEE /* PlusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */; };
 		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
@@ -130,7 +137,6 @@
 		8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */; };
 		88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CAE276BA8350032C290 /* CryptoViewController.swift */; };
 		88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */; };
-		88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +249,12 @@
 		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3BC63AF52799EF33007EA638 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCardViewController.storyboard; sourceTree = "<group>"; };
+		3BCA277D279B10D400D496E3 /* CryptoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataService.swift; sourceTree = "<group>"; };
+		3BCA277F279B111500D496E3 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		3BCA2781279B27C900D496E3 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		3BCA2782279B27C900D496E3 /* CryptoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoTableViewCell.xib; sourceTree = "<group>"; };
+		3BCA2788279B4E4100D496E3 /* CryptoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataManager.swift; sourceTree = "<group>"; };
+		3BCA278A279B4F2900D496E3 /* CryptoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConstants.swift; sourceTree = "<group>"; };
 		3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusCollectionViewCell.xib; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
@@ -304,7 +316,6 @@
 		8877099E27721F7100D8C965 /* NationalCurrencyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NationalCurrencyViewController.storyboard; sourceTree = "<group>"; };
 		88800CAE276BA8350032C290 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
-		88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +331,7 @@
 				3BF99FD127637C21009A287C /* FirebaseStorage in Frameworks */,
 				3BF99FAD27637C21009A287C /* FirebaseAuth in Frameworks */,
 				3BF99FD527637C21009A287C /* FirebaseStorageSwift-Beta in Frameworks */,
+				3BCA2787279B419A00D496E3 /* Kingfisher in Frameworks */,
 				3BF99FC327637C21009A287C /* FirebaseInAppMessaging-Beta in Frameworks */,
 				3BF99FA527637C21009A287C /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				3BF99FC927637C21009A287C /* FirebaseMLModelDownloader in Frameworks */,
@@ -411,6 +423,7 @@
 			children = (
 				3B6C47A527729D8A008AD740 /* NetworkManager.swift */,
 				3B6C47AC2772A203008AD740 /* ExchangeDataManager.swift */,
+				3BCA2788279B4E4100D496E3 /* CryptoDataManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -501,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				3B6C47AA27729EC8008AD740 /* ExchangeRatesConstants.swift */,
+				3BCA278A279B4F2900D496E3 /* CryptoConstants.swift */,
 				3BF594EE27814680004D1988 /* Servers.swift */,
 			);
 			path = Contants;
@@ -662,8 +676,29 @@
 		3BCA277A279B0AD700D496E3 /* Crypto Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3BCA2781279B27C900D496E3 /* CryptoTableViewCell.swift */,
+				3BCA2782279B27C900D496E3 /* CryptoTableViewCell.xib */,
 			);
 			path = "Crypto Cell";
+			sourceTree = "<group>";
+		};
+		3BCA277B279B0F2500D496E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BCA277D279B10D400D496E3 /* CryptoDataService.swift */,
+				3BCA277F279B111500D496E3 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BCA277C279B0F3100D496E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BCA277A279B0AD700D496E3 /* Crypto Cell */,
+				88800CAE276BA8350032C290 /* CryptoViewController.swift */,
+				88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3BD1FBDF2798212B00CAFAEE /* Plus cell */ = {
@@ -878,10 +913,8 @@
 		88800CB0276BA83E0032C290 /* Crypto Scene */ = {
 			isa = PBXGroup;
 			children = (
-				3BCA277A279B0AD700D496E3 /* Crypto Cell */,
-				88800CB3276BAA5B0032C290 /* CryptoTableViewCell.swift */,
-				88800CAE276BA8350032C290 /* CryptoViewController.swift */,
-				88800CB1276BA8DD0032C290 /* CryptoViewController.storyboard */,
+				3BCA277C279B0F3100D496E3 /* View */,
+				3BCA277B279B0F2500D496E3 /* ViewModel */,
 			);
 			path = "Crypto Scene";
 			sourceTree = "<group>";
@@ -932,6 +965,7 @@
 				3BF99FD427637C21009A287C /* FirebaseStorageSwift-Beta */,
 				885EE78B27762EEB0045C510 /* FSCalendar */,
 				885A21D02778BB7F00C7E5CA /* Charts */,
+				3BCA2786279B419A00D496E3 /* Kingfisher */,
 			);
 			productName = "Cryptal-Bank";
 			productReference = 3BF99F692763767B009A287C /* Cryptal Bank.app */;
@@ -1069,6 +1103,7 @@
 				3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				885EE78A27762EEB0045C510 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 				885A21CF2778BB7F00C7E5CA /* XCRemoteSwiftPackageReference "Charts" */,
+				3BCA2785279B419A00D496E3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3BF99F6A2763767B009A287C /* Products */;
 			projectDirPath = "";
@@ -1094,6 +1129,7 @@
 				3BF99FA027637B20009A287C /* GoogleService-Info.plist in Resources */,
 				3BF99F792763767D009A287C /* Assets.xcassets in Resources */,
 				3B824B2527825879008E26FF /* HomeDashboardViewController.storyboard in Resources */,
+				3BCA2784279B27C900D496E3 /* CryptoTableViewCell.xib in Resources */,
 				885498E3277B45E7003EFED0 /* IDCardViewController.storyboard in Resources */,
 				885A21C62778B50200C7E5CA /* GraphsAndChartsViewController.storyboard in Resources */,
 				8877099F27721F7100D8C965 /* NationalCurrencyViewController.storyboard in Resources */,
@@ -1187,6 +1223,7 @@
 				3B7C76A0279A719E00EEE5DA /* ViewController+Extensions.swift in Sources */,
 				885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */,
 				3B91B76D2787B4E100921544 /* CardsCollectionViewCell.swift in Sources */,
+				3BCA277E279B10D400D496E3 /* CryptoDataService.swift in Sources */,
 				3BF594EF27814680004D1988 /* Servers.swift in Sources */,
 				3B824B2B278267E6008E26FF /* HomeDashboardViewModel.swift in Sources */,
 				8852A11E2789EFA800C516A0 /* Extensions.swift in Sources */,
@@ -1198,6 +1235,7 @@
 				3BE39A452773B95F00A230B2 /* ExchangeRates.swift in Sources */,
 				3B6C47AD2772A203008AD740 /* ExchangeDataManager.swift in Sources */,
 				3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */,
+				3BCA2789279B4E4100D496E3 /* CryptoDataManager.swift in Sources */,
 				3B6C47A2277104C5008AD740 /* AppIntroPageCell.swift in Sources */,
 				3B7C769E279A0A8B00EEE5DA /* HomeDashboardNavigationController.swift in Sources */,
 				3B6C47922770EF51008AD740 /* UICollectionView+Extension.swift in Sources */,
@@ -1208,15 +1246,17 @@
 				3B91B7692787AC3E00921544 /* HomeDashboardCardsDataService.swift in Sources */,
 				3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */,
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
+				3BCA278B279B4F2900D496E3 /* CryptoConstants.swift in Sources */,
 				885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */,
 				3BFED47727811475007109AF /* LogInViewDataService.swift in Sources */,
 				3B6C47902770EF19008AD740 /* UICollectionViewCell+Extension.swift in Sources */,
 				3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */,
 				3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */,
 				3B6C47A827729DCC008AD740 /* URLExtensions.swift in Sources */,
+				3BCA2783279B27C900D496E3 /* CryptoTableViewCell.swift in Sources */,
 				3BFED472278111C2007109AF /* CreateAccountViewModel.swift in Sources */,
-				88800CB4276BAA5B0032C290 /* CryptoTableViewCell.swift in Sources */,
 				3B824B1E27824F65008E26FF /* ProfileTabViewController.swift in Sources */,
+				3BCA2780279B111500D496E3 /* CryptoViewModel.swift in Sources */,
 				3B6C47AF2772A761008AD740 /* UDManager.swift in Sources */,
 				885A21C82778B6D500C7E5CA /* LineViewController.swift in Sources */,
 				3BFED475278112A7007109AF /* DialogAlertsForActions.swift in Sources */,
@@ -1802,6 +1842,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3BCA2785279B419A00D496E3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 8.0.0;
+				minimumVersion = 7.0.0;
+			};
+		};
 		3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1831,6 +1880,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3BCA2786279B419A00D496E3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BCA2785279B419A00D496E3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		3BF99FA227637C21009A287C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3BF99FA127637C21009A287C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
