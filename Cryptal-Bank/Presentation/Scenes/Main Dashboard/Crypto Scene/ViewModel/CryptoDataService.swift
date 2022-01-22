@@ -15,7 +15,7 @@ class CryptoDataService: NSObject, UITableViewDataSource {
     weak private var viewModel: CryptoViewModelProtocol!
     private var cryptos = [CryptoModelElement](){
         didSet{
-            tableView.reloadData()
+            tableView.reloadWithAnimation()
         }
     }
     

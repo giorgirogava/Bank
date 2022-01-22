@@ -33,13 +33,13 @@ class HomeDashboardTotalBallanceDataService:NSObject {
         viewModel.isHidenLive(){ [unowned self] hiden in
             if hiden {
                 self.eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
-                ballanceLabel.text = "$ $ $ $"
+                ballanceLabel.setWithScaleAnimation(text: "$ $ $ $")
                 currencyLabel.isHidden = true
             }else {
                 self.eyeButton.setImage(UIImage(systemName: "eye"), for: .normal)
                 
                 viewModel.totalBalanceSingle(){[unowned self] balance in
-                    ballanceLabel.text = balance.moneyFormat()
+                    ballanceLabel.setWithScaleAnimation(text: balance.moneyFormat())
                     currencyLabel.isHidden = false
                 }
             }
@@ -57,11 +57,11 @@ class HomeDashboardTotalBallanceDataService:NSObject {
         viewModel.isHidenLive(){ [unowned self] hiden in
             if hiden {
                 self.eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
-                ballanceLabel.text = "$ $ $ $"
+                ballanceLabel.setWithScaleAnimation(text: "$ $ $ $")
                 currencyLabel.isHidden = true
             }else {
                 self.eyeButton.setImage(UIImage(systemName: "eye"), for: .normal)
-                    ballanceLabel.text = money?.moneyFormat() ?? "0"
+                ballanceLabel.setWithScaleAnimation(text: money?.moneyFormat() ?? "0")
                     currencyLabel.isHidden = false
             }
     }

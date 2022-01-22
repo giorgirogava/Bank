@@ -87,13 +87,21 @@ class HomeDashboardCardsDataService: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        
         if indexPath.row < cards.count {
             let  cell = collectionView.deque(class: CardsCollectionViewCell.self, for: indexPath)
             cell.configure(with: cards[indexPath.row])
+            cell.gridAnimationCell(indexPath: indexPath)
+            
             return cell
         }else {
-            return collectionView.deque(class: PlusCollectionViewCell.self, for: indexPath)
+            let  cell = collectionView.deque(class: PlusCollectionViewCell.self, for: indexPath)
+            cell.gridAnimationCell(indexPath: indexPath)
+            return cell
         }
+        
+       
+
     }
     
 }
