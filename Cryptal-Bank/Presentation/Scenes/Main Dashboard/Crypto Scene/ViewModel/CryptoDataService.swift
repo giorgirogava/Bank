@@ -10,6 +10,8 @@ import UIKit
 class CryptoDataService: NSObject, UITableViewDataSource {
     weak private var controller: UIViewController!
     weak private var tableView: UITableView!
+    private let refreshControl = UIRefreshControl()
+    
     weak private var viewModel: CryptoViewModelProtocol!
     private var cryptos = [CryptoModelElement](){
         didSet{
@@ -30,12 +32,21 @@ class CryptoDataService: NSObject, UITableViewDataSource {
        // self.tableView.isPagingEnabled = true
         self.tableView.showsHorizontalScrollIndicator = false
         self.tableView.registerNib(class: CryptoTableViewCell.self)
-       // self.tableView.contentInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
+        self.tableView.refreshControl = refreshControl
+        refreshControl.attributedTitle = NSAttributedString(string: "Loading...")
+        self.refreshControl.addTarget(self, action: #selector(swiperefresh(_:)), for: .valueChanged)
         
         self.viewModel = viewModel
     }
     
-    func loadTableView(){
+    @objc private func swiperefresh(_ sender: Any) {
+        
+        loadTableView(){
+            self.refreshControl.endRefreshing()
+        }
+    }
+    
+    func loadTableView(end: @escaping () -> ()){
         networkManager = NetworkManager()
         // DI - Dependenc injection
         cryptoDataManager = CryptoDataManager(networkManager: networkManager)
@@ -43,6 +54,7 @@ class CryptoDataService: NSObject, UITableViewDataSource {
         cryptoDataManager.getCrypto(){ [weak self] all in
             DispatchQueue.main.async {
             self?.cryptos = all
+                end()
             }
         }
     }
