@@ -21,6 +21,7 @@
                         <segue destination="uXl-GM-fda" kind="relationship" relationship="viewControllers" id="Iph-VV-gAe"/>
                         <segue destination="IJa-Wd-6ch" kind="relationship" relationship="viewControllers" id="wIl-77-JGi"/>
                         <segue destination="Rla-vh-8M8" kind="relationship" relationship="viewControllers" id="pKo-Il-zRM"/>
+                        <segue destination="8eJ-iA-oRJ" kind="relationship" relationship="viewControllers" id="AFL-Mb-P9T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8M-OE-kaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -66,7 +67,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2D-Xo-Bwn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-206"/>
+            <point key="canvasLocation" x="759" y="-208"/>
+        </scene>
+        <!--NationalCurrencyExchangeNavigationController-->
+        <scene sceneID="Xv2-Nq-9Wo">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NationalCurrencyExchangeNavigationController" storyboardName="NationalCurrencyExchangeViewController" referencedIdentifier="NationalCurrencyExchangeNavigationController" id="8eJ-iA-oRJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VMA-zt-igm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQw-zZ-kSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-172"/>
         </scene>
         <!--HomeDashboardNavigationController-->
         <scene sceneID="dIk-hl-A5S">
