@@ -58,6 +58,7 @@
 		3BCA2789279B4E4100D496E3 /* CryptoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA2788279B4E4100D496E3 /* CryptoDataManager.swift */; };
 		3BCA278B279B4F2900D496E3 /* CryptoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA278A279B4F2900D496E3 /* CryptoConstants.swift */; };
 		3BCA278D279BFC9A00D496E3 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA278C279BFC9A00D496E3 /* UILabel+Extensions.swift */; };
+		3BCA278F279C274300D496E3 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA278E279C274300D496E3 /* ProfileNavigationController.swift */; };
 		3BD1FBE22798215200CAFAEE /* PlusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */; };
 		3BD1FBE32798215200CAFAEE /* PlusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */; };
 		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
@@ -257,6 +258,7 @@
 		3BCA2788279B4E4100D496E3 /* CryptoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataManager.swift; sourceTree = "<group>"; };
 		3BCA278A279B4F2900D496E3 /* CryptoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConstants.swift; sourceTree = "<group>"; };
 		3BCA278C279BFC9A00D496E3 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		3BCA278E279C274300D496E3 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 		3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusCollectionViewCell.xib; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
@@ -586,6 +588,7 @@
 			children = (
 				3B824B1D27824F65008E26FF /* ProfileTabViewController.swift */,
 				3B824B1B27824F57008E26FF /* ProfileTabViewController.storyboard */,
+				3BCA278E279C274300D496E3 /* ProfileNavigationController.swift */,
 			);
 			path = "Profile bar";
 			sourceTree = "<group>";
@@ -1225,6 +1228,7 @@
 				3BCA278D279BFC9A00D496E3 /* UILabel+Extensions.swift in Sources */,
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
 				3B7C76A0279A719E00EEE5DA /* ViewController+Extensions.swift in Sources */,
+				3BCA278F279C274300D496E3 /* ProfileNavigationController.swift in Sources */,
 				885A21C42778B4CA00C7E5CA /* BarViewController.swift in Sources */,
 				3B91B76D2787B4E100921544 /* CardsCollectionViewCell.swift in Sources */,
 				3BCA277E279B10D400D496E3 /* CryptoDataService.swift in Sources */,

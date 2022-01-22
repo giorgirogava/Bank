@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="780" y="88"/>
         </scene>
-        <!--ProfileTabViewController-->
+        <!--ProfileNavigationController-->
         <scene sceneID="Tk2-Yx-34O">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProfileTabViewController" referencedIdentifier="ProfileTabViewController" id="Rla-vh-8M8" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ProfileTabViewController" referencedIdentifier="ProfileNavigationController" id="Rla-vh-8M8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="RFJ-Sg-V1K"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2D-Xo-Bwn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

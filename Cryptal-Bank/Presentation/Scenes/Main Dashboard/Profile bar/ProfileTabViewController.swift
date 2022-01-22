@@ -12,7 +12,7 @@ class ProfileTabViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view. ProfileNavigationController UINavigationController
     }
     
     @IBAction private func onLogOutButtonClick(_ sender: Any) {
