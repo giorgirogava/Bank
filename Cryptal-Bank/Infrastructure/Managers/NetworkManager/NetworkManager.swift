@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol NetworkManagerProtocol: AnyObject {
-    func get<T: Codable>(url: String,path:String, queryParams:[String: String], completion: @escaping ((Result<T, Error>) -> Void))
+    func get<T: Codable>(url: String,path:String, HTTPHeaderFields:[String: String], queryParams:[String: String], completion: @escaping ((Result<T, Error>) -> Void))
     func post<T: Codable>(url: String,path:String, queryParams:[String: String], body: [String: Any], completion: @escaping ((Result<T, Error>) -> Void))
 }
 
@@ -22,7 +22,7 @@ class NetworkManager: NetworkManagerProtocol {
     
     typealias completionBlock<T: Codable> = ((Result<T, Error>) -> Void)
     
-    func get<T: Codable>(url: String,path:String, queryParams:[String: String], completion: @escaping completionBlock<T>) {
+    func get<T: Codable>(url: String,path:String, HTTPHeaderFields:[String: String], queryParams:[String: String], completion: @escaping completionBlock<T>) {
         
         guard var fullURL = URL(string: url+path) else { return }
         for (key, value) in queryParams {
@@ -33,6 +33,9 @@ class NetworkManager: NetworkManagerProtocol {
         var urlRequest = URLRequest(url: fullURL)
         urlRequest.httpMethod = "GET" // GET PUT DELETE
         
+        for (key, value) in HTTPHeaderFields {
+        urlRequest.addValue(value, forHTTPHeaderField: key)
+        }
         
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             

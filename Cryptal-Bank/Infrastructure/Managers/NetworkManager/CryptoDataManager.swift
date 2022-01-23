@@ -20,7 +20,7 @@ class CryptoDataManager {
                        "per_page":"50",
                        "order":"market_cap_desc"]
         
-        networkManager.get(url: CryptoConstants.BASE_URL_CRYPTO, path: CryptoConstants.CRYPTO_URL_PATH , queryParams: queries) { (result: Result<CryptoModel, Error>) in
+        networkManager.get(url: CryptoConstants.BASE_URL_CRYPTO, path: CryptoConstants.CRYPTO_URL_PATH, HTTPHeaderFields: [:] , queryParams: queries) { (result: Result<CryptoModel, Error>) in
             switch result {
             case .success(let apiResponse):
                 completion(apiResponse)

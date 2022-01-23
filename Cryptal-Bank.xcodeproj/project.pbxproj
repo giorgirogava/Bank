@@ -44,6 +44,7 @@
 		3B91B76D2787B4E100921544 /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91B76B2787B4E100921544 /* CardsCollectionViewCell.swift */; };
 		3B91B76E2787B4E100921544 /* CardsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B91B76C2787B4E100921544 /* CardsCollectionViewCell.xib */; };
 		3B91B7702787B84F00921544 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91B76F2787B84F00921544 /* CardModel.swift */; };
+		3B9C2007279D34EF00BFD4E3 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C2006279D34EF00BFD4E3 /* DropDown.swift */; };
 		3B9D00DA2778F12700874FB0 /* FloatingLabelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */; };
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
@@ -69,6 +70,9 @@
 		3BE39A452773B95F00A230B2 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099C27721F5B00D8C965 /* ExchangeRates.swift */; };
 		3BE6276F2787CC1900983F73 /* Colours+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6276E2787CC1900983F73 /* Colours+Extensions.swift */; };
 		3BE627712787E11400983F73 /* StackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE627702787E11400983F73 /* StackView+Extensions.swift */; };
+		3BEE898C279D72200086CA20 /* CurrencyExchangeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE898B279D72200086CA20 /* CurrencyExchangeDataManager.swift */; };
+		3BEE898E279D7BFD0086CA20 /* ExchangeFromToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE898D279D7BFD0086CA20 /* ExchangeFromToModel.swift */; };
+		3BEE8990279D8B110086CA20 /* AllNationalCurrenciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE898F279D8B110086CA20 /* AllNationalCurrenciesModel.swift */; };
 		3BF594EF27814680004D1988 /* Servers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF594EE27814680004D1988 /* Servers.swift */; };
 		3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6C2763767B009A287C /* AppDelegate.swift */; };
 		3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6E2763767B009A287C /* SceneDelegate.swift */; };
@@ -248,6 +252,7 @@
 		3B91B76B2787B4E100921544 /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B91B76C2787B4E100921544 /* CardsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsCollectionViewCell.xib; sourceTree = "<group>"; };
 		3B91B76F2787B84F00921544 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		3B9C2006279D34EF00BFD4E3 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelInput.swift; sourceTree = "<group>"; };
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
@@ -270,6 +275,9 @@
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		3BE6276E2787CC1900983F73 /* Colours+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colours+Extensions.swift"; sourceTree = "<group>"; };
 		3BE627702787E11400983F73 /* StackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extensions.swift"; sourceTree = "<group>"; };
+		3BEE898B279D72200086CA20 /* CurrencyExchangeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeDataManager.swift; sourceTree = "<group>"; };
+		3BEE898D279D7BFD0086CA20 /* ExchangeFromToModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeFromToModel.swift; sourceTree = "<group>"; };
+		3BEE898F279D8B110086CA20 /* AllNationalCurrenciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNationalCurrenciesModel.swift; sourceTree = "<group>"; };
 		3BF594EE27814680004D1988 /* Servers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servers.swift; sourceTree = "<group>"; };
 		3BF99F692763767B009A287C /* Cryptal Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF99F6C2763767B009A287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -415,6 +423,8 @@
 				3B6C479E277101E5008AD740 /* AppIntroPageModel.swift */,
 				3B6C47B02772A783008AD740 /* User.swift */,
 				3B91B76F2787B84F00921544 /* CardModel.swift */,
+				3BEE898D279D7BFD0086CA20 /* ExchangeFromToModel.swift */,
+				3BEE898F279D8B110086CA20 /* AllNationalCurrenciesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -434,6 +444,7 @@
 				3B6C47A527729D8A008AD740 /* NetworkManager.swift */,
 				3B6C47AC2772A203008AD740 /* ExchangeDataManager.swift */,
 				3BCA2788279B4E4100D496E3 /* CryptoDataManager.swift */,
+				3BEE898B279D72200086CA20 /* CurrencyExchangeDataManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -539,6 +550,7 @@
 				3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */,
 				3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */,
 				3B824B1F278253E8008E26FF /* ImgViewsCustomisations.swift */,
+				3B9C2006279D34EF00BFD4E3 /* DropDown.swift */,
 			);
 			path = "Custom UI Components";
 			sourceTree = "<group>";
@@ -1258,7 +1270,9 @@
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
 				3B6C479C2770F14A008AD740 /* AppIntroViewModel.swift in Sources */,
 				3B6C478E2770EEDB008AD740 /* CustomPageControl.swift in Sources */,
+				3BEE8990279D8B110086CA20 /* AllNationalCurrenciesModel.swift in Sources */,
 				3B7C2DEB276B361600F7DD28 /* AppIntroViewController.swift in Sources */,
+				3B9C2007279D34EF00BFD4E3 /* DropDown.swift in Sources */,
 				3BE39A452773B95F00A230B2 /* ExchangeRates.swift in Sources */,
 				3B6C47AD2772A203008AD740 /* ExchangeDataManager.swift in Sources */,
 				3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */,
@@ -1271,6 +1285,7 @@
 				88800CAF276BA8350032C290 /* CryptoViewController.swift in Sources */,
 				3BCA2796279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift in Sources */,
 				3B6C479F277101E5008AD740 /* AppIntroPageModel.swift in Sources */,
+				3BEE898C279D72200086CA20 /* CurrencyExchangeDataManager.swift in Sources */,
 				3B91B7692787AC3E00921544 /* HomeDashboardCardsDataService.swift in Sources */,
 				3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */,
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
@@ -1280,6 +1295,7 @@
 				3B6C47902770EF19008AD740 /* UICollectionViewCell+Extension.swift in Sources */,
 				3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */,
 				3BF99F772763767B009A287C /* Cryptal_Bank.xcdatamodeld in Sources */,
+				3BEE898E279D7BFD0086CA20 /* ExchangeFromToModel.swift in Sources */,
 				3B6C47A827729DCC008AD740 /* URLExtensions.swift in Sources */,
 				3BCA2783279B27C900D496E3 /* CryptoTableViewCell.swift in Sources */,
 				3BFED472278111C2007109AF /* CreateAccountViewModel.swift in Sources */,
