@@ -25,13 +25,13 @@ class NationalCurrencyExchangeViewController: UIViewController {
             
             print(rateTo)
         }
-        
+        let currencies = ["USD","EUR","GBP","AED","AMD","AVD","AZN","BGN","CAD","CHF","CNY","CZK","DKK","ILS","JPY","NOK","PLN","QAR","RUR","SAR","SEK","TRY","UKG"]
         
         // The list of array to display. Can be changed dynamically
-        dropDownFrom.optionArray = ["Option 1", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3"]
-        dropDownTo.optionArray = ["Option 1", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3", "Option 2", "Option 3"]
+        dropDownFrom.optionArray = currencies
+        dropDownTo.optionArray = currencies
         //Its Id Values and its optional
-        dropDownFrom.optionIds = [1,23,54,22]
+        //dropDownFrom.optionIds = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
 
         // Image Array its optional
         //dropDownFrom.ImageArray = [👩🏻‍🦳,🙊,🥞]
