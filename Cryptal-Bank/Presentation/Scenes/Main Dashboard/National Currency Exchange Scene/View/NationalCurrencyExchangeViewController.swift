@@ -12,14 +12,18 @@ class NationalCurrencyExchangeViewController: UIViewController {
     @IBOutlet weak var amount: FloatingLabelInput!
     @IBOutlet weak var dropDownFrom: DropDownView!
     @IBOutlet weak var dropDownTo: DropDownView!
+    @IBOutlet weak var nationalCurrencies: UITableView!
     
+    private var viewModel: NationalCurrencyExchangeViewModelProtocol!
+    private var nationalExBSDataService: NationalCurrencyExchangeBuySellDataService!
+    // DI
     private var networkManager: NetworkManagerProtocol!
     private var currencyExchangeDataManager: CurrencyExchangeDataManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         networkManager = NetworkManager()
-        // DI - Dependenc injection
+        // DI - Dependenc injection  NationalCurrencyExchangeViewModelProtocol
         currencyExchangeDataManager = CurrencyExchangeDataManager(networkManager: networkManager)
         
       
@@ -35,6 +39,7 @@ class NationalCurrencyExchangeViewController: UIViewController {
         dropDownTo.listDidDisappear() { [weak self] in
             self?.updateResultOfexchange()
         }
+        configureDataSource()
     }
     
     @IBAction func invertCurrencies(_ sender: Any) {
@@ -67,5 +72,13 @@ class NationalCurrencyExchangeViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    private func configureDataSource() {
+        unowned let vc = self
+        viewModel = NationalCurrencyExchangeViewModel()
+        nationalExBSDataService = NationalCurrencyExchangeBuySellDataService(withController: vc, with: nationalCurrencies, viewModel: viewModel)
+        
+        nationalExBSDataService.loadTableView(){}
     }
 }

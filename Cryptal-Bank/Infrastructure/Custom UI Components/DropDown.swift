@@ -519,7 +519,7 @@ class Arrow: UIView {
     }
 }
 
-extension UIView {
+fileprivate extension UIView {
 
     func dropShadow(scale: Bool = true) {
         layer.masksToBounds = false

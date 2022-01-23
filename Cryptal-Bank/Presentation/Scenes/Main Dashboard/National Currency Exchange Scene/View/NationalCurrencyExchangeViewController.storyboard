@@ -14,20 +14,20 @@
             <objects>
                 <viewController restorationIdentifier="NationalCurrencyExchangeViewController" storyboardIdentifier="NationalCurrencyExchangeViewController" id="Y6W-OH-hqX" customClass="NationalCurrencyExchangeViewController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mb-vi-UyQ">
-                                <rect key="frame" x="0.0" y="88" width="375" height="1078"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="803.99999999999989"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tv-bX-xnX" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1078"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1045.3333333333333"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75r-xi-fHj" customClass="UIViewAdditionalFeatures" customModule="Cryptal_Bank" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="15" width="345" height="155"/>
+                                                <rect key="frame" x="15" y="15" width="398" height="155"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZO4-ec-KJI" customClass="FloatingLabelInput" customModule="Cryptal_Bank" customModuleProvider="target">
-                                                        <rect key="frame" x="7" y="20" width="331" height="45"/>
+                                                        <rect key="frame" x="7" y="20" width="384" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="SZr-wS-eWP"/>
                                                         </constraints>
@@ -53,7 +53,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-Te-8Sz" userLabel="Drop Down from" customClass="DropDownView" customModule="Cryptal_Bank" customModuleProvider="target">
-                                                        <rect key="frame" x="195" y="90" width="143" height="45"/>
+                                                        <rect key="frame" x="221.66666666666663" y="90" width="169.33333333333337" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="ocD-jd-hMB"/>
                                                         </constraints>
@@ -84,7 +84,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCz-AK-d4z" userLabel="Drop Down to" customClass="DropDownView" customModule="Cryptal_Bank" customModuleProvider="target">
-                                                        <rect key="frame" x="7" y="90" width="143" height="45"/>
+                                                        <rect key="frame" x="7" y="90" width="169.66666666666666" height="45"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="E7M-n8-JHw"/>
@@ -116,7 +116,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnD-Su-I7I">
-                                                        <rect key="frame" x="155" y="95" width="35" height="35"/>
+                                                        <rect key="frame" x="181.66666666666666" y="95" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="35" id="Dgt-sj-raa"/>
                                                             <constraint firstAttribute="height" constant="35" id="Fno-ca-Snu"/>
@@ -131,7 +131,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tae-PI-NnX">
-                                                        <rect key="frame" x="7" y="145" width="331" height="0.0"/>
+                                                        <rect key="frame" x="7" y="145" width="384" height="0.0"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="250" constant="20" id="KN3-nE-dgh"/>
                                                         </constraints>
@@ -173,18 +173,60 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WB-5O-9WG">
+                                                <rect key="frame" x="15" y="200" width="270" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGO-SS-COG">
+                                                <rect key="frame" x="15" y="258" width="70" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G60-ay-mZf">
+                                                <rect key="frame" x="197" y="258" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpJ-OO-Qeg">
+                                                <rect key="frame" x="354" y="258" width="39" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-YW-7eM">
+                                                <rect key="frame" x="15" y="304.00000000000006" width="398" height="741.33333333333348"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                         <constraints>
+                                            <constraint firstItem="IGO-SS-COG" firstAttribute="top" secondItem="7WB-5O-9WG" secondAttribute="bottom" constant="10" id="6Xl-rP-Npy"/>
+                                            <constraint firstItem="PpJ-OO-Qeg" firstAttribute="centerY" secondItem="G60-ay-mZf" secondAttribute="centerY" id="Biq-vL-h6c"/>
+                                            <constraint firstItem="IGO-SS-COG" firstAttribute="leading" secondItem="7WB-5O-9WG" secondAttribute="leading" id="DTR-ad-G1U"/>
+                                            <constraint firstItem="7WB-5O-9WG" firstAttribute="leading" secondItem="75r-xi-fHj" secondAttribute="leading" id="HBI-AZ-btv"/>
+                                            <constraint firstItem="gBu-YW-7eM" firstAttribute="trailing" secondItem="75r-xi-fHj" secondAttribute="trailing" id="Jl3-8c-Tuc"/>
+                                            <constraint firstItem="PpJ-OO-Qeg" firstAttribute="trailing" secondItem="75r-xi-fHj" secondAttribute="trailing" constant="-20" id="PPi-me-tud"/>
                                             <constraint firstAttribute="trailing" secondItem="75r-xi-fHj" secondAttribute="trailing" constant="15" id="RhF-kd-TY3"/>
+                                            <constraint firstItem="gBu-YW-7eM" firstAttribute="top" secondItem="IGO-SS-COG" secondAttribute="bottom" constant="25" id="Vzi-F5-jk0"/>
+                                            <constraint firstItem="G60-ay-mZf" firstAttribute="centerX" secondItem="75r-xi-fHj" secondAttribute="centerX" id="fVu-Ye-6dE"/>
+                                            <constraint firstItem="G60-ay-mZf" firstAttribute="centerY" secondItem="IGO-SS-COG" secondAttribute="centerY" id="fc1-9S-IaM"/>
+                                            <constraint firstItem="gBu-YW-7eM" firstAttribute="leading" secondItem="75r-xi-fHj" secondAttribute="leading" id="mK1-eO-jUo"/>
+                                            <constraint firstAttribute="bottom" secondItem="gBu-YW-7eM" secondAttribute="bottom" id="om7-cR-JYV"/>
                                             <constraint firstItem="75r-xi-fHj" firstAttribute="leading" secondItem="2Tv-bX-xnX" secondAttribute="leading" constant="15" id="sBk-3S-YNQ"/>
                                             <constraint firstItem="75r-xi-fHj" firstAttribute="top" secondItem="2Tv-bX-xnX" secondAttribute="top" constant="15" id="vOa-7U-CsI"/>
+                                            <constraint firstItem="7WB-5O-9WG" firstAttribute="top" secondItem="75r-xi-fHj" secondAttribute="bottom" constant="30" id="wyt-Qi-yG2"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="2Tv-bX-xnX" firstAttribute="width" secondItem="1mb-vi-UyQ" secondAttribute="width" id="0Sp-Pn-EET"/>
-                                    <constraint firstItem="2Tv-bX-xnX" firstAttribute="height" secondItem="1mb-vi-UyQ" secondAttribute="height" priority="250" id="4gB-y8-DBK"/>
+                                    <constraint firstItem="2Tv-bX-xnX" firstAttribute="height" secondItem="1mb-vi-UyQ" secondAttribute="height" multiplier="1.3" priority="250" id="4gB-y8-DBK"/>
                                     <constraint firstAttribute="trailing" secondItem="2Tv-bX-xnX" secondAttribute="trailing" id="ZIp-uk-Ppe"/>
                                     <constraint firstAttribute="bottom" secondItem="2Tv-bX-xnX" secondAttribute="bottom" id="gLm-R9-dvS"/>
                                     <constraint firstItem="2Tv-bX-xnX" firstAttribute="top" secondItem="1mb-vi-UyQ" secondAttribute="top" id="hDN-Kx-jvV"/>
@@ -202,17 +244,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Currency Converter" id="BET-Cj-fPg"/>
-                    <size key="freeformSize" width="375" height="1200"/>
                     <connections>
                         <outlet property="amount" destination="ZO4-ec-KJI" id="eRo-6S-2yh"/>
                         <outlet property="dropDownFrom" destination="YCz-AK-d4z" id="sHw-xA-rgU"/>
                         <outlet property="dropDownTo" destination="cqf-Te-8Sz" id="1PZ-va-YRh"/>
+                        <outlet property="nationalCurrencies" destination="gBu-YW-7eM" id="W76-O9-tne"/>
                         <outlet property="resultLabel" destination="Tae-PI-NnX" id="Aha-cZ-zNg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957.60000000000002" y="87.192118226600982"/>
+            <point key="canvasLocation" x="956.07476635514013" y="86.825053995680349"/>
         </scene>
         <!--National Currency Exchange Navigation Controller-->
         <scene sceneID="TNB-ni-AaJ">

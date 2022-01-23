@@ -73,6 +73,10 @@
 		3BEE898C279D72200086CA20 /* CurrencyExchangeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE898B279D72200086CA20 /* CurrencyExchangeDataManager.swift */; };
 		3BEE898E279D7BFD0086CA20 /* ExchangeFromToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE898D279D7BFD0086CA20 /* ExchangeFromToModel.swift */; };
 		3BEE8990279D8B110086CA20 /* AllNationalCurrenciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE898F279D8B110086CA20 /* AllNationalCurrenciesModel.swift */; };
+		3BEE8994279DBAA40086CA20 /* NationalCurrencyExchangeBuySellDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8993279DBAA40086CA20 /* NationalCurrencyExchangeBuySellDataService.swift */; };
+		3BEE8998279DC2280086CA20 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8996279DC2280086CA20 /* CurrencyTableViewCell.swift */; };
+		3BEE8999279DC2280086CA20 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE8997279DC2280086CA20 /* CurrencyTableViewCell.xib */; };
+		3BEE899B279DC3B70086CA20 /* NationalCurrencyExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE899A279DC3B70086CA20 /* NationalCurrencyExchangeViewModel.swift */; };
 		3BF594EF27814680004D1988 /* Servers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF594EE27814680004D1988 /* Servers.swift */; };
 		3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6C2763767B009A287C /* AppDelegate.swift */; };
 		3BF99F6F2763767B009A287C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF99F6E2763767B009A287C /* SceneDelegate.swift */; };
@@ -278,6 +282,10 @@
 		3BEE898B279D72200086CA20 /* CurrencyExchangeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeDataManager.swift; sourceTree = "<group>"; };
 		3BEE898D279D7BFD0086CA20 /* ExchangeFromToModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeFromToModel.swift; sourceTree = "<group>"; };
 		3BEE898F279D8B110086CA20 /* AllNationalCurrenciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNationalCurrenciesModel.swift; sourceTree = "<group>"; };
+		3BEE8993279DBAA40086CA20 /* NationalCurrencyExchangeBuySellDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCurrencyExchangeBuySellDataService.swift; sourceTree = "<group>"; };
+		3BEE8996279DC2280086CA20 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		3BEE8997279DC2280086CA20 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		3BEE899A279DC3B70086CA20 /* NationalCurrencyExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCurrencyExchangeViewModel.swift; sourceTree = "<group>"; };
 		3BF594EE27814680004D1988 /* Servers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servers.swift; sourceTree = "<group>"; };
 		3BF99F692763767B009A287C /* Cryptal Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptal Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF99F6C2763767B009A287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -747,6 +755,8 @@
 		3BEE8991279D98B60086CA20 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE8993279DBAA40086CA20 /* NationalCurrencyExchangeBuySellDataService.swift */,
+				3BEE899A279DC3B70086CA20 /* NationalCurrencyExchangeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -754,11 +764,21 @@
 		3BEE8992279D98BD0086CA20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE8995279DC1C70086CA20 /* Currency Cell */,
 				3BCA2791279C4E1F00D496E3 /* NationalCurrencyExchangeViewController.swift */,
 				3BCA2793279C4E2D00D496E3 /* NationalCurrencyExchangeViewController.storyboard */,
 				3BCA2795279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3BEE8995279DC1C70086CA20 /* Currency Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE8996279DC2280086CA20 /* CurrencyTableViewCell.swift */,
+				3BEE8997279DC2280086CA20 /* CurrencyTableViewCell.xib */,
+			);
+			path = "Currency Cell";
 			sourceTree = "<group>";
 		};
 		3BF99F602763767B009A287C = {
@@ -1196,6 +1216,7 @@
 				3B7C2DED276B362400F7DD28 /* AppIntroViewController.storyboard in Resources */,
 				3B91B76E2787B4E100921544 /* CardsCollectionViewCell.xib in Resources */,
 				3B6C47A3277104C5008AD740 /* AppIntroPageCell.xib in Resources */,
+				3BEE8999279DC2280086CA20 /* CurrencyTableViewCell.xib in Resources */,
 				885A22032778D91800C7E5CA /* NotificationController.storyboard in Resources */,
 				3B824B1C27824F57008E26FF /* ProfileTabViewController.storyboard in Resources */,
 				8852A1222789F0DE00C516A0 /* imageViewController.storyboard in Resources */,
@@ -1253,6 +1274,7 @@
 				3B63F5662783BBC5006D5670 /* StringsFormater+Extensions.swift in Sources */,
 				3B7C2DF5276B37F200F7DD28 /* CreateAccountViewController.swift in Sources */,
 				3BE6276F2787CC1900983F73 /* Colours+Extensions.swift in Sources */,
+				3BEE899B279DC3B70086CA20 /* NationalCurrencyExchangeViewModel.swift in Sources */,
 				885A21CA2778B6EE00C7E5CA /* PieViewController.swift in Sources */,
 				8852A1202789F0BE00C516A0 /* imageViewController.swift in Sources */,
 				3B91B7702787B84F00921544 /* CardModel.swift in Sources */,
@@ -1305,6 +1327,7 @@
 				3B91B7692787AC3E00921544 /* HomeDashboardCardsDataService.swift in Sources */,
 				3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */,
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
+				3BEE8998279DC2280086CA20 /* CurrencyTableViewCell.swift in Sources */,
 				3BCA278B279B4F2900D496E3 /* CryptoConstants.swift in Sources */,
 				885EE78F27762FAF0045C510 /* CalendarViewController.swift in Sources */,
 				3BFED47727811475007109AF /* LogInViewDataService.swift in Sources */,
@@ -1318,6 +1341,7 @@
 				3B824B1E27824F65008E26FF /* ProfileTabViewController.swift in Sources */,
 				3BCA2780279B111500D496E3 /* CryptoViewModel.swift in Sources */,
 				3B6C47AF2772A761008AD740 /* UDManager.swift in Sources */,
+				3BEE8994279DBAA40086CA20 /* NationalCurrencyExchangeBuySellDataService.swift in Sources */,
 				885A21C82778B6D500C7E5CA /* LineViewController.swift in Sources */,
 				3BFED475278112A7007109AF /* DialogAlertsForActions.swift in Sources */,
 			);
