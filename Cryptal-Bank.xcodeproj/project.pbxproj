@@ -729,9 +729,8 @@
 		3BCA2790279C4DCC00D496E3 /* National Currency Exchange Scene */ = {
 			isa = PBXGroup;
 			children = (
-				3BCA2791279C4E1F00D496E3 /* NationalCurrencyExchangeViewController.swift */,
-				3BCA2793279C4E2D00D496E3 /* NationalCurrencyExchangeViewController.storyboard */,
-				3BCA2795279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift */,
+				3BEE8992279D98BD0086CA20 /* View */,
+				3BEE8991279D98B60086CA20 /* ViewModel */,
 			);
 			path = "National Currency Exchange Scene";
 			sourceTree = "<group>";
@@ -743,6 +742,23 @@
 				3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */,
 			);
 			path = "Plus cell";
+			sourceTree = "<group>";
+		};
+		3BEE8991279D98B60086CA20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BEE8992279D98BD0086CA20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BCA2791279C4E1F00D496E3 /* NationalCurrencyExchangeViewController.swift */,
+				3BCA2793279C4E2D00D496E3 /* NationalCurrencyExchangeViewController.storyboard */,
+				3BCA2795279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3BF99F602763767B009A287C = {

@@ -21,19 +21,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
         
-//        // for fast development  HomeDashboardViewController CryptoViewController
-//        let sb = UIStoryboard(name: "NationalCurrencyExchangeViewController", bundle: nil)
-//        vc = sb.instantiateViewController(withIdentifier: "NationalCurrencyExchangeViewController")
-//        ////////////////// open View Controller first for fast development
+        // for fast development  HomeDashboardViewController CryptoViewController
+        let sb = UIStoryboard(name: "NationalCurrencyExchangeViewController", bundle: nil)
+        vc = sb.instantiateViewController(withIdentifier: "NationalCurrencyExchangeViewController")
+        ////////////////// open View Controller first for fast development
         
-        if UDManager.isNotFirstInstall(){
-            let sb = UIStoryboard(name: "AppIntroViewController", bundle: nil)
-            vc = sb.instantiateViewController(withIdentifier: "AppIntroViewController")
-            // window?.rootViewController = vc
-        }else{
-            let sb = UIStoryboard(name: "LogInViewController", bundle: nil)
-            vc = sb.instantiateViewController(withIdentifier: "LogInViewController")
-        }
+//        if UDManager.isNotFirstInstall(){
+//            let sb = UIStoryboard(name: "AppIntroViewController", bundle: nil)
+//            vc = sb.instantiateViewController(withIdentifier: "AppIntroViewController")
+//            // window?.rootViewController = vc
+//        }else{
+//            let sb = UIStoryboard(name: "LogInViewController", bundle: nil)
+//            vc = sb.instantiateViewController(withIdentifier: "LogInViewController")
+//        }
         
         window?.rootViewController = UINavigationController(rootViewController: vc)
     }
