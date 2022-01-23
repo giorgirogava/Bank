@@ -29,7 +29,7 @@ class AddCardViewController: UIViewController {
                                            expireData: "\(exMonthInput.text ?? "09")/\(exYearsInput.text ?? "26")",
                                             cardnumber: binInput.text ?? "XXXXX XXXX XXXX 6756",
                                            AcountNumber: "XXXX XXXXX 3434",
-                                           cardType: CardType.VISA,
+                                           cardType: "VISA",
                                            money: [Money(balances: 121232.23, currency: CurrencyType.GEL),
                                                    Money(balances: 14352.23, currency: CurrencyType.USD)]
                                           ))

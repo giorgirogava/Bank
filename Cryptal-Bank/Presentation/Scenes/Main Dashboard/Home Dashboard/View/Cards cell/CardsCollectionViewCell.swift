@@ -29,7 +29,7 @@ class CardsCollectionViewCell: UICollectionViewCell {
             switch type {
             case CardType.MASTER: cardType.image = UIImage(named: "ic_mastercard_new")
             case CardType.VISA: cardType.image = UIImage(named: "ic_visa")
-            //default: cardType.image = UIImage(named: "ic_masterCard")
+            default: cardType.image = UIImage(named: "ic_masterCard")
             }
         }
         

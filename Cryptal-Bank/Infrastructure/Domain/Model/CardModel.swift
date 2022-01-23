@@ -14,7 +14,7 @@ struct CardModel {
     var expireData: String?
     var cardnumber: String?
     var AcountNumber: String?
-    var cardType: CardType?
+    var cardType: String?
     var money: [Money]?
     
     
@@ -25,7 +25,7 @@ struct CardModel {
          "expireData": expireData ?? "",
          "cardnumber": cardnumber ?? "",
          "AcountNumber": AcountNumber ?? "",
-         "cardType": cardType?.rawValue ?? "",
+         "cardType": cardType ?? "",
          "money": money?.compactMap{
             ["balances": $0.balances ?? 0.0,
              "currency": $0.currency ?? ""]
@@ -46,7 +46,7 @@ enum CurrencyType: CaseIterable {
     static let GEL = "GEL"
 }
 
-enum CardType:String,CaseIterable {
-    case VISA = "VISA"
-    case MASTER = "MASTER"
+enum CardType:CaseIterable {
+    static let VISA = "VISA"
+    static let MASTER = "MASTER"
 }

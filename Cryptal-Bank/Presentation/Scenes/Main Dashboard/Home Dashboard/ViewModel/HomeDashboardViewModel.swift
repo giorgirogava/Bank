@@ -176,7 +176,7 @@ final class HomeDashboardViewModel: HomeDashboardViewModelProtocol {
                     let expireData = card?["expireData"] as? String ?? ""
                     let cardnumber = card?["cardnumber"] as? String ?? ""
                     let AcountNumber = card?["AcountNumber"] as? String ?? ""
-                    let cardType = card?["cardType"] as? CardType ?? CardType.VISA
+                    let cardType = card?["cardType"] as? String ?? CardType.VISA
                     let money = card?["money"] as? NSArray
                     
                     

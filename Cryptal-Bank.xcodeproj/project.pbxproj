@@ -680,12 +680,12 @@
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				3B824B212782583D008E26FF /* Home Dashboard */,
 				3BCA2790279C4DCC00D496E3 /* National Currency Exchange Scene */,
 				88800CB0276BA83E0032C290 /* Crypto Scene */,
 				3B824B1A27824EF7008E26FF /* Profile bar */,
-				8852A11A2789EF6300C516A0 /* CoreML */,
-				3B824B212782583D008E26FF /* Home Dashboard */,
 				3BFED46C2780D834007109AF /* Main */,
+				8852A11A2789EF6300C516A0 /* CoreML */,
 				8874F768277DE88B006B6F23 /* Face And Touch ID */,
 				885498DF277B44EC003EFED0 /* Government issued ID */,
 				885A21FF2778D8CC00C7E5CA /* Transaction Notification */,
