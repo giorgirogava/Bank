@@ -14,14 +14,14 @@ class NationalCurrencyExchangeBuySellDataService : NSObject, UITableViewDataSour
     private let refreshControl = UIRefreshControl()
     
     weak private var viewModel: NationalCurrencyExchangeViewModelProtocol!
-    private var currencies = [CryptoModelElement](){
+    private var currencies = [CommercialRatesList](){
         didSet{
             tableView.reloadWithAnimation()
         }
     }
     
     private var networkManager: NetworkManagerProtocol!
-    private var cryptoDataManager: CryptoDataManager!
+    private var currencyExchangeDataManager: CurrencyExchangeDataManager!
     
     
     init(withController: UIViewController, with tableView: UITableView, viewModel: NationalCurrencyExchangeViewModelProtocol) {
@@ -50,11 +50,11 @@ class NationalCurrencyExchangeBuySellDataService : NSObject, UITableViewDataSour
     func loadTableView(end: @escaping () -> ()){
         networkManager = NetworkManager()
         // DI - Dependenc injection
-        cryptoDataManager = CryptoDataManager(networkManager: networkManager)
+        currencyExchangeDataManager = CurrencyExchangeDataManager(networkManager: networkManager)
         
-        cryptoDataManager.getCrypto(){ [weak self] all in
+        currencyExchangeDataManager.getAllNationalCurrencies(){ [weak self] all in
             DispatchQueue.main.async {
-            self?.currencies = all
+                self?.currencies = all.commercialRatesList ?? []
                 end()
             }
         }
@@ -62,7 +62,7 @@ class NationalCurrencyExchangeBuySellDataService : NSObject, UITableViewDataSour
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50//currencies.count
+        return currencies.count
     }
     
     
@@ -71,7 +71,7 @@ class NationalCurrencyExchangeBuySellDataService : NSObject, UITableViewDataSour
         
         let cell = tableView.deque(CurrencyTableViewCell.self, for: indexPath)
         
-       // cell.configure(with: currencies[indexPath.row])
+        cell.configure(with: currencies[indexPath.row])
         
         return cell
     }

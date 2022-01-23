@@ -19,45 +19,13 @@
                     <connections>
                         <segue destination="TVs-MK-e53" kind="relationship" relationship="viewControllers" id="lmB-14-Eei"/>
                         <segue destination="uXl-GM-fda" kind="relationship" relationship="viewControllers" id="Iph-VV-gAe"/>
-                        <segue destination="IJa-Wd-6ch" kind="relationship" relationship="viewControllers" id="wIl-77-JGi"/>
-                        <segue destination="Rla-vh-8M8" kind="relationship" relationship="viewControllers" id="pKo-Il-zRM"/>
-                        <segue destination="8eJ-iA-oRJ" kind="relationship" relationship="viewControllers" id="AFL-Mb-P9T"/>
+                        <segue destination="8eJ-iA-oRJ" kind="relationship" relationship="viewControllers" id="SSM-J2-cRL"/>
+                        <segue destination="Rla-vh-8M8" kind="relationship" relationship="viewControllers" id="N2h-gZ-5Ne"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8M-OE-kaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-199" y="38"/>
-        </scene>
-        <!--NationalCurrencyViewController-->
-        <scene sceneID="6Bp-yT-VWv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NationalCurrencyViewController" referencedIdentifier="NationalCurrencyViewController" id="IJa-Wd-6ch" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wallet" image="ic_wallet" landscapeImage="ic_wallet" largeContentSizeImage="ic_wallet" id="nnx-gi-jQ3"/>
-                    <navigationItem key="navigationItem" id="ldJ-zF-WJ0"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tOu-Zu-OYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="782" y="-244"/>
-        </scene>
-        <!--IDCardViewController-->
-        <scene sceneID="noE-O7-wSY">
-            <objects>
-                <viewControllerPlaceholder storyboardName="IDCardViewController" referencedIdentifier="IDCardViewController" id="mIm-Oe-6sM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="i11-rs-ZRd"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hfx-VE-et2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="764" y="52"/>
-        </scene>
-        <!--BiometricsViewController-->
-        <scene sceneID="fLq-8Q-XQz">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="BiometricsViewController" storyboardName="BiometricsViewController" referencedIdentifier="BiometricsViewController" id="DA0-vZ-sko" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kxg-ok-lWK"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sEi-Em-A4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="780" y="88"/>
         </scene>
         <!--ProfileNavigationController-->
         <scene sceneID="Tk2-Yx-34O">
@@ -77,7 +45,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQw-zZ-kSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="-172"/>
+            <point key="canvasLocation" x="848" y="-243"/>
         </scene>
         <!--HomeDashboardNavigationController-->
         <scene sceneID="dIk-hl-A5S">
@@ -88,38 +56,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVH-i6-fb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="804" y="-312"/>
-        </scene>
-        <!--LocationViewController-->
-        <scene sceneID="37D-nV-Vb7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="LocationViewController" referencedIdentifier="LocationViewController" id="Xz8-LK-4LN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KHI-gL-rbq"/>
-                    <navigationItem key="navigationItem" id="etJ-qT-IuL"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yc-UE-RBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="770" y="22"/>
-        </scene>
-        <!--CalendarViewController-->
-        <scene sceneID="Q49-1R-ozV">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CalendarViewController" referencedIdentifier="CalendarViewController" id="YaN-s1-wEb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6mO-f2-Shq"/>
-                    <navigationItem key="navigationItem" id="UE3-L0-3Ox"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tqI-wZ-Tn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="773" y="-8"/>
-        </scene>
-        <!--NotificationController-->
-        <scene sceneID="PXW-G7-lp9">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NotificationController" referencedIdentifier="NotificationController" id="42G-nz-ZaS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mca-Xn-9fb"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YWB-ac-1Pq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="764" y="-43"/>
         </scene>
         <!--CryptoViewController-->
         <scene sceneID="hQv-fW-HRA">
@@ -135,6 +71,5 @@
     </scenes>
     <resources>
         <image name="ic_investment" width="48" height="48"/>
-        <image name="ic_wallet" width="48" height="48"/>
     </resources>
 </document>

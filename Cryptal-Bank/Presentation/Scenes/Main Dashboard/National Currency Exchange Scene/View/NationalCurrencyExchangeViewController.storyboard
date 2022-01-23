@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NhP-lJ-oa4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mb-vi-UyQ">
-                                <rect key="frame" x="0.0" y="88" width="428" height="803.99999999999989"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tv-bX-xnX" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1045.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="981.66666666666663"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75r-xi-fHj" customClass="UIViewAdditionalFeatures" customModule="Cryptal_Bank" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="15" width="398" height="155"/>
@@ -198,7 +198,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-YW-7eM">
-                                                <rect key="frame" x="15" y="304.00000000000006" width="398" height="741.33333333333348"/>
+                                                <rect key="frame" x="15" y="303.99999999999994" width="398" height="677.66666666666652"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,7 +243,9 @@
                             <constraint firstItem="1mb-vi-UyQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="n5c-eO-nmm"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Currency" image="coloncurrencysign.square.fill" catalog="system" id="ka6-ti-hdC"/>
                     <navigationItem key="navigationItem" title="Currency Converter" id="BET-Cj-fPg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="amount" destination="ZO4-ec-KJI" id="eRo-6S-2yh"/>
                         <outlet property="dropDownFrom" destination="YCz-AK-d4z" id="sHw-xA-rgU"/>
@@ -277,6 +279,7 @@
     </scenes>
     <resources>
         <image name="arrow.left.arrow.right.circle" catalog="system" width="128" height="121"/>
+        <image name="coloncurrencysign.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
