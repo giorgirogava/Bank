@@ -27,10 +27,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        ////////////////// open View Controller first for fast development
         
         if UDManager.isNotFirstInstall(){
+            
             let sb = UIStoryboard(name: "AppIntroViewController", bundle: nil)
             vc = sb.instantiateViewController(withIdentifier: "AppIntroViewController")
             // window?.rootViewController = vc
         }else{
+            
             let sb = UIStoryboard(name: "LogInViewController", bundle: nil)
             vc = sb.instantiateViewController(withIdentifier: "LogInViewController")
         }

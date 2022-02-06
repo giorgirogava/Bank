@@ -686,7 +686,7 @@
 				3B824B1A27824EF7008E26FF /* Profile bar */,
 				3BFED46C2780D834007109AF /* Main */,
 				8852A11A2789EF6300C516A0 /* CoreML */,
-				8874F768277DE88B006B6F23 /* Face And Touch ID */,
+				8874F768277DE88B006B6F23 /* Face And Touch ID Scene */,
 				885498DF277B44EC003EFED0 /* Government issued ID */,
 				885A21FF2778D8CC00C7E5CA /* Transaction Notification */,
 				885A21BD2778B32800C7E5CA /* Financial Graphs And Charts */,
@@ -953,13 +953,13 @@
 			path = "Cryptal Bank Watch WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		8874F768277DE88B006B6F23 /* Face And Touch ID */ = {
+		8874F768277DE88B006B6F23 /* Face And Touch ID Scene */ = {
 			isa = PBXGroup;
 			children = (
 				8874F769277DE915006B6F23 /* BiometricsViewController.swift */,
 				8874F76B277DE934006B6F23 /* BiometricsViewController.storyboard */,
 			);
-			path = "Face And Touch ID";
+			path = "Face And Touch ID Scene";
 			sourceTree = "<group>";
 		};
 		887546E52774E9CC002ACC8F /* User Location */ = {

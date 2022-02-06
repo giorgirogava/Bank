@@ -8,19 +8,24 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import LocalAuthentication
 
 class LogInViewController: UIViewController {
-  
-   
+    
+    
     @IBOutlet weak var bEmailFild: FloatingLabelInput!
     @IBOutlet weak var bPasswordFild: FloatingLabelInput!
-   
-
+    
+    let currentUser = Auth.auth().currentUser
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.navigationController?.isNavigationBarHidden = false
-       
+        
+        if currentUser != nil {
+            tryBioAuth()
+        }
     }
     
     
@@ -32,7 +37,7 @@ class LogInViewController: UIViewController {
     
     @IBAction func onLoginButtonClick(_ sender: Any) {
         
-      
+        
         
         
         guard
@@ -66,8 +71,65 @@ class LogInViewController: UIViewController {
             }
         }
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
+    
+    func tryBioAuth(){
+        
+        let context = LAContext()
+        var error: NSError? = nil
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                     error: &error) {
+            
+            let reason = "Please authorize with touch id! "
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                   
+                                   localizedReason: reason)  { [weak self] success, error in
+                
+                
+                DispatchQueue.main.async {
+                    
+                    guard success, error == nil else {
+                        
+                        let alert = UIAlertController(title: "Failed to Authenticate",
+                                                      message: "Please try again",
+                                                      preferredStyle: .alert)
+                        
+                        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                        
+                        self?.present(alert, animated: true)
+                        
+                        return
+                    }
+                    
+                    self?.navigationController?.popToRootViewController( animated: false )
+                    let sb = UIStoryboard(name: "MainDashboardTabBarController", bundle: nil)
+                    let vc = sb.instantiateViewController(withIdentifier: "MainDashboardTabBarController")
+                    
+                    self?.navigationController?.viewControllers.removeAll()
+                    vc.modalPresentationStyle = .fullScreen
+                    self?.present(vc, animated: true)
+                    
+                }
+                
+            }
+            
+        } else {
+            
+            let alert = UIAlertController(title: "Unavailable",
+                                          message: "You cant use this feature",
+                                          preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            
+            present(alert, animated: true)
+            
+        }
+        
+    }
+    
 }

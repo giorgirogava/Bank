@@ -54,13 +54,13 @@ class BiometricsViewController: UIViewController {
                         return
                     }
                     
-                    let vc = UIViewController()
-                    vc.title = "Welcome To The Cryptal Bank "
-                    vc.view.backgroundColor = .systemBlue
+                    self?.navigationController?.popToRootViewController( animated: false )
+                    let sb = UIStoryboard(name: "MainDashboardTabBarController", bundle: nil)
+                    let vc = sb.instantiateViewController(withIdentifier: "MainDashboardTabBarController")
                     
-                    self?.present(UINavigationController(rootViewController: vc),
-                                  animated: true,
-                                  completion: nil)
+                    self?.navigationController?.viewControllers.removeAll()
+                    vc.modalPresentationStyle = .fullScreen
+                    self?.present(vc, animated: true)
                     
                 }
                 
