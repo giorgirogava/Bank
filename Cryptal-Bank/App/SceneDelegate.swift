@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -21,23 +22,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
         
-//        // for fast development  HomeDashboardViewController CryptoViewController
-//        let sb = UIStoryboard(name: "NationalCurrencyExchangeViewController", bundle: nil)
-//        vc = sb.instantiateViewController(withIdentifier: "NationalCurrencyExchangeViewController")
-//        ////////////////// open View Controller first for fast development
+        vc = UIHostingController(rootView: SplashScreen())
         
-        if UDManager.isNotFirstInstall(){
-            
-            let sb = UIStoryboard(name: "AppIntroViewController", bundle: nil)
-            vc = sb.instantiateViewController(withIdentifier: "AppIntroViewController")
-            // window?.rootViewController = vc
-        }else{
-            
-            let sb = UIStoryboard(name: "LogInViewController", bundle: nil)
-            vc = sb.instantiateViewController(withIdentifier: "LogInViewController")
-        }
+        let transition = CATransition()
         
-        window?.rootViewController = UINavigationController(rootViewController: vc)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        transition.duration = 3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromBottom
+        
+        self.window?.layer.add(transition, forKey: kCATransition)
+        
+        // present
+        self.window?.rootViewController = vc //UINavigationController(rootViewController: vc)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

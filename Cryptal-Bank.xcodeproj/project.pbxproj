@@ -46,9 +46,13 @@
 		3B91B7702787B84F00921544 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91B76F2787B84F00921544 /* CardModel.swift */; };
 		3B9C2007279D34EF00BFD4E3 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C2006279D34EF00BFD4E3 /* DropDown.swift */; };
 		3B9D00DA2778F12700874FB0 /* FloatingLabelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */; };
+		3BB431DB27BDAA37001B782A /* LogInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431DA27BDAA37001B782A /* LogInNavigationController.swift */; };
+		3BB431DD27BDAC97001B782A /* AppIntroNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431DC27BDAC97001B782A /* AppIntroNavigationController.swift */; };
+		3BB431DF27BDAD35001B782A /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431DE27BDAD35001B782A /* SplashScreenViewModel.swift */; };
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
 		3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */; };
+		3BC44E2F27BA7AC500737C59 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC44E2E27BA7AC500737C59 /* SplashScreen.swift */; };
 		3BC63AF62799EF33007EA638 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC63AF52799EF33007EA638 /* AddCardViewController.swift */; };
 		3BC63AF82799EF67007EA638 /* AddCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */; };
 		3BCA277E279B10D400D496E3 /* CryptoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA277D279B10D400D496E3 /* CryptoDataService.swift */; };
@@ -258,9 +262,13 @@
 		3B91B76F2787B84F00921544 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		3B9C2006279D34EF00BFD4E3 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		3B9D00D92778F12700874FB0 /* FloatingLabelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelInput.swift; sourceTree = "<group>"; };
+		3BB431DA27BDAA37001B782A /* LogInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInNavigationController.swift; sourceTree = "<group>"; };
+		3BB431DC27BDAC97001B782A /* AppIntroNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroNavigationController.swift; sourceTree = "<group>"; };
+		3BB431DE27BDAD35001B782A /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		3BC44E2E27BA7AC500737C59 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		3BC63AF52799EF33007EA638 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		3BC63AF72799EF67007EA638 /* AddCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCardViewController.storyboard; sourceTree = "<group>"; };
 		3BCA277D279B10D400D496E3 /* CryptoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataService.swift; sourceTree = "<group>"; };
@@ -420,6 +428,7 @@
 				3B6C47A4277104CD008AD740 /* AppIntroPageCell */,
 				3B7C2DEA276B361600F7DD28 /* AppIntroViewController.swift */,
 				3B7C2DEC276B362400F7DD28 /* AppIntroViewController.storyboard */,
+				3BB431DC27BDAC97001B782A /* AppIntroNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -570,6 +579,7 @@
 				3B7C2DEF276B37A600F7DD28 /* Create Account Scene */,
 				3B7C2DEE276B379900F7DD28 /* Log in Scene */,
 				3B7C2DE9276B35DA00F7DD28 /* Intro scene */,
+				3BC44E2C27BA61D100737C59 /* Splash Screen */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -673,8 +683,17 @@
 			children = (
 				3B7C2DF0276B37C200F7DD28 /* LogInViewController.swift */,
 				3B7C2DF2276B37CD00F7DD28 /* LogInViewController.storyboard */,
+				3BB431DA27BDAA37001B782A /* LogInNavigationController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3BB431D927BDA962001B782A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BB431DE27BDAD35001B782A /* SplashScreenViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
@@ -695,6 +714,23 @@
 				885EE78D27762F490045C510 /* User Calendar */,
 			);
 			path = "Main Dashboard";
+			sourceTree = "<group>";
+		};
+		3BC44E2C27BA61D100737C59 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3BC44E2D27BA7AA500737C59 /* View */,
+				3BB431D927BDA962001B782A /* ViewModel */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		3BC44E2D27BA7AA500737C59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BC44E2E27BA7AC500737C59 /* SplashScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3BC63AF42799EECC007EA638 /* Add Card scene */ = {
@@ -1291,10 +1327,13 @@
 				8852A11C2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel in Sources */,
 				8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
+				3BB431DB27BDAA37001B782A /* LogInNavigationController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
+				3BC44E2F27BA7AC500737C59 /* SplashScreen.swift in Sources */,
 				885A22012778D8FF00C7E5CA /* NotificationController.swift in Sources */,
 				3B9D00DA2778F12700874FB0 /* FloatingLabelInput.swift in Sources */,
 				3BCA278D279BFC9A00D496E3 /* UILabel+Extensions.swift in Sources */,
+				3BB431DF27BDAD35001B782A /* SplashScreenViewModel.swift in Sources */,
 				3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */,
 				3B7C76A0279A719E00EEE5DA /* ViewController+Extensions.swift in Sources */,
 				3BCA278F279C274300D496E3 /* ProfileNavigationController.swift in Sources */,
@@ -1326,6 +1365,7 @@
 				3BEE898C279D72200086CA20 /* CurrencyExchangeDataManager.swift in Sources */,
 				3B91B7692787AC3E00921544 /* HomeDashboardCardsDataService.swift in Sources */,
 				3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */,
+				3BB431DD27BDAC97001B782A /* AppIntroNavigationController.swift in Sources */,
 				3B7C2DF1276B37C200F7DD28 /* LogInViewController.swift in Sources */,
 				3BEE8998279DC2280086CA20 /* CurrencyTableViewCell.swift in Sources */,
 				3BCA278B279B4F2900D496E3 /* CryptoConstants.swift in Sources */,

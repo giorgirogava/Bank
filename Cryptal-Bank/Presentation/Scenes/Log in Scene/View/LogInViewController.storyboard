@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="1778" y="78"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Log In Navigation Controller-->
         <scene sceneID="SFv-db-SdL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SJe-z8-SNR" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="LogInNavigationController" storyboardIdentifier="LogInNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="SJe-z8-SNR" customClass="LogInNavigationController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8S5-Kl-Dhd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

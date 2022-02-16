@@ -59,7 +59,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ofz-bw-9vr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="689"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="645"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M2S-Lx-4wJ">
                                     <size key="itemSize" width="128" height="128"/>
@@ -86,6 +86,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ofz-bw-9vr" secondAttribute="trailing" id="jC6-lP-wKu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EVD-qV-cRw"/>
                     <connections>
                         <outlet property="collectionView" destination="ofz-bw-9vr" id="Fi6-Yj-awV"/>
                         <outlet property="customPageControl" destination="vh9-Jl-Zg9" id="Kfp-Y8-PuP"/>
@@ -93,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="79"/>
+            <point key="canvasLocation" x="928.98550724637687" y="78.348214285714278"/>
         </scene>
         <!--LogInViewController-->
         <scene sceneID="smN-to-O0N">
@@ -103,7 +104,25 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGG-s6-Wb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="78"/>
+            <point key="canvasLocation" x="1692.0289855072465" y="77.678571428571431"/>
+        </scene>
+        <!--App Intro Navigation Controller-->
+        <scene sceneID="63q-ot-c7d">
+            <objects>
+                <navigationController restorationIdentifier="AppIntroNavigationController" storyboardIdentifier="AppIntroNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="dQu-3y-WhR" customClass="AppIntroNavigationController" customModule="Cryptal_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xxA-Zo-PDu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="4RG-C8-vfS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hb-KZ-NFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
     <resources>
