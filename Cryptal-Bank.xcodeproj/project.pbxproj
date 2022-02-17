@@ -49,6 +49,8 @@
 		3BB431DB27BDAA37001B782A /* LogInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431DA27BDAA37001B782A /* LogInNavigationController.swift */; };
 		3BB431DD27BDAC97001B782A /* AppIntroNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431DC27BDAC97001B782A /* AppIntroNavigationController.swift */; };
 		3BB431DF27BDAD35001B782A /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431DE27BDAD35001B782A /* SplashScreenViewModel.swift */; };
+		3BB431E227BDB561001B782A /* AccountParamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB431E127BDB561001B782A /* AccountParamsViewController.swift */; };
+		3BB431E427BDB56D001B782A /* AccountParamsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB431E327BDB56D001B782A /* AccountParamsViewController.storyboard */; };
 		3BBAA6D227774F0400C91DD0 /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */; };
 		3BBAA6D427774F1200C91DD0 /* MainDashboardTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */; };
 		3BBAA6D62777AF5900C91DD0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */; };
@@ -69,6 +71,7 @@
 		3BCA2796279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA2795279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift */; };
 		3BD1FBE22798215200CAFAEE /* PlusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */; };
 		3BD1FBE32798215200CAFAEE /* PlusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */; };
+		3BE0E2F227BE4A0A0011D408 /* UISwitch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0E2F127BE4A0A0011D408 /* UISwitch+Extensions.swift */; };
 		3BE39A432773B18200A230B2 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE39A422773B18200A230B2 /* CryptoModel.swift */; };
 		3BE39A442773B91500A230B2 /* NationalCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099A27721F0400D8C965 /* NationalCurrencyViewController.swift */; };
 		3BE39A452773B95F00A230B2 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877099C27721F5B00D8C965 /* ExchangeRates.swift */; };
@@ -265,6 +268,8 @@
 		3BB431DA27BDAA37001B782A /* LogInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInNavigationController.swift; sourceTree = "<group>"; };
 		3BB431DC27BDAC97001B782A /* AppIntroNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroNavigationController.swift; sourceTree = "<group>"; };
 		3BB431DE27BDAD35001B782A /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		3BB431E127BDB561001B782A /* AccountParamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountParamsViewController.swift; sourceTree = "<group>"; };
+		3BB431E327BDB56D001B782A /* AccountParamsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountParamsViewController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D127774F0400C91DD0 /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		3BBAA6D327774F1200C91DD0 /* MainDashboardTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashboardTabBarController.storyboard; sourceTree = "<group>"; };
 		3BBAA6D52777AF5900C91DD0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -284,6 +289,7 @@
 		3BCA2795279C752400D496E3 /* NationalCurrencyExchangeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCurrencyExchangeNavigationController.swift; sourceTree = "<group>"; };
 		3BD1FBE02798215200CAFAEE /* PlusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BD1FBE12798215200CAFAEE /* PlusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusCollectionViewCell.xib; sourceTree = "<group>"; };
+		3BE0E2F127BE4A0A0011D408 /* UISwitch+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extensions.swift"; sourceTree = "<group>"; };
 		3BE39A422773B18200A230B2 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		3BE6276E2787CC1900983F73 /* Colours+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colours+Extensions.swift"; sourceTree = "<group>"; };
 		3BE627702787E11400983F73 /* StackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extensions.swift"; sourceTree = "<group>"; };
@@ -527,6 +533,7 @@
 				3BE627702787E11400983F73 /* StackView+Extensions.swift */,
 				3B7C769F279A719E00EEE5DA /* ViewController+Extensions.swift */,
 				3BCA278C279BFC9A00D496E3 /* UILabel+Extensions.swift */,
+				3BE0E2F127BE4A0A0011D408 /* UISwitch+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -622,6 +629,7 @@
 		3B824B1A27824EF7008E26FF /* Profile bar */ = {
 			isa = PBXGroup;
 			children = (
+				3BB431E027BDB513001B782A /* Account Params */,
 				3B824B1D27824F65008E26FF /* ProfileTabViewController.swift */,
 				3B824B1B27824F57008E26FF /* ProfileTabViewController.storyboard */,
 				3BCA278E279C274300D496E3 /* ProfileNavigationController.swift */,
@@ -694,6 +702,15 @@
 				3BB431DE27BDAD35001B782A /* SplashScreenViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BB431E027BDB513001B782A /* Account Params */ = {
+			isa = PBXGroup;
+			children = (
+				3BB431E127BDB561001B782A /* AccountParamsViewController.swift */,
+				3BB431E327BDB56D001B782A /* AccountParamsViewController.storyboard */,
+			);
+			path = "Account Params";
 			sourceTree = "<group>";
 		};
 		3BBAA6D027774E8A00C91DD0 /* Main Dashboard */ = {
@@ -1244,6 +1261,7 @@
 				88800CB2276BA8DD0032C290 /* CryptoViewController.storyboard in Resources */,
 				3BCA2794279C4E2D00D496E3 /* NationalCurrencyExchangeViewController.storyboard in Resources */,
 				3B7C2DF7276B37FE00F7DD28 /* CreateAccountViewController.storyboard in Resources */,
+				3BB431E427BDB56D001B782A /* AccountParamsViewController.storyboard in Resources */,
 				3B7C2DF3276B37CD00F7DD28 /* LogInViewController.storyboard in Resources */,
 				3BC63AF82799EF67007EA638 /* AddCardViewController.storyboard in Resources */,
 				8874F76C277DE934006B6F23 /* BiometricsViewController.storyboard in Resources */,
@@ -1327,6 +1345,7 @@
 				8852A11C2789EF8300C516A0 /* GoogLeNetPlaces.mlmodel in Sources */,
 				8874F76A277DE915006B6F23 /* BiometricsViewController.swift in Sources */,
 				887546E72774EA12002ACC8F /* LocationViewController.swift in Sources */,
+				3BB431E227BDB561001B782A /* AccountParamsViewController.swift in Sources */,
 				3BB431DB27BDAA37001B782A /* LogInNavigationController.swift in Sources */,
 				3B6C47982770EFEC008AD740 /* UITableViewCell+Extension.swift in Sources */,
 				3BC44E2F27BA7AC500737C59 /* SplashScreen.swift in Sources */,
@@ -1346,6 +1365,7 @@
 				3B6C479A2770F05C008AD740 /* AppIntroDataService.swift in Sources */,
 				3BF99F6D2763767B009A287C /* AppDelegate.swift in Sources */,
 				3B6C479C2770F14A008AD740 /* AppIntroViewModel.swift in Sources */,
+				3BE0E2F227BE4A0A0011D408 /* UISwitch+Extensions.swift in Sources */,
 				3B6C478E2770EEDB008AD740 /* CustomPageControl.swift in Sources */,
 				3BEE8990279D8B110086CA20 /* AllNationalCurrenciesModel.swift in Sources */,
 				3B7C2DEB276B361600F7DD28 /* AppIntroViewController.swift in Sources */,

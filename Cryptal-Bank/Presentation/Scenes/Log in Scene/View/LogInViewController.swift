@@ -22,10 +22,6 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.isNavigationBarHidden = false
-        
-        if currentUser != nil {
-            tryBioAuth()
-        }
     }
     
     
@@ -74,6 +70,12 @@ class LogInViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func  viewDidAppear(_ animated: Bool){
+        if currentUser != nil && UDManager.biometricAuthState(){
+            tryBioAuth()
+        }
     }
     
     func tryBioAuth(){

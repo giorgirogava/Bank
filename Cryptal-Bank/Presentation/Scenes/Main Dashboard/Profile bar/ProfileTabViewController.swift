@@ -18,6 +18,7 @@ class ProfileTabViewController: UIViewController {
     
     @IBAction private func onLogOutButtonClick(_ sender: Any) {
         UDManager.markUserAsLoggedOut()
+        UDManager.biometricAuthState(isOn: false)
         do { try Auth.auth().signOut() }
         catch { print("already logged out") }
         

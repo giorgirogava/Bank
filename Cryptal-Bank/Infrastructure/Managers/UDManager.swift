@@ -15,6 +15,7 @@ struct UDManager {
     private static let KEY_IS_USER_LOGGED_IN = "KEY_IS_USER_LOGGED_IN"
     private static let KEY_USER_CREDENTIAL_USERNAME = "KEY_USER_CREDENTIAL_USERNAME"
     private static let KEY_USER_CREDENTIAL_PASSWORD = "KEY_USER_CREDENTIAL_PASSWORD"
+    private static let biometricAuthOn = "BIOMETRIC_AUTH_ON"
     
     private static var ud = UserDefaults.standard
     
@@ -50,5 +51,11 @@ struct UDManager {
         ud.set(true, forKey: KEY_IS_USER_LOGGED_IN)
         ud.set(user.username,forKey: KEY_USER_CREDENTIAL_USERNAME)
         ud.set(user.password,forKey: KEY_USER_CREDENTIAL_PASSWORD)
+    }
+    static func biometricAuthState() -> Bool {
+        ud.bool(forKey: biometricAuthOn)
+    }
+    static func biometricAuthState(isOn: Bool ) {
+        ud.set(isOn, forKey: biometricAuthOn )
     }
 }

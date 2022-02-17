@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="1920" y="184.72906403940888"/>
         </scene>
-        <!--BiometricsViewController-->
+        <!--AccountParamsViewController-->
         <scene sceneID="vMx-WD-key">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="BiometricsViewController" storyboardName="BiometricsViewController" referencedIdentifier="BiometricsViewController" id="Ivp-lZ-SmC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="AccountParamsViewController" storyboardName="AccountParamsViewController" referencedIdentifier="AccountParamsViewController" id="Ivp-lZ-SmC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1nI-dW-3mV"/>
                     <navigationItem key="navigationItem" id="Xf8-IU-lpq"/>
                 </viewControllerPlaceholder>
@@ -283,7 +283,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="LT2-GA-OiP"/>
+        <segue reference="8qw-np-ThB"/>
         <segue reference="eyB-Cj-W0g"/>
     </inferredMetricsTieBreakers>
     <resources>
