@@ -8,12 +8,14 @@
 import UIKit
 
 class NationalCurrencyExchangeViewController: UIViewController {
+    @IBOutlet weak var scrolableContent: UIScrollView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var amount: FloatingLabelInput!
     @IBOutlet weak var dropDownFrom: DropDownView!
     @IBOutlet weak var dropDownTo: DropDownView!
     @IBOutlet weak var nationalCurrencies: UITableView!
     
+    var refreshControl: UIRefreshControl!
     private var viewModel: NationalCurrencyExchangeViewModelProtocol!
     private var nationalExBSDataService: NationalCurrencyExchangeBuySellDataService!
     // DI
@@ -22,6 +24,7 @@ class NationalCurrencyExchangeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        unowned let vc = self
         networkManager = NetworkManager()
         // DI - Dependenc injection  NationalCurrencyExchangeViewModelProtocol
         currencyExchangeDataManager = CurrencyExchangeDataManager(networkManager: networkManager)
@@ -40,6 +43,12 @@ class NationalCurrencyExchangeViewController: UIViewController {
             self?.updateResultOfexchange()
         }
         configureDataSource()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(vc, action: #selector(updateResultOfexchange), for: .valueChanged)
+        refreshControl.addTarget(vc, action: #selector(configureDataSource), for: .valueChanged)
+        scrolableContent.addSubview(refreshControl)
     }
     
     @IBAction func invertCurrencies(_ sender: Any) {
@@ -57,7 +66,7 @@ class NationalCurrencyExchangeViewController: UIViewController {
     }
     
     
-    func updateResultOfexchange(){
+    @objc func updateResultOfexchange(){
         currencyExchangeDataManager.getExchanges(amount: amount.text ?? "", from: dropDownFrom.text ?? "", to: dropDownTo.text ?? ""){ [weak self] rateTo in
             
             DispatchQueue.main.async {
@@ -74,11 +83,13 @@ class NationalCurrencyExchangeViewController: UIViewController {
         }
     }
     
-    private func configureDataSource() {
+    @objc private func configureDataSource() {
         unowned let vc = self
         viewModel = NationalCurrencyExchangeViewModel()
         nationalExBSDataService = NationalCurrencyExchangeBuySellDataService(withController: vc, with: nationalCurrencies, viewModel: viewModel)
         
-        nationalExBSDataService.loadTableView(){}
+        nationalExBSDataService.loadTableView(){ [weak self] in
+            self?.refreshControl.endRefreshing()
+        }
     }
 }

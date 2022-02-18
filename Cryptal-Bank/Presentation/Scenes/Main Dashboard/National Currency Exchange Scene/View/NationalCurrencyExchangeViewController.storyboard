@@ -252,6 +252,7 @@
                         <outlet property="dropDownTo" destination="cqf-Te-8Sz" id="1PZ-va-YRh"/>
                         <outlet property="nationalCurrencies" destination="gBu-YW-7eM" id="W76-O9-tne"/>
                         <outlet property="resultLabel" destination="Tae-PI-NnX" id="Aha-cZ-zNg"/>
+                        <outlet property="scrolableContent" destination="1mb-vi-UyQ" id="0bQ-2U-CdL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
