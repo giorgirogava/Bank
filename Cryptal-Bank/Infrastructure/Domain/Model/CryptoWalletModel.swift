@@ -12,11 +12,13 @@ struct CryptoWalletModel {
     var cryptoShortName: String?
     var cryptoLongName: String?
     var balanceInCrypto: Double?
+    var balanceInGel: Double?
     
     func toNSDictionary()-> NSDictionary {
         ["cryptoIcon": cryptoIcon ?? "",
          "cryptoShortName": cryptoShortName ?? "",
          "cryptoLongName": cryptoLongName ?? "",
+         "balanceInGel": balanceInGel ?? "",
          "balanceInCrypto": balanceInCrypto ?? ""
         ]
     }

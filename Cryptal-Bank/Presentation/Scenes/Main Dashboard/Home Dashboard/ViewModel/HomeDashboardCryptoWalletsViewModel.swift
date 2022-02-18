@@ -23,12 +23,13 @@ class HomeDashboardCryptoWalletsViewModel: HomeDashboardCryptoWalletsViewModelPr
         
         guard let appUserUid = self.appUserUid else { return}
         
-        let myNewRef = Database.database(url: Servers.Firebase_Base_URL).reference(withPath:"UsersPrivateData/\(appUserUid)/CryptoWallets/\("hbdsashdhbsade723ehdffqwe2yhe2eh")")
+        let myNewRef = Database.database(url: Servers.Firebase_Base_URL).reference(withPath:"UsersPrivateData/\(appUserUid)/CryptoWallets/\("hbdsashdhbsade723ehqwe2yhe2eh")")
         
-        myNewRef.setValue(CryptoWalletModel(cryptoIcon: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
-                                            cryptoShortName: "BTC",
-                                            cryptoLongName: "Bitcoin",
-                                            balanceInCrypto: 0.0223).toNSDictionary())
+        myNewRef.setValue(CryptoWalletModel(cryptoIcon: "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+                                            cryptoShortName: "ETH",
+                                            cryptoLongName: "Ethereum",
+                                            balanceInCrypto: 1.0223,
+                                            balanceInGel: 8826.15).toNSDictionary())
     }
     
     
@@ -50,8 +51,9 @@ class HomeDashboardCryptoWalletsViewModel: HomeDashboardCryptoWalletsViewModelPr
                     let cryptoShortName = wallet?["cryptoShortName"] as? String ?? ""
                     let cryptoLongName = wallet?["cryptoLongName"] as? String ?? ""
                     let balanceInCrypto = wallet?["balanceInCrypto"] as? Double ?? 0.0
+                    let balanceInGel = wallet?["balanceInGel"] as? Double ?? 0.0
                     
-                    wallets.append(CryptoWalletModel(cryptoIcon: cryptoIcon, cryptoShortName: cryptoShortName, cryptoLongName: cryptoLongName, balanceInCrypto: balanceInCrypto))
+                    wallets.append(CryptoWalletModel(cryptoIcon: cryptoIcon, cryptoShortName: cryptoShortName, cryptoLongName: cryptoLongName, balanceInCrypto: balanceInCrypto,balanceInGel: balanceInGel))
                 }
 
                 fnCards(wallets)

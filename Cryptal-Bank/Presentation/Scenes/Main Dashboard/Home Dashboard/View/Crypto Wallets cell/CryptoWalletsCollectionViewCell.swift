@@ -24,6 +24,7 @@ class CryptoWalletsCollectionViewCell: UICollectionViewCell {
         cryptoIcon.kf.setImage(with: URL(string: with.cryptoIcon ?? ""))
         cryptoShortNameLabel.text = with.cryptoShortName
         cryptoLongNameLabel.text = with.cryptoLongName
+        balanceInLocalCurrencyLabel.text = "\(with.balanceInGel ?? 0) Lari"
         balanceInCryptoLabel.text = "\(with.balanceInCrypto ?? 0) \(with.cryptoShortName ?? "")"
     }
 }
