@@ -66,6 +66,9 @@
                 <constraint firstItem="WOo-le-j3P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="txF-xC-UgX"/>
             </constraints>
             <size key="customSize" width="250" height="150"/>
+            <connections>
+                <outlet property="titleLabel" destination="tTs-f1-vfc" id="R19-nG-MHJ"/>
+            </connections>
             <point key="canvasLocation" x="282.60869565217394" y="159.375"/>
         </collectionViewCell>
     </objects>

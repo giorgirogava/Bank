@@ -13,13 +13,16 @@ class HomeDashboardViewController: UIViewController {
     @IBOutlet weak private var currencyLabel: UILabel!
     @IBOutlet weak private var eyeButton: UIButton!
     @IBOutlet weak private var cardsCollectionView: UICollectionView!
+    @IBOutlet weak private var cryptoWalletCollectionView: UICollectionView!
     
     
     var refreshControl: UIRefreshControl!
     
     private var viewModel: HomeDashboardViewModelProtocol!
+    private var cryptoWalletViewModel: HomeDashboardCryptoWalletsViewModelProtocol!
     private var ballanceDataService: HomeDashboardTotalBallanceDataService!
     private var cardsDataService: HomeDashboardCardsDataService!
+    private var cryptoWalletsDataService: HomeDashboardCryptoWalletsDataService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,7 @@ class HomeDashboardViewController: UIViewController {
     private func configureDataSource() {
         unowned let vc = self
         viewModel = HomeDashboardViewModel()
+        cryptoWalletViewModel = HomeDashboardCryptoWalletsViewModel()
         ballanceDataService = HomeDashboardTotalBallanceDataService(withController: vc,
                                                                     ballanceLabel: ballanceLabel,
                                                                     currencyLabel: currencyLabel,
@@ -40,10 +44,13 @@ class HomeDashboardViewController: UIViewController {
                                                          cardsCollectionView:cardsCollectionView,
                                                          viewModel: viewModel)
         
-        
+        cryptoWalletsDataService = HomeDashboardCryptoWalletsDataService(withController: vc,
+                                                         cardsCollectionView:cryptoWalletCollectionView,
+                                                         viewModel: cryptoWalletViewModel)
         //ballanceDataService.loadDashboard(){}
         
         cardsDataService.refresh(){}
+        cryptoWalletsDataService.refresh(){}
         
         cardsDataService.sumOfCards(){ [unowned self] totalMoney in
             ballanceDataService.setSumOfCards(money: totalMoney)
@@ -80,6 +87,7 @@ class HomeDashboardViewController: UIViewController {
                 refreshControl.endRefreshing()
             }
         }
+        cryptoWalletsDataService.refresh(){}
         
     }
 }

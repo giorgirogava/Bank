@@ -8,10 +8,15 @@
 import UIKit
 
 class PlusCollectionViewCell: UICollectionViewCell {
-
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configure(with title: String){
+        titleLabel.text = title
     }
 
 }
