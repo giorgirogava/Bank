@@ -8,12 +8,12 @@
 import UIKit
 
 class NationalCurrencyExchangeViewController: UIViewController {
-    @IBOutlet weak var scrolableContent: UIScrollView!
-    @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var amount: FloatingLabelInput!
-    @IBOutlet weak var dropDownFrom: DropDownView!
-    @IBOutlet weak var dropDownTo: DropDownView!
-    @IBOutlet weak var nationalCurrencies: UITableView!
+    @IBOutlet weak private var scrolableContent: UIScrollView!
+    @IBOutlet weak private var resultLabel: UILabel!
+    @IBOutlet weak private var amount: FloatingLabelInput!
+    @IBOutlet weak private var dropDownFrom: DropDownView!
+    @IBOutlet weak private var dropDownTo: DropDownView!
+    @IBOutlet weak private var nationalCurrencies: UITableView!
     
     var refreshControl: UIRefreshControl!
     private var viewModel: NationalCurrencyExchangeViewModelProtocol!
