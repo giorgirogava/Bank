@@ -1,4 +1,4 @@
-# Cryptal-Bank
+# Bank
 
 <div align="center">
  <img src="/ScreenShots/video.gif" width="1300px"</img>
